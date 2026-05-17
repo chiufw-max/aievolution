@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>邱芳瑋醫師・醫學週報｜全方胃．恢腸肝膽最新研究每週更新</title>
+<meta name="description" content="邱芳瑋醫師・全方胃．恢腸肝膽主持，每週自動整合台灣醫學新聞與頂尖期刊 NEJM、Lancet，專注消化道・肝臟・膽道・減重・代謝最新研究。">
+<meta name="keywords" content="全方胃,恢腸肝膽,腸胃科,肝膽科,醫學週報,NEJM,Lancet,邱芳瑋醫師,消化道,減重,MASH,GLP-1">
+<link rel="canonical" href="https://fw-gi.com/weekly.html">
+<meta property="og:title" content="邱芳瑋醫師・醫學週報｜全方胃．恢腸肝膽最新研究">
+<meta property="og:description" content="每週整合台灣醫學新聞與 NEJM・Lancet，全方胃．恢腸肝膽・代謝・減重最新研究">
+<meta property="og:url" content="https://fw-gi.com/weekly.html">
+<meta property="og:type" content="website">
+
+<!-- 預連線資源節省 TLS 握手時間 -->
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://www.facebook.com">
+<link rel="preconnect" href="https://www.facebook.com" crossorigin>
+<style>
+/* ─── Reset & Base ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #FEFCE8;
+  --bg2: #FEF3C7;
+  --surface: #FFFFFF;
+  --surface-hover: #FFFBF0;
+  --border: rgba(180,140,40,0.18);
+  --border-hover: rgba(13,148,136,0.35);
+  --teal: #0F766E;          /* WCAG AA 5.47:1（原 #0D9488 為 3.74:1） */
+  --teal-bright: #0D9488;   /* 裝飾用：漸層、邊框、陰影 */
+  --teal-light: #5EADB3;
+  --amber: #B45309;         /* WCAG AA 5.13:1（原 #D97706 為 3.40:1） */
+  --amber-bright: #D97706;
+  --rose: #9F1239;          /* WCAG AA 6.32:1（原 #BE185D 為 5.07:1，仍可） */
+  --emerald: #047857;       /* WCAG AA 5.40:1 */
+  --text: #292524;
+  --text2: #78716C;
+  --text-muted: #A8A29E;
+  --shadow: 0 2px 12px rgba(120,80,20,0.07);
+  --shadow-hover: 0 8px 28px rgba(13,148,136,0.13);
+  --radius: 14px;
+  --radius-sm: 9px;
+}
+
+html { scroll-behavior: smooth; font-size: 17px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, 'Noto Sans TC', sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ─── Scroll Progress Bar ─── */
+#progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--amber), var(--teal), var(--teal-light));
+  z-index: 1000;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 6px rgba(13,148,136,0.4);
+}
+
+/* ─── Warm Background ─── */
+.bg-warm {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 50% at 5% 15%, rgba(253,230,138,0.45) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 95% 85%, rgba(167,243,208,0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 55% at 50% 50%, rgba(254,243,199,0.28) 0%, transparent 70%);
+}
+
+/* Subtle warm grid */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(217,119,6,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217,119,6,0.035) 1px, transparent 1px);
+  background-size: 52px 52px;
+}
+
+/* Botanical SVG decoration */
+.leaf-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ─── Navigation ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  padding: 0 1.75rem;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,251,235,0.93);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 10px rgba(120,80,20,0.06);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+}
+
+.nav-brand-icon {
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px rgba(13,148,136,0.25);
+}
+
+.nav-brand-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.nav-brand-sub {
+  font-size: 1.02rem;
+  color: var(--teal);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--teal); }
+.nav-links a.active { font-weight: 700; }
+
+/* ── 次標籤（同頁錨點：台灣新聞/NEJM/Lancet/歷史）── */
+.nav-links .nav-sub-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-left: 0.9rem;
+  margin-left: 0.2rem;
+  border-left: 1px solid var(--border);
+}
+.nav-links .nav-sub-group a {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.nav-links .nav-sub-group a:hover { color: var(--teal); }
+
+.nav-fb-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1877F2;
+  color: white !important;
+  padding: 0.32rem 0.9rem;
+  border-radius: 100px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(24,119,242,0.3);
+}
+.nav-fb-link:hover { opacity: 0.85; }
+.nav-hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.nav-hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text2); border-radius: 2px; transition: all 0.3s;
+}
+.mobile-menu {
+  display: none;
+  position: fixed; top: 62px; left: 0; right: 0; z-index: 199;
+  background: rgba(254,252,232,0.97);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2rem;
+  flex-direction: column; gap: 1rem;
+}
+.mobile-menu a {
+  color: var(--text2); text-decoration: none;
+  font-size: 1rem; font-weight: 500; padding: 0.4rem 0;
+}
+.mobile-menu a:hover { color: var(--teal); }
+.mobile-menu.open { display: flex; }
+
+/* ─── Page Layout: main + FB sidebar ─── */
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content { min-width: 0; }
+
+/* ─── Facebook Sidebar ─── */
+.fb-sidebar {
+  position: sticky;
+  top: 62px;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+  border-left: 1px solid var(--border);
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.fb-sidebar-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(135deg, #1877F2 0%, #0B5CD7 100%);
+  color: white;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.fb-sidebar-header h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.01em;
+}
+
+.fb-sidebar-header p {
+  font-size: 1.02rem;
+  opacity: 0.85;
+}
+
+.fb-page-wrap {
+  flex: 1;
+  overflow: hidden;
+}
+
+.fb-page-wrap iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  border: none;
+  display: block;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.fb-direct-link {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border);
+  background: rgba(255,255,255,0.5);
+}
+
+.fb-direct-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1877F2;
+  color: white;
+  padding: 0.42rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.86rem;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(24,119,242,0.28);
+}
+.fb-direct-link a:hover { opacity: 0.85; }
+
+/* ─── Week Banner ─── */
+.week-banner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.7rem 2rem;
+  margin-top: 62px;
+  background: linear-gradient(90deg, transparent, rgba(13,148,136,0.07), rgba(217,119,6,0.04), transparent);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  flex-wrap: wrap;
+}
+
+.week-banner strong { color: var(--teal); font-weight: 700; }
+
+/* ─── Hero ─── */
+.hero {
+  position: relative;
+  padding: 4.5rem 2.5rem 3rem;
+  background: linear-gradient(160deg, #FFFDE7 0%, #F0FDF4 60%, #ECFDF5 100%);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(13,148,136,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; left: 10%;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(217,119,6,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1rem;
+  background: rgba(13,148,136,0.08);
+  padding: 0.28rem 0.85rem;
+  border-radius: 100px;
+  border: 1px solid rgba(13,148,136,0.2);
+  font-weight: 600;
+  opacity: 0;
+  animation: fade-up 0.8s 0.3s ease forwards;
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+  opacity: 0;
+  animation: fade-up 0.8s 0.5s ease forwards;
+}
+
+.hero-title .highlight { color: var(--teal); }
+
+.hero-subtitle {
+  font-size: 0.93rem;
+  color: var(--text2);
+  margin-bottom: 2rem;
+  max-width: 580px;
+  opacity: 0;
+  animation: fade-up 0.8s 0.65s ease forwards;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fade-up 0.8s 0.8s ease forwards;
+}
+
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  color: var(--text2);
+  background: white;
+  border: 1px solid var(--border);
+  padding: 0.32rem 0.85rem;
+  border-radius: 100px;
+  box-shadow: var(--shadow);
+  font-weight: 500;
+}
+
+.hero-badge .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease infinite;
+}
+
+.dot-teal { background: var(--teal); }
+.dot-amber { background: var(--amber); }
+.dot-rose { background: var(--rose); }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.5); }
+}
+
+/* ─── Section Layout ─── */
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 3.5rem 2.5rem;
+}
+
+.section-header {
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section-label {
+  font-size: 0.63rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.section-count {
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  background: rgba(13,148,136,0.07);
+  padding: 0.22rem 0.7rem;
+  border-radius: 100px;
+  border: 1px solid rgba(13,148,136,0.12);
+}
+
+/* ─── Divider ─── */
+.divider {
+  position: relative;
+  z-index: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 0 2.5rem;
+}
+
+/* ─── Scroll-Driven Animations ─── */
+@supports (animation-timeline: scroll()) {
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: reveal-card linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+  }
+  @keyframes reveal-card {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .scroll-reveal-left {
+    opacity: 0;
+    transform: translateX(-24px);
+    animation: reveal-left linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+  }
+  @keyframes reveal-left {
+    from { opacity: 0; transform: translateX(-24px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  .stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger-children > *:nth-child(2) { animation-delay: 70ms; }
+  .stagger-children > *:nth-child(3) { animation-delay: 140ms; }
+  .stagger-children > *:nth-child(4) { animation-delay: 210ms; }
+  .stagger-children > *:nth-child(5) { animation-delay: 280ms; }
+}
+
+@supports not (animation-timeline: scroll()) {
+  .scroll-reveal, .scroll-reveal-left {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .scroll-reveal.visible, .scroll-reveal-left.visible {
+    opacity: 1; transform: none;
+  }
+}
+
+/* ─── News Cards ─── */
+.news-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.news-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.9rem 1.2rem;
+  align-items: start;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.22s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.news-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--teal), var(--teal-light));
+  opacity: 0;
+  transition: opacity 0.22s;
+}
+
+.news-card:hover {
+  border-color: rgba(13,148,136,0.28);
+  transform: translateY(-2px) translateX(2px);
+  box-shadow: var(--shadow-hover);
+}
+.news-card:hover::before { opacity: 1; }
+
+.news-number {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--teal);
+  letter-spacing: 0.04em;
+  padding-top: 0.1rem;
+  opacity: 0.55;
+  min-width: 22px;
+}
+
+.news-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.61rem;
+  padding: 0.16rem 0.52rem;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.tag-tw { background: rgba(5,150,105,0.1); color: #047857; border: 1px solid rgba(5,150,105,0.2); }
+.tag-source { background: rgba(15,118,110,0.09); color: var(--teal); border: 1px solid rgba(15,118,110,0.18); }
+.tag-category { background: rgba(180,83,9,0.09); color: var(--amber); border: 1px solid rgba(180,83,9,0.2); }
+
+.news-title {
+  font-size: 0.96rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 0.45rem;
+  color: var(--text);
+}
+
+.news-summary {
+  font-size: 0.91rem;
+  color: var(--text2);
+  line-height: 1.65;
+}
+
+.news-link-icon {
+  color: var(--text-muted);
+  transition: color 0.2s, transform 0.2s;
+  padding-top: 0.1rem;
+  flex-shrink: 0;
+}
+.news-card:hover .news-link-icon { color: var(--teal); transform: translate(2px, -2px); }
+
+/* ─── Academic Cards ─── */
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.academic-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: all 0.22s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.academic-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+
+.academic-card.nejm::after { background: linear-gradient(90deg, #0D9488, #5EADB3); }
+.academic-card.lancet::after { background: linear-gradient(90deg, #BE185D, #F9A8D4); }
+.academic-card.jama::after { background: linear-gradient(90deg, #1E40AF, #60A5FA); }
+.academic-card.gastro::after { background: linear-gradient(90deg, #C2410C, #FB923C); }
+.academic-card.hepato::after { background: linear-gradient(90deg, #6B21A8, #C084FC); }
+
+.academic-card:hover {
+  border-color: rgba(13,148,136,0.28);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.academic-journal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journal-badge {
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.62rem;
+  border-radius: 100px;
+}
+
+.journal-badge.nejm {
+  background: rgba(15,118,110,0.1);
+  color: var(--teal);
+  border: 1px solid rgba(15,118,110,0.22);
+}
+
+.journal-badge.lancet {
+  background: rgba(159,18,57,0.09);
+  color: var(--rose);
+  border: 1px solid rgba(159,18,57,0.2);
+}
+
+.journal-badge.jama {
+  background: rgba(30,64,175,0.10);
+  color: #1E3A8A;
+  border: 1px solid rgba(30,64,175,0.22);
+}
+
+.journal-badge.gastro {
+  background: rgba(194,65,12,0.10);
+  color: #9A3412;
+  border: 1px solid rgba(194,65,12,0.22);
+}
+
+.journal-badge.hepato {
+  background: rgba(107,33,168,0.10);
+  color: #6B21A8;
+  border: 1px solid rgba(107,33,168,0.22);
+}
+
+.academic-category {
+  font-size: 0.67rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.academic-title {
+  font-size: 0.91rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.abstract-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.tab-btn {
+  font-size: 1.02rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.62rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  background: rgba(13,148,136,0.1);
+  border-color: rgba(13,148,136,0.3);
+  color: var(--teal);
+}
+
+.abstract-text {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+.abstract-en { display: block; }
+.abstract-zh { display: none; }
+
+.read-more {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.73rem;
+  color: var(--teal);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.read-more svg { transition: transform 0.2s; }
+.academic-card:hover .read-more svg { transform: translateX(4px); }
+
+/* ─── History Section ─── */
+.history-section {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2.5rem;
+}
+
+.history-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.history-tab {
+  font-size: 0.85rem;
+  padding: 0.42rem 1.1rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  box-shadow: var(--shadow);
+}
+
+.history-tab.active {
+  background: linear-gradient(135deg, rgba(13,148,136,0.12), rgba(94,173,179,0.07));
+  border-color: rgba(13,148,136,0.35);
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.history-panel { display: none; }
+.history-panel.active { display: block; }
+
+/* ─── Footer ─── */
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 2.5rem 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  background: rgba(255,251,235,0.85);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 2;
+}
+
+.footer-text a {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-text a:hover { text-decoration: underline; }
+
+/* ─── Animations ─── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(180,140,40,0.22); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--teal); }
+
+/* ─── Responsive ─── */
+@media (max-width: 960px) {
+  .page-layout { grid-template-columns: 1fr; }
+  .fb-sidebar {
+    position: static;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+  .fb-page-wrap iframe { min-height: 500px; }
+}
+@media (max-width: 680px) {
+  .academic-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .news-card { grid-template-columns: auto 1fr; }
+  .news-link-icon { display: none; }
+  .section { padding: 2.5rem 1.25rem; }
+  .history-section { padding: 2rem 1.25rem; }
+  .hero { padding: 3rem 1.25rem 2rem; }
+  .nav-brand-sub { font-size: 0.68rem; white-space: nowrap; letter-spacing: 0.01em; }
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div id="progress-bar"></div>
+
+<!-- Warm background layers -->
+<div class="bg-warm"></div>
+<div class="leaf-bg" aria-hidden="true">
+  <svg width="100%" height="100%" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice"
+    xmlns="http://www.w3.org/2000/svg" style="opacity:0.06">
+    <g fill="#0D9488">
+      <ellipse cx="80" cy="220" rx="65" ry="22" transform="rotate(-35 80 220)"/>
+      <ellipse cx="95" cy="215" rx="58" ry="17" transform="rotate(-35 95 215)" fill="none" stroke="#0D9488" stroke-width="1.5"/>
+      <ellipse cx="1320" cy="130" rx="72" ry="26" transform="rotate(22 1320 130)"/>
+      <ellipse cx="1310" cy="760" rx="58" ry="21" transform="rotate(-18 1310 760)"/>
+      <ellipse cx="55" cy="710" rx="68" ry="24" transform="rotate(28 55 710)"/>
+    </g>
+    <g stroke="#D97706" fill="none">
+      <circle cx="180" cy="820" r="65" stroke-width="1.8" stroke-dasharray="7 5"/>
+      <circle cx="1220" cy="390" r="88" stroke-width="1.4" stroke-dasharray="5 7"/>
+    </g>
+    <g fill="#059669">
+      <path d="M42,410 Q75,360 108,410 Q75,460 42,410Z" transform="rotate(-22 75 410)"/>
+      <path d="M1355,620 Q1378,568 1401,620 Q1378,672 1355,620Z" transform="rotate(18 1378 620)"/>
+      <path d="M700,20 Q730,-18 760,20 Q730,58 700,20Z" transform="rotate(-10 730 20)"/>
+    </g>
+  </svg>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <a class="nav-brand" href="/">
+    <div class="nav-brand-icon"><img src="logo3.jpg?v=1" alt="邱芳瑋醫師 Logo" width="38" height="38" style="width:100%;height:100%;object-fit:contain;display:block;border-radius:10px;"></div>
+    <div>
+      <div class="nav-brand-text">邱芳瑋醫師・醫學週報</div>
+      <div class="nav-brand-sub">全方胃．恢腸肝膽・聽你說「腸」心事</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">首頁</a></li>
+    <li><a href="/weekly.html" class="active">醫學週報</a></li>
+    <li class="nav-sub-group" aria-label="本頁段落">
+      <a href="#taiwan">台灣新聞</a>
+      <a href="#nejm">NEJM</a>
+      <a href="#lancet">Lancet</a>
+      <a href="#jama">JAMA</a>
+      <a href="#gastro">Gastro</a>
+      <a href="#hepato">Hepato</a>
+      <a href="#history">歷史</a>
+    </li>
+    <li><a href="/education.html">衛教文章</a></li>
+    <li>
+      <a class="nav-fb-link" href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        粉絲團
+      </a>
+    </li>
+  </ul>
+  <!-- Mobile hamburger -->
+  <button class="nav-hamburger" aria-label="選單" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/" onclick="closeMenu()">🏠 首頁</a>
+  <a href="/weekly.html" onclick="closeMenu()">📰 醫學週報</a>
+  <a href="/education.html" onclick="closeMenu()">📚 衛教文章</a>
+  <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">👍 Facebook 粉絲團</a>
+</div>
+
+<!-- Week banner -->
+<div class="week-banner" id="week-banner"><strong>2026 第20週</strong> &nbsp;·&nbsp; 更新日期：2026-05-15 &nbsp;·&nbsp; <span>腸胃肝膽・代謝領域・自動整理</span></div>
+
+<!-- ═══ Two-column page layout ═══ -->
+<div class="page-layout">
+
+  <!-- ── Main content ── -->
+  <main class="main-content" id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <p class="hero-eyebrow">每週自動更新 · AI 整理</p>
+      <h1 class="hero-title">腸胃肝膽健康<span class="highlight">・醫學週報</span></h1>
+      <p class="hero-subtitle">整合台灣熱門醫學新聞與頂尖期刊（NEJM・Lancet）肝・膽・胃・腸・減重・代謝領域最新研究，每週自動更新</p>
+      <div class="hero-meta">
+        <div class="hero-badge"><span class="dot dot-teal"></span>台灣熱門新聞 TOP 5</div>
+        <div class="hero-badge"><span class="dot dot-amber"></span>NEJM 近期研究</div>
+        <div class="hero-badge"><span class="dot dot-rose"></span>Lancet 近期研究</div>
+      </div>
+    </section>
+
+    <!-- Taiwan News (預渲染：本週靜態 HTML，後續週次由 update_medical_news.py 重寫) -->
+    <section class="section" id="taiwan">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">本週熱門</p>
+          <h2 class="section-title">台灣醫學新聞 TOP 5</h2>
+        </div>
+        <span class="section-count" id="tw-count">5 則</span>
+      </div>
+      <div class="news-grid stagger-children" id="taiwan-news">
+        <!-- BEGIN PRERENDER:taiwan -->
+<a class="news-card scroll-reveal" href="https://www.careonline.com.tw/2026/05/202605150200.html" target="_blank" rel="noopener" id="tw-20260515-01">
+  <span class="news-number">01</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">醫療</span>
+      <span class="tag tag-source">照護線上</span>
+    </div>
+    <p class="news-title">腸道發炎老是好不了？也許，體重管理是關鍵</p>
+    <p class="news-summary">新研究指出，過重與肥胖會放大發炎性腸道疾病(IBD)的腸道發炎反應，體重管理可能是輔助治療關鍵。患者除藥物治療外，搭配減重與運動或能改善腹痛、腹瀉及黏膜癒合。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://www.careonline.com.tw/2026/05/202605111400.html" target="_blank" rel="noopener" id="tw-20260515-02">
+  <span class="news-number">02</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">醫療</span>
+      <span class="tag tag-source">照護線上</span>
+    </div>
+    <p class="news-title">C型肝炎患者，罹患糖尿病的風險較高嗎？</p>
+    <p class="news-summary">C型肝炎病毒會干擾胰島素訊號傳遞、加重胰島素阻抗，使患者糖尿病風險顯著上升。建議C肝患者應同時關注血糖，並把握直接抗病毒藥物(DAA)治療時機，根除病毒同時降低代謝風險。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://www.careonline.com.tw/2026/05/20260508-02.html" target="_blank" rel="noopener" id="tw-20260515-03">
+  <span class="news-number">03</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">醫療</span>
+      <span class="tag tag-source">照護線上</span>
+    </div>
+    <p class="news-title">脂肪肝成全球健康隱憂　研究示警：到2050年恐影響近18億人</p>
+    <p class="news-summary">Lancet Gastro最新全球疾病負擔分析估計，2050年全球將有約18億人罹患代謝功能障礙相關脂肪肝(MASLD)，較2023年增加42%。台灣肥胖與糖尿病盛行率攀升，肝纖維化篩檢與生活型態介入勢在必行。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://www.careonline.com.tw/2026/05/20260513.html" target="_blank" rel="noopener" id="tw-20260515-04">
+  <span class="news-number">04</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">醫療</span>
+      <span class="tag tag-source">照護線上</span>
+    </div>
+    <p class="news-title">晚期卵巢癌：HRD基因檢測精準導航，PARP抑制劑合併療法降低復發</p>
+    <p class="news-summary">一名孕婦產檢時意外發現晚期卵巢癌，經HRD基因檢測為陽性後，採PARP抑制劑合併療法做維持治療，目前病況穩定。HRD檢測有助於精準篩出能從PARP抑制劑獲益的患者，降低7成復發率。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://health.ltn.com.tw/article/breakingnews/4770755" target="_blank" rel="noopener" id="tw-20260515-05">
+  <span class="news-number">05</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">醫療</span>
+      <span class="tag tag-source">自由健康網</span>
+    </div>
+    <p class="news-title">健保收載癌症新藥及擴增給付　投入16億元、3,085癌友受惠</p>
+    <p class="news-summary">健保署本月通過1項癌症新藥與3項癌症藥品擴增給付規定，總計挹注藥費約16億元，預估有3,085位癌友受惠，包括多發性骨髓瘤第三線以上治療納入elotuzumab合併療法，提升新藥可近性。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+        <!-- END PRERENDER:taiwan -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- NEJM -->
+    <section class="section" id="nejm">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">NEJM 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="nejm-articles">
+        <!-- BEGIN PRERENDER:nejm -->
+<div class="academic-card nejm scroll-reveal" id="nejm-20260515-01">
+  <div class="academic-journal">
+    <span class="journal-badge nejm">NEJM</span>
+    <span class="academic-category">MASH藥物治療</span>
+  </div>
+  <p class="academic-title">Phase 3 Trial of Semaglutide in Metabolic Dysfunction–Associated Steatohepatitis</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">In this phase 3 trial of 1,197 patients with biopsy-defined MASH and fibrosis stage 2 or 3, once-weekly subcutaneous semaglutide 2.4 mg significantly increased resolution of steatohepatitis without worsening of fibrosis (62.9% vs 34.3% with placebo) over 240 weeks, and improved fibrosis without worsening MASH.</p>
+    <p class="abstract-text abstract-zh">1,197位切片證實的MASH合併中度纖維化患者隨機給予每週皮下注射semaglutide 2.4 mg或安慰劑240週。結果顯示semaglutide組脂肪肝炎緩解率達62.9%，明顯優於安慰劑組34.3%，且纖維化改善率亦較高，為MASH藥物治療奠定新基石。</p>
+  </div>
+  <a class="read-more" href="https://www.nejm.org/doi/abs/10.1056/NEJMoa2413258" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card nejm scroll-reveal" id="nejm-20260515-02">
+  <div class="academic-journal">
+    <span class="journal-badge nejm">NEJM</span>
+    <span class="academic-category">肥胖症治療</span>
+  </div>
+  <p class="academic-title">Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist for Obesity Treatment</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">In a phase 3 trial enrolling 3,127 adults with obesity without diabetes, once-daily oral orforglipron led to mean weight reductions of −7.5% (6 mg), −8.4% (12 mg), and −11.2% (36 mg) at 72 weeks, versus −2.0% with placebo. Adverse events were predominantly gastrointestinal and dose-dependent.</p>
+    <p class="abstract-text abstract-zh">肥胖且未合併糖尿病者隨機分配每日口服orforglipron(6/12/36 mg)或安慰劑72週。各劑量組體重分別下降7.5%、8.4%、11.2%，明顯優於安慰劑組的2.0%。副作用以腸胃道為主、呈劑量相關，為首個口服小分子GLP-1取得正面數據。</p>
+  </div>
+  <a class="read-more" href="https://www.nejm.org/doi/full/10.1056/NEJMoa2511774" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card nejm scroll-reveal" id="nejm-20260515-03">
+  <div class="academic-journal">
+    <span class="journal-badge nejm">NEJM</span>
+    <span class="academic-category">第二型糖尿病</span>
+  </div>
+  <p class="academic-title">Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist, in Early Type 2 Diabetes</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Phase 3 double-blind, placebo-controlled trial assigned diet-and-exercise-only T2D patients to orforglipron 3/12/36 mg or placebo once daily for 40 weeks. HbA1c reductions were dose-dependent and significantly greater than placebo, with parallel weight loss—suggesting an oral GLP-1 option for early T2D management.</p>
+    <p class="abstract-text abstract-zh">僅以飲食運動控制的早期第二型糖尿病患者隨機分配口服orforglipron(3/12/36 mg)或安慰劑40週。各劑量組HbA1c降幅與體重下降皆顯著優於安慰劑且呈劑量相關，提供早期糖尿病一個新的口服GLP-1選擇，有望改變治療階梯。</p>
+  </div>
+  <a class="read-more" href="https://www.nejm.org/doi/full/10.1056/NEJMoa2505669" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:nejm -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Lancet -->
+    <section class="section" id="lancet">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">Lancet 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="lancet-articles">
+        <!-- BEGIN PRERENDER:lancet -->
+<div class="academic-card lancet scroll-reveal" id="lancet-20260515-01">
+  <div class="academic-journal">
+    <span class="journal-badge lancet">The Lancet</span>
+    <span class="academic-category">流行病學</span>
+  </div>
+  <p class="academic-title">Global burden of metabolic dysfunction-associated steatotic liver disease, 1990–2023, and projections to 2050</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Systematic GBD 2023 analysis showed global MASLD prevalence of 16.1% in 2023 (~1.3 billion cases). By 2050 prevalence is projected to rise 42%, reaching 1.8 billion, with the steepest increases in Asia. The data underscore urgent need for screening pathways, lifestyle intervention and access to newly approved pharmacotherapies.</p>
+    <p class="abstract-text abstract-zh">依GBD 2023系統分析，2023年全球MASLD盛行率達16.1%(約13億人)，預估至2050年將上升42%、達18億人，亞洲增幅最劇。研究呼籲建立常規肝纖維化篩檢路徑、強化生活型態介入與新藥(如resmetirom、semaglutide)可近性。</p>
+  </div>
+  <a class="read-more" href="https://www.thelancet.com/journals/langas/article/PIIS2468-1253(26)00011-7/abstract" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card lancet scroll-reveal" id="lancet-20260515-02">
+  <div class="academic-journal">
+    <span class="journal-badge lancet">The Lancet</span>
+    <span class="academic-category">MASH治療策略</span>
+  </div>
+  <p class="academic-title">Current and emerging therapeutic landscape for metabolic dysfunction-associated steatohepatitis</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This review summarises the recent shift from no licensed therapies to two approved agents—resmetirom (THR-β agonist) and semaglutide—for MASH with fibrosis. Authors outline patient selection, monitoring with non-invasive tests (FIB-4, ELF, vibration-controlled elastography) and the pipeline of FGF21 analogues, PPAR agonists and combination strategies.</p>
+    <p class="abstract-text abstract-zh">本回顧整理MASH從無藥可用到resmetirom與semaglutide先後獲核可的歷程，並提出非侵入性檢測(FIB-4、ELF、震動控制式彈性影像)選擇與監測患者的實務建議，並展望FGF21類似物、PPAR促效劑與合併用藥的研發藍圖。</p>
+  </div>
+  <a class="read-more" href="https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00260-2/abstract" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:lancet -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- JAMA -->
+    <section class="section" id="jama">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">JAMA 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="jama-articles">
+        <!-- BEGIN PRERENDER:jama -->
+<div class="academic-card jama scroll-reveal" id="jama-20260515-01">
+  <div class="academic-journal">
+    <span class="journal-badge jama">JAMA</span>
+    <span class="academic-category">大腸癌篩檢</span>
+  </div>
+  <p class="academic-title">Population Health Colorectal Cancer Screening Strategies in Adults Aged 45 to 49 Years: A Randomized Clinical Trial</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This randomized trial compared population-health outreach strategies (mailed FIT, mailed FIT plus colonoscopy invitation, and usual care) for boosting colorectal cancer screening uptake among adults aged 45–49 years. Both proactive outreach arms significantly increased screening completion versus usual care, supporting earlier implementation of organised CRC screening in this newly eligible age group.</p>
+    <p class="abstract-text abstract-zh">本隨機試驗比較三種族群健康介入(郵寄FIT、郵寄FIT合併大腸鏡邀請、常規照護)在45–49歲族群中提升大腸癌篩檢率的效果。兩種主動介入皆顯著高於常規照護，支持台灣可比照美國USPSTF建議將篩檢年齡前移並採取主動寄發策略，提升年輕族群早期偵測率。</p>
+  </div>
+  <a class="read-more" href="https://jamanetwork.com/journals/jama/fullarticle/2837228" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card jama scroll-reveal" id="jama-20260515-02">
+  <div class="academic-journal">
+    <span class="journal-badge jama">JAMA</span>
+    <span class="academic-category">大腸癌篩檢</span>
+  </div>
+  <p class="academic-title">Clinical Validation of a Cell-Free DNA Blood-Based Test for Colorectal Cancer Screening</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Prospective pivotal study in 48,995 average-risk adults aged 45–85 evaluating a cell-free DNA blood test against screening colonoscopy. The cfDNA test detected colorectal cancer with sensitivity around 83% and advanced adenoma sensitivity remained modest (~13%), suggesting blood-based screening can lower entry barrier but is not yet a substitute for endoscopic detection of pre-cancerous polyps.</p>
+    <p class="abstract-text abstract-zh">前瞻性樞紐研究納入48,995位45–85歲平均風險族群，評估血液 cfDNA 檢測對比大腸鏡篩檢。對大腸癌偵測敏感度約83%，但對進階腺瘤的敏感度僅約13%。顯示血液檢測可降低受檢門檻，但目前仍無法取代大腸鏡在偵測癌前病灶的角色，臨床溝通時應同時說明侷限。</p>
+  </div>
+  <a class="read-more" href="https://jamanetwork.com/journals/jama/fullarticle/2779991" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:jama -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Gastroenterology -->
+    <section class="section" id="gastro">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">Gastroenterology 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="gastro-articles">
+        <!-- BEGIN PRERENDER:gastro -->
+<div class="academic-card gastro scroll-reveal" id="gastro-20260515-01">
+  <div class="academic-journal">
+    <span class="journal-badge gastro">Gastroenterology</span>
+    <span class="academic-category">發炎性腸道疾病</span>
+  </div>
+  <p class="academic-title">AGA Living Clinical Practice Guideline on the Pharmacologic Management of Moderate-to-Severe Crohn&#39;s Disease</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Updated AGA living guideline integrates evidence from newly approved biologics and small molecules (anti-TL1A, JAK inhibitors, S1P modulators) and recommends early advanced therapy over accelerated step-up for moderate-to-severe Crohn&#39;s disease. The panel emphasises shared decision-making, treat-to-target with mucosal healing, and routine therapeutic drug monitoring.</p>
+    <p class="abstract-text abstract-zh">AGA 持續更新版指引整合近期核可的生物製劑與小分子藥(anti-TL1A、JAK抑制劑、S1P調節劑)，主張中重度克隆氏症應「早期使用進階治療」優於緩步升階。重點包括共享決策、以黏膜癒合為治療目標(treat-to-target)，並常規施行治療性藥物濃度監測(TDM)。</p>
+  </div>
+  <a class="read-more" href="https://www.gastrojournal.org/article/S0016-5085(25)06091-3/fulltext" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card gastro scroll-reveal" id="gastro-20260515-02">
+  <div class="academic-journal">
+    <span class="journal-badge gastro">Gastroenterology</span>
+    <span class="academic-category">脂肪肝共識</span>
+  </div>
+  <p class="academic-title">Global Consensus Recommendations for Metabolic Dysfunction-Associated Steatotic Liver Disease and Steatohepatitis</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Multisociety global Delphi consensus establishes unified diagnostic terminology (MASLD/MASH), risk stratification with FIB-4 and elastography, and care pathways spanning primary care, endocrinology and hepatology. The consensus standardises non-invasive testing thresholds, defines audit metrics, and incorporates resmetirom and incretin-based therapy into stepwise management.</p>
+    <p class="abstract-text abstract-zh">多學會全球德爾菲共識統一 MASLD/MASH 診斷詞彙，建立 FIB-4 與彈性影像分層流程，並橫跨家醫、內分泌與肝膽科的照護路徑。共識統一非侵入性檢測截值、定義稽核指標，並將 resmetirom 與 GLP-1 類藥物納入階梯式治療，是台灣建立脂肪肝照護網的重要參考。</p>
+  </div>
+  <a class="read-more" href="https://www.gastrojournal.org/article/S0016-5085(25)00632-8/fulltext" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:gastro -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Hepatology -->
+    <section class="section" id="hepato">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">Hepatology 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="hepato-articles">
+        <!-- BEGIN PRERENDER:hepato -->
+<div class="academic-card hepato scroll-reveal" id="hepato-20260515-01">
+  <div class="academic-journal">
+    <span class="journal-badge hepato">Hepatology</span>
+    <span class="academic-category">B型肝炎治癒</span>
+  </div>
+  <p class="academic-title">Hepatitis B Functional Cure: Current and Future Perspective</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Comprehensive review summarises HBV functional cure (sustained HBsAg loss) achievement rates with current nucleos(t)ide analogues (3–5% over 10 years) and pegylated interferon (8–14%). Pipeline therapies including siRNAs (bepirovirsen, JNJ-3989), ASOs, capsid assembly modulators and therapeutic vaccines combined with NUC backbones show promising HBsAg reductions exceeding 90% in selected patients.</p>
+    <p class="abstract-text abstract-zh">本綜述整理 HBV 功能性治癒(持續 HBsAg 陰性)在現行治療下的達成率：核苷類10年僅3–5%、長效干擾素3–5年8–14%。新興療法如 siRNA(bepirovirsen、JNJ-3989)、ASO、衣殼組裝調節劑與治療性疫苗合併核苷類治療，在選定患者可使 HBsAg 下降超過90%，台灣B肝高盛行族群可期待新藥到位。</p>
+  </div>
+  <a class="read-more" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12576716/" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card hepato scroll-reveal" id="hepato-20260515-02">
+  <div class="academic-journal">
+    <span class="journal-badge hepato">Hepatology</span>
+    <span class="academic-category">脂肪肝相關肝硬化</span>
+  </div>
+  <p class="academic-title">Characteristics and Clinical Outcomes in Patients With Cirrhosis Due to MASLD in Sweden</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Nationwide Swedish register cohort of 2,318 compensated and 1,339 decompensated MASLD-cirrhosis patients (2001–2020) showed 5-year overall mortality of 28% and 60% respectively. HCC incidence was 1.4% per year in compensated cirrhosis. Type 2 diabetes and obesity independently predicted decompensation, supporting aggressive metabolic management even after cirrhosis develops.</p>
+    <p class="abstract-text abstract-zh">瑞典全國登錄世代納入2,318名代償期與1,339名失代償期 MASLD 肝硬化患者(2001–2020)，五年總死亡率分別為28%與60%；代償期患者每年肝癌發生率1.4%。糖尿病與肥胖為失代償獨立危險因子，提示即使已肝硬化仍需積極代謝介入，呼應台灣脂肪肝病人需同步管控代謝症候群。</p>
+  </div>
+  <a class="read-more" href="https://onlinelibrary.wiley.com/doi/10.1111/liv.70487" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:hepato -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- History -->
+    <section class="history-section" id="history">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">歷史紀錄</p>
+          <h2 class="section-title">近三期週報</h2>
+        </div>
+      </div>
+      <div class="history-tabs" id="history-tabs"></div>
+      <div id="history-content"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+        邱芳瑋醫師・醫學週報 &nbsp;|&nbsp; 資料來源：Yahoo健康、HEHO健康、聯合報、NEJM、Lancet<br>
+        內容僅供醫學資訊參考，不構成醫療建議。本頁由 Claude AI 自動整理生成。<br>
+        <a href="https://github.com/chiufw-max/aievolution" target="_blank" rel="noopener">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">Facebook 粉絲團</a>
+        &nbsp;·&nbsp;
+        <span id="footer-date">─</span>
+      </p>
+    </footer>
+
+  </main><!-- /main-content -->
+
+  <!-- ── Facebook Sidebar ── -->
+  <aside class="fb-sidebar">
+    <div class="fb-sidebar-header">
+      <h3>邱芳瑋醫師</h3>
+      <p>聽你說「腸」心事・粉絲團最新貼文</p>
+    </div>
+    <div class="fb-page-wrap" id="fb-page-wrap">
+      <!-- iframe：src 由 IntersectionObserver 在進入視口時才填入 (節省 LCP) -->
+      <iframe
+        id="fb-iframe"
+        title="邱芳瑋醫師 Facebook 粉絲團最新貼文"
+        data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61576486042172&tabs=timeline&width=340&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"
+        width="340" height="800"
+        loading="lazy"
+        style="border:none;overflow:hidden;border-radius:12px;display:block;"
+        scrolling="no" frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+      <!-- Fallback：iframe 無法載入時顯示 -->
+      <div id="fb-fallback" style="display:none;padding:2rem 1.5rem;text-align:center;color:#555;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="#1877F2" style="margin-bottom:1rem;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <p style="font-weight:700;font-size:1rem;margin-bottom:0.5rem;">邱芳瑋醫師</p>
+        <p style="font-size:0.82rem;margin-bottom:1.5rem;line-height:1.6;">全方胃．恢腸肝膽 · 聽你說「腸」心事<br>追蹤粉絲團，每週醫學新知不錯過</p>
+        <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener"
+          style="display:inline-block;background:#1877F2;color:white;padding:0.6rem 1.4rem;border-radius:8px;font-size:0.9rem;font-weight:600;text-decoration:none;">
+          前往粉絲團 →
+        </a>
+      </div>
+    </div>
+  </aside>
+
+</div><!-- /page-layout -->
+
+<script>
+// ─── Mobile menu ─────────────────────────────────────────────────
+function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+function closeMenu()  { document.getElementById('mobile-menu').classList.remove('open'); }
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.querySelector('.nav-hamburger');
+  if (menu && menu.classList.contains('open') && !menu.contains(e.target) && btn && !btn.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+// ─── Data ───────────────────────────────────────────────────────
+// Inline data (updated by Python script each week)
+const DATA = {
+  "weeks": [
+    {
+      "date": "2026-05-15",
+      "week_label": "2026 第20週",
+      "taiwan_news": [
+        {
+          "id": "tw-20260515-01",
+          "title": "腸道發炎老是好不了？也許，體重管理是關鍵",
+          "summary": "新研究指出，過重與肥胖會放大發炎性腸道疾病(IBD)的腸道發炎反應，體重管理可能是輔助治療關鍵。患者除藥物治療外，搭配減重與運動或能改善腹痛、腹瀉及黏膜癒合。",
+          "url": "https://www.careonline.com.tw/2026/05/202605150200.html",
+          "source": "照護線上",
+          "category": "肝膽腸胃"
+        },
+        {
+          "id": "tw-20260515-02",
+          "title": "C型肝炎患者，罹患糖尿病的風險較高嗎？",
+          "summary": "C型肝炎病毒會干擾胰島素訊號傳遞、加重胰島素阻抗，使患者糖尿病風險顯著上升。建議C肝患者應同時關注血糖，並把握直接抗病毒藥物(DAA)治療時機，根除病毒同時降低代謝風險。",
+          "url": "https://www.careonline.com.tw/2026/05/202605111400.html",
+          "source": "照護線上",
+          "category": "肝膽腸胃"
+        },
+        {
+          "id": "tw-20260515-03",
+          "title": "脂肪肝成全球健康隱憂　研究示警：到2050年恐影響近18億人",
+          "summary": "Lancet Gastro最新全球疾病負擔分析估計，2050年全球將有約18億人罹患代謝功能障礙相關脂肪肝(MASLD)，較2023年增加42%。台灣肥胖與糖尿病盛行率攀升，肝纖維化篩檢與生活型態介入勢在必行。",
+          "url": "https://www.careonline.com.tw/2026/05/20260508-02.html",
+          "source": "照護線上",
+          "category": "肝膽腸胃"
+        },
+        {
+          "id": "tw-20260515-04",
+          "title": "晚期卵巢癌：HRD基因檢測精準導航，PARP抑制劑合併療法降低復發",
+          "summary": "一名孕婦產檢時意外發現晚期卵巢癌，經HRD基因檢測為陽性後，採PARP抑制劑合併療法做維持治療，目前病況穩定。HRD檢測有助於精準篩出能從PARP抑制劑獲益的患者，降低7成復發率。",
+          "url": "https://www.careonline.com.tw/2026/05/20260513.html",
+          "source": "照護線上",
+          "category": "癌症"
+        },
+        {
+          "id": "tw-20260515-05",
+          "title": "健保收載癌症新藥及擴增給付　投入16億元、3,085癌友受惠",
+          "summary": "健保署本月通過1項癌症新藥與3項癌症藥品擴增給付規定，總計挹注藥費約16億元，預估有3,085位癌友受惠，包括多發性骨髓瘤第三線以上治療納入elotuzumab合併療法，提升新藥可近性。",
+          "url": "https://health.ltn.com.tw/article/breakingnews/4770755",
+          "source": "自由健康網",
+          "category": "健康政策"
+        }
+      ],
+      "academic": {
+        "nejm": [
+          {
+            "id": "nejm-20260515-01",
+            "title": "Phase 3 Trial of Semaglutide in Metabolic Dysfunction–Associated Steatohepatitis",
+            "title_zh": "Semaglutide 治療代謝功能障礙相關脂肪肝炎(MASH)的第三期試驗",
+            "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2413258",
+            "journal": "NEJM",
+            "category": "MASH藥物治療",
+            "abstract": "In this phase 3 trial of 1,197 patients with biopsy-defined MASH and fibrosis stage 2 or 3, once-weekly subcutaneous semaglutide 2.4 mg significantly increased resolution of steatohepatitis without worsening of fibrosis (62.9% vs 34.3% with placebo) over 240 weeks, and improved fibrosis without worsening MASH.",
+            "abstract_zh": "1,197位切片證實的MASH合併中度纖維化患者隨機給予每週皮下注射semaglutide 2.4 mg或安慰劑240週。結果顯示semaglutide組脂肪肝炎緩解率達62.9%，明顯優於安慰劑組34.3%，且纖維化改善率亦較高，為MASH藥物治療奠定新基石。"
+          },
+          {
+            "id": "nejm-20260515-02",
+            "title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist for Obesity Treatment",
+            "title_zh": "口服小分子GLP-1受體致效劑Orforglipron用於肥胖症治療",
+            "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2511774",
+            "journal": "NEJM",
+            "category": "肥胖症治療",
+            "abstract": "In a phase 3 trial enrolling 3,127 adults with obesity without diabetes, once-daily oral orforglipron led to mean weight reductions of −7.5% (6 mg), −8.4% (12 mg), and −11.2% (36 mg) at 72 weeks, versus −2.0% with placebo. Adverse events were predominantly gastrointestinal and dose-dependent.",
+            "abstract_zh": "肥胖且未合併糖尿病者隨機分配每日口服orforglipron(6/12/36 mg)或安慰劑72週。各劑量組體重分別下降7.5%、8.4%、11.2%，明顯優於安慰劑組的2.0%。副作用以腸胃道為主、呈劑量相關，為首個口服小分子GLP-1取得正面數據。"
+          },
+          {
+            "id": "nejm-20260515-03",
+            "title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist, in Early Type 2 Diabetes",
+            "title_zh": "口服小分子GLP-1受體致效劑Orforglipron用於早期第二型糖尿病",
+            "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2505669",
+            "journal": "NEJM",
+            "category": "第二型糖尿病",
+            "abstract": "Phase 3 double-blind, placebo-controlled trial assigned diet-and-exercise-only T2D patients to orforglipron 3/12/36 mg or placebo once daily for 40 weeks. HbA1c reductions were dose-dependent and significantly greater than placebo, with parallel weight loss—suggesting an oral GLP-1 option for early T2D management.",
+            "abstract_zh": "僅以飲食運動控制的早期第二型糖尿病患者隨機分配口服orforglipron(3/12/36 mg)或安慰劑40週。各劑量組HbA1c降幅與體重下降皆顯著優於安慰劑且呈劑量相關，提供早期糖尿病一個新的口服GLP-1選擇，有望改變治療階梯。"
+          }
+        ],
+        "lancet": [
+          {
+            "id": "lancet-20260515-01",
+            "title": "Global burden of metabolic dysfunction-associated steatotic liver disease, 1990–2023, and projections to 2050",
+            "title_zh": "1990–2023年代謝功能障礙相關脂肪肝疾病(MASLD)全球疾病負擔與2050年預測",
+            "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(26)00011-7/abstract",
+            "journal": "Lancet",
+            "category": "流行病學",
+            "abstract": "Systematic GBD 2023 analysis showed global MASLD prevalence of 16.1% in 2023 (~1.3 billion cases). By 2050 prevalence is projected to rise 42%, reaching 1.8 billion, with the steepest increases in Asia. The data underscore urgent need for screening pathways, lifestyle intervention and access to newly approved pharmacotherapies.",
+            "abstract_zh": "依GBD 2023系統分析，2023年全球MASLD盛行率達16.1%(約13億人)，預估至2050年將上升42%、達18億人，亞洲增幅最劇。研究呼籲建立常規肝纖維化篩檢路徑、強化生活型態介入與新藥(如resmetirom、semaglutide)可近性。"
+          },
+          {
+            "id": "lancet-20260515-02",
+            "title": "Current and emerging therapeutic landscape for metabolic dysfunction-associated steatohepatitis",
+            "title_zh": "代謝功能障礙相關脂肪肝炎(MASH)現行與新興治療藍圖",
+            "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00260-2/abstract",
+            "journal": "Lancet",
+            "category": "MASH治療策略",
+            "abstract": "This review summarises the recent shift from no licensed therapies to two approved agents—resmetirom (THR-β agonist) and semaglutide—for MASH with fibrosis. Authors outline patient selection, monitoring with non-invasive tests (FIB-4, ELF, vibration-controlled elastography) and the pipeline of FGF21 analogues, PPAR agonists and combination strategies.",
+            "abstract_zh": "本回顧整理MASH從無藥可用到resmetirom與semaglutide先後獲核可的歷程，並提出非侵入性檢測(FIB-4、ELF、震動控制式彈性影像)選擇與監測患者的實務建議，並展望FGF21類似物、PPAR促效劑與合併用藥的研發藍圖。"
+          }
+        ],
+        "jama": [
+          {
+            "id": "jama-20260515-01",
+            "title": "Population Health Colorectal Cancer Screening Strategies in Adults Aged 45 to 49 Years: A Randomized Clinical Trial",
+            "title_zh": "45至49歲成人大腸癌族群篩檢策略：隨機臨床試驗",
+            "url": "https://jamanetwork.com/journals/jama/fullarticle/2837228",
+            "journal": "JAMA",
+            "category": "大腸癌篩檢",
+            "abstract": "This randomized trial compared population-health outreach strategies (mailed FIT, mailed FIT plus colonoscopy invitation, and usual care) for boosting colorectal cancer screening uptake among adults aged 45–49 years. Both proactive outreach arms significantly increased screening completion versus usual care, supporting earlier implementation of organised CRC screening in this newly eligible age group.",
+            "abstract_zh": "本隨機試驗比較三種族群健康介入(郵寄FIT、郵寄FIT合併大腸鏡邀請、常規照護)在45–49歲族群中提升大腸癌篩檢率的效果。兩種主動介入皆顯著高於常規照護，支持台灣可比照美國USPSTF建議將篩檢年齡前移並採取主動寄發策略，提升年輕族群早期偵測率。"
+          },
+          {
+            "id": "jama-20260515-02",
+            "title": "Clinical Validation of a Cell-Free DNA Blood-Based Test for Colorectal Cancer Screening",
+            "title_zh": "血液 cfDNA 大腸癌篩檢檢測之臨床驗證",
+            "url": "https://jamanetwork.com/journals/jama/fullarticle/2779991",
+            "journal": "JAMA",
+            "category": "大腸癌篩檢",
+            "abstract": "Prospective pivotal study in 48,995 average-risk adults aged 45–85 evaluating a cell-free DNA blood test against screening colonoscopy. The cfDNA test detected colorectal cancer with sensitivity around 83% and advanced adenoma sensitivity remained modest (~13%), suggesting blood-based screening can lower entry barrier but is not yet a substitute for endoscopic detection of pre-cancerous polyps.",
+            "abstract_zh": "前瞻性樞紐研究納入48,995位45–85歲平均風險族群，評估血液 cfDNA 檢測對比大腸鏡篩檢。對大腸癌偵測敏感度約83%，但對進階腺瘤的敏感度僅約13%。顯示血液檢測可降低受檢門檻，但目前仍無法取代大腸鏡在偵測癌前病灶的角色，臨床溝通時應同時說明侷限。"
+          }
+        ],
+        "gastro": [
+          {
+            "id": "gastro-20260515-01",
+            "title": "AGA Living Clinical Practice Guideline on the Pharmacologic Management of Moderate-to-Severe Crohn's Disease",
+            "title_zh": "AGA 中重度克隆氏症藥物治療最新即時臨床實務指引",
+            "url": "https://www.gastrojournal.org/article/S0016-5085(25)06091-3/fulltext",
+            "journal": "Gastroenterology",
+            "category": "發炎性腸道疾病",
+            "abstract": "Updated AGA living guideline integrates evidence from newly approved biologics and small molecules (anti-TL1A, JAK inhibitors, S1P modulators) and recommends early advanced therapy over accelerated step-up for moderate-to-severe Crohn's disease. The panel emphasises shared decision-making, treat-to-target with mucosal healing, and routine therapeutic drug monitoring.",
+            "abstract_zh": "AGA 持續更新版指引整合近期核可的生物製劑與小分子藥(anti-TL1A、JAK抑制劑、S1P調節劑)，主張中重度克隆氏症應「早期使用進階治療」優於緩步升階。重點包括共享決策、以黏膜癒合為治療目標(treat-to-target)，並常規施行治療性藥物濃度監測(TDM)。"
+          },
+          {
+            "id": "gastro-20260515-02",
+            "title": "Global Consensus Recommendations for Metabolic Dysfunction-Associated Steatotic Liver Disease and Steatohepatitis",
+            "title_zh": "MASLD 與 MASH 之全球共識建議",
+            "url": "https://www.gastrojournal.org/article/S0016-5085(25)00632-8/fulltext",
+            "journal": "Gastroenterology",
+            "category": "脂肪肝共識",
+            "abstract": "Multisociety global Delphi consensus establishes unified diagnostic terminology (MASLD/MASH), risk stratification with FIB-4 and elastography, and care pathways spanning primary care, endocrinology and hepatology. The consensus standardises non-invasive testing thresholds, defines audit metrics, and incorporates resmetirom and incretin-based therapy into stepwise management.",
+            "abstract_zh": "多學會全球德爾菲共識統一 MASLD/MASH 診斷詞彙，建立 FIB-4 與彈性影像分層流程，並橫跨家醫、內分泌與肝膽科的照護路徑。共識統一非侵入性檢測截值、定義稽核指標，並將 resmetirom 與 GLP-1 類藥物納入階梯式治療，是台灣建立脂肪肝照護網的重要參考。"
+          }
+        ],
+        "hepato": [
+          {
+            "id": "hepato-20260515-01",
+            "title": "Hepatitis B Functional Cure: Current and Future Perspective",
+            "title_zh": "B型肝炎功能性治癒：現況與未來展望",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12576716/",
+            "journal": "Hepatology",
+            "category": "B型肝炎治癒",
+            "abstract": "Comprehensive review summarises HBV functional cure (sustained HBsAg loss) achievement rates with current nucleos(t)ide analogues (3–5% over 10 years) and pegylated interferon (8–14%). Pipeline therapies including siRNAs (bepirovirsen, JNJ-3989), ASOs, capsid assembly modulators and therapeutic vaccines combined with NUC backbones show promising HBsAg reductions exceeding 90% in selected patients.",
+            "abstract_zh": "本綜述整理 HBV 功能性治癒(持續 HBsAg 陰性)在現行治療下的達成率：核苷類10年僅3–5%、長效干擾素3–5年8–14%。新興療法如 siRNA(bepirovirsen、JNJ-3989)、ASO、衣殼組裝調節劑與治療性疫苗合併核苷類治療，在選定患者可使 HBsAg 下降超過90%，台灣B肝高盛行族群可期待新藥到位。"
+          },
+          {
+            "id": "hepato-20260515-02",
+            "title": "Characteristics and Clinical Outcomes in Patients With Cirrhosis Due to MASLD in Sweden",
+            "title_zh": "瑞典 MASLD 相關肝硬化患者臨床特徵與預後",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/liv.70487",
+            "journal": "Hepatology",
+            "category": "脂肪肝相關肝硬化",
+            "abstract": "Nationwide Swedish register cohort of 2,318 compensated and 1,339 decompensated MASLD-cirrhosis patients (2001–2020) showed 5-year overall mortality of 28% and 60% respectively. HCC incidence was 1.4% per year in compensated cirrhosis. Type 2 diabetes and obesity independently predicted decompensation, supporting aggressive metabolic management even after cirrhosis develops.",
+            "abstract_zh": "瑞典全國登錄世代納入2,318名代償期與1,339名失代償期 MASLD 肝硬化患者(2001–2020)，五年總死亡率分別為28%與60%；代償期患者每年肝癌發生率1.4%。糖尿病與肥胖為失代償獨立危險因子，提示即使已肝硬化仍需積極代謝介入，呼應台灣脂肪肝病人需同步管控代謝症候群。"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-12",
+      "week_label": "2026 第20週",
+      "taiwan_news": [
+        {
+          "id": "tw-20260512-01",
+          "title": "流行性腦脊髓膜炎新增2例！死亡率達40%，疾管署提醒高風險族群應及早接種疫苗",
+          "summary": "疾管署公布新增2例流行性腦脊髓膜炎確診病例，提醒民眾此病死亡率高達40%，尤以免疫力較差、群居生活的青少年及新生兒為高風險族群，建議及早接種四價腦膜炎疫苗預防感染。",
+          "url": "https://heho.com.tw/archives/379612",
+          "source": "Heho健康",
+          "category": "健康政策"
+        },
+        {
+          "id": "tw-20260512-02",
+          "title": "18歲罹大腸癌三期！年輕人確診比長輩多拖128天就醫，醫師揭2個常被忽略的警訊症狀",
+          "summary": "台灣大腸癌年輕化趨勢持續，甚至出現18歲確診三期個案。研究發現年輕族群平均比長輩多延誤128天才就醫，主因是忽視血便與不明腹痛。醫師呼籲出現症狀應及早檢查，勿輕忽。",
+          "url": "https://www.businesstoday.com.tw/article/category/183029/post/202604200020/",
+          "source": "今周刊",
+          "category": "癌症"
+        },
+        {
+          "id": "tw-20260512-03",
+          "title": "瘦瘦針大進化！GLP-1口服錠與仿製藥即將問世，減肥藥將不再高不可攀",
+          "summary": "隨著GLP-1減重藥物專利2026年起陸續到期，口服錠劑型與仿製藥正式進入市場，國內台灣神隆等藥廠已具量產實力。預期價格大幅下降將使更多患者可負擔，改變台灣肥胖治療格局。",
+          "url": "https://udn.com/news/story/7266/9226895",
+          "source": "聯合新聞網",
+          "category": "減重代謝"
+        },
+        {
+          "id": "tw-20260512-04",
+          "title": "健保擴大3癌別免疫療法給付！非小細胞肺癌、大腸癌、三陰性乳癌逾3400癌友受惠",
+          "summary": "健保署宣布擴大免疫療法給付，涵蓋非鱗狀非小細胞肺癌第一線、轉移性大腸直腸癌第一線及早期三陰性乳癌，估逾3400位癌友受惠，每人每年可省下171至247萬元藥費。",
+          "url": "https://www.uho.com.tw/article-66792.html",
+          "source": "Uho優活健康網",
+          "category": "健康政策"
+        },
+        {
+          "id": "tw-20260512-05",
+          "title": "全球肝病人數破13億！Lancet最新研究：MASLD（代謝相關脂肪肝）30年暴增143%",
+          "summary": "最新刊載於《刺胳針》的全球疾病負擔研究顯示，2023年全球已有13億人罹患肝臟疾病，較1990年增加143%，其中代謝相關脂肪肝（MASLD）增幅最為顯著，亞洲為高發地區，應積極篩查。",
+          "url": "https://www.business-standard.com/health/liver-disease-cases-rise-to-1-3-billion-globally-in-2023-lancet-study-126041400052_1.html",
+          "source": "Business Standard／Lancet",
+          "category": "肝膽腸胃"
+        }
+      ],
+      "academic": {
+        "nejm": [
+          {
+            "id": "nejm-20260512-01",
+            "title": "Noninvasive Assessment of Liver Fibrosis",
+            "title_zh": "肝纖維化的非侵入性評估",
+            "url": "https://www.nejm.org/doi/abs/10.1056/NEJMra2403308",
+            "journal": "NEJM",
+            "category": "肝纖維化評估",
+            "abstract": "This NEJM review comprehensively covers noninvasive tools for assessing liver fibrosis in MASLD, including FIB-4, vibration-controlled transient elastography (VCTE), and MRE. It discusses optimized thresholds for identifying treatment-eligible F2–F3 patients, supporting the 2024 EASL guideline shift away from routine liver biopsy.",
+            "abstract_zh": "本篇NEJM綜述全面介紹MASLD肝纖維化的非侵入性評估工具，包括FIB-4指數、VCTE震動彈性超音波及MRE磁振彈性成像，並探討識別適合治療的F2-F3患者的最適切截值，支持2024年EASL指引逐漸取代常規肝切片的趨勢。"
+          },
+          {
+            "id": "nejm-20260512-02",
+            "title": "Phase 3 Trial of Semaglutide in Metabolic Dysfunction–Associated Steatohepatitis (ESSENCE)",
+            "title_zh": "Semaglutide治療代謝相關脂肪性肝炎第三期試驗（ESSENCE）",
+            "url": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2413258",
+            "journal": "NEJM",
+            "category": "MASH藥物治療",
+            "abstract": "The ESSENCE phase 3 trial randomized 1,197 patients with biopsy-confirmed MASH (F2–F3) to semaglutide 2.4 mg weekly vs. placebo for 240 weeks. MASH resolution occurred in 62.9% vs. 34.3%, and fibrosis improvement ≥1 stage in 37.0% vs. 22.4%, establishing semaglutide as a first-line option for MASH.",
+            "abstract_zh": "ESSENCE第三期試驗將1197名經切片確診MASH（F2-F3）患者隨機分配接受semaglutide 2.4mg或安慰劑，共240週。MASH緩解率62.9% vs 34.3%，纖維化改善≥1期為37.0% vs 22.4%，確立semaglutide作為MASH第一線治療的地位。"
+          },
+          {
+            "id": "nejm-20260512-03",
+            "title": "Tirzepatide for Metabolic Dysfunction–Associated Steatohepatitis with Liver Fibrosis (SYNERGY-NASH)",
+            "title_zh": "Tirzepatide治療合併肝纖維化之代謝相關脂肪性肝炎（SYNERGY-NASH）",
+            "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2401943",
+            "journal": "NEJM",
+            "category": "MASH藥物治療",
+            "abstract": "A phase 2 dose-finding trial of tirzepatide (GLP-1/GIP dual agonist) in biopsy-confirmed MASH with F2–F3 fibrosis. Tirzepatide 10 mg and 15 mg achieved MASH resolution in ~62% of patients, with fibrosis improvement ≥1 stage in ~55% vs. ~30% placebo, demonstrating superior efficacy over single GLP-1 agonism.",
+            "abstract_zh": "tirzepatide（GLP-1/GIP雙重促效劑）用於切片確診MASH合併F2-F3纖維化的第二期劑量探索試驗。10mg及15mg組MASH緩解率約62%，纖維化改善≥1期約55% vs 安慰劑30%，顯示雙重促效劑療效優於單一GLP-1促效劑。"
+          }
+        ],
+        "lancet": [
+          {
+            "id": "lancet-20260512-01",
+            "title": "Global burden of metabolic dysfunction-associated steatotic liver disease, 1990–2023, and projections to 2050",
+            "title_zh": "代謝相關脂肪肝全球疾病負擔（1990-2023）及2050年預測",
+            "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(26)00011-7/abstract",
+            "journal": "Lancet",
+            "category": "全球疾病負擔",
+            "abstract": "A systematic analysis using Global Burden of Disease Study 2023 data reveals that 1.3 billion people had MASLD in 2023, a 143% increase since 1990. Asia carries the highest burden. Without intervention, projections indicate further dramatic increases by 2050, underscoring urgent need for population-level screening and metabolic risk management.",
+            "abstract_zh": "利用2023年全球疾病負擔研究資料的系統分析顯示，2023年全球已有13億人患MASLD，較1990年增加143%，亞洲疾病負擔最重。若不積極介入，預測至2050年將持續大幅增加，凸顯族群篩查與代謝風險管理的急迫性。"
+          },
+          {
+            "id": "lancet-20260512-02",
+            "title": "Current and emerging therapeutic landscape for metabolic dysfunction-associated steatohepatitis",
+            "title_zh": "代謝相關脂肪性肝炎的當前與新興治療版圖",
+            "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00260-2/abstract",
+            "journal": "Lancet",
+            "category": "MASH治療綜述",
+            "abstract": "This Lancet Gastroenterology & Hepatology review maps the rapidly evolving MASH treatment landscape following FDA approval of resmetirom in March 2024 and phase 3 data for semaglutide and tirzepatide. It discusses combination strategies, patient selection, and the role of FGF21 analogues for advanced fibrosis (F3–F4).",
+            "abstract_zh": "本篇《刺胳針》胃腸肝膽病學綜述回顧2024年FDA核准resmetirom及semaglutide、tirzepatide第三期數據後迅速演進的MASH治療格局，並探討組合治療策略、患者選擇原則及FGF21類似物在晚期纖維化（F3-F4）中的角色。"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "week_label": "2026 第19週",
+      "taiwan_news": [
+        {
+          "id": "tw-20260508-01",
+          "title": "肥胖就一定會提高罹癌風險嗎？探索身體裡的祕密連結",
+          "summary": "照護線上5月5日報導，肥胖不只是體重問題，更是系統性代謝異常。研究顯示，肥胖會促進慢性發炎、升高胰島素及雌激素濃度，並改變腸道菌相，進而增加大腸癌、肝癌、乳癌、食道癌等至少13種癌症風險。BMI每增加5 kg/m²，腺癌型食道癌風險提高55%，大腸癌風險增加18%。臨床醫師提醒，體重管理本身就是預防癌症的重要一環。",
+          "source": "照護線上",
+          "url": "https://www.careonline.com.tw/2026/05/202605051100.html",
+          "tag": "減重代謝"
+        },
+        {
+          "id": "tw-20260508-02",
+          "title": "瘦瘦針亂停恐愈減愈肥？最新研究警示：斷續給藥將誘發抗藥性與脂肪囤積",
+          "summary": "GLP-1受體促效劑（瘦瘦針）如司美格魯肽若「打打停停」，效果可能比穩定使用差得多。最新研究顯示，多次給藥中斷的組別不僅出現治療抗藥性，最終體脂比例比持續用藥者增加約20%，且代謝健康惡化更明顯。研究者推測反覆停藥可能使脂肪細胞產生補償機制。臨床醫師提醒，若因副作用或費用考量暫停，應事先與醫師討論替代策略，避免溜溜球效應。",
+          "source": "ok1.com.tw",
+          "url": "https://www.ok1.com.tw/%E7%98%A6%E7%98%A6%E9%87%9D%E4%BA%82%E5%81%9C%E6%81%90%E6%84%88%E6%B8%9B%E6%84%88%E8%82%A5%EF%BC%9F%E6%9C%80%E6%96%B0%E7%A0%94%E7%A9%B6%E8%AD%A6%E7%A4%BA%EF%BC%9A%E6%96%B7%E7%BA%8C%E7%B5%A6%E8%97%A5/",
+          "tag": "減重代謝"
+        },
+        {
+          "id": "tw-20260508-03",
+          "title": "吃的瘦瘦針來了！GLP-1口服錠與仿製藥問世，價格不再高貴",
+          "summary": "2026年GLP-1減重市場出現重大變化：口服版司美格魯肽與仿製藥雙雙問世，市場准入門檻大幅下降。口服劑型可消除注射恐懼，有望吸引更多患者使用；仿製藥進入市場後，每月費用預計降至注射原廠藥的三分之一以下。對診間有意提供減重療程的醫師而言，這將改變患者的選擇意願與依從性，但仍需關注仿製藥的品質管控與療效一致性。",
+          "source": "聯合新聞網",
+          "url": "https://udn.com/news/story/7266/9226895",
+          "tag": "減重代謝"
+        },
+        {
+          "id": "tw-20260508-04",
+          "title": "大腸癌與胃癌，未來誰的威脅較大？一項全球研究的警示",
+          "summary": "全球疾病負擔研究2021年數據顯示：1990至2021年間，胃癌在全球發生率和死亡率整體下降（主因幽門螺旋桿菌防治成效），但大腸直腸癌卻持續攀升。尤其在50歲以下族群，早發性大腸癌（EOCRC）增幅最為顯著，與西式飲食、肥胖、久坐及代謝功能失調密切相關。研究警示：大腸癌篩檢年齡下限應重新討論，高風險族群建議提早至40歲進行大腸鏡檢查。",
+          "source": "照護線上",
+          "url": "https://www.careonline.com.tw/2026/04/202604132000.html",
+          "tag": "肝膽腸胃"
+        },
+        {
+          "id": "tw-20260508-05",
+          "title": "2026癌症論壇：健保署研擬放寬基因定序適用癌別，精準醫療再進一步",
+          "summary": "2026癌症論壇中健保署表示，正研議擴大次世代基因定序（NGS）給付癌別，目前已有肺癌、大腸癌等適用，未來可能納入肝癌、胰臟癌等更多固態腫瘤。精準醫療透過基因檢測比對，可縮短患者試藥期並提升療效。同場論壇亦討論癌症新藥基金2026年擴充至百億元規模，預計讓更多晚期癌症患者受惠。",
+          "source": "聯合新聞網",
+          "url": "https://udn.com/news/story/7266/9435658",
+          "tag": "藥物治療"
+        }
+      ],
+      "academic": {
+        "nejm": [
+          {
+            "id": "nejm-20260508-01",
+            "title": "Phase 3 Trial of Semaglutide in Metabolic Dysfunction–Associated Steatohepatitis (ESSENCE Trial)",
+            "abstract": "In the ESSENCE Phase 3 trial, subcutaneous semaglutide 2.4 mg weekly for 72 weeks was evaluated in 800 adults with biopsy-confirmed MASH and moderate-to-advanced fibrosis. Resolution of steatohepatitis without worsening of fibrosis occurred in 62.9% vs 34.3% (placebo). Fibrosis reduction by at least one stage without worsening of MASH was achieved in 36.8% vs 22.4%. Combined MASH resolution with fibrosis reduction occurred in 32.7% vs 16.1%. Mean body weight reduction was 10.5% with semaglutide vs 0.8% with placebo.",
+            "abstract_zh": "ESSENCE第三期試驗評估皮下注射Semaglutide 2.4mg每週一次共72週，對象為800名活檢確認MASH合併中至重度纖維化患者。治療組脂肪性肝炎緩解且無纖維化惡化率達62.9%，遠高於安慰劑組34.3%。纖維化至少改善一期且MASH無惡化為36.8% vs 22.4%。MASH緩解合併纖維化改善為32.7% vs 16.1%。治療組平均體重下降10.5%，安慰劑組0.8%。",
+            "url": "https://www.nejm.org/doi/10.1056/NEJMoa2413258",
+            "category": "肝臟 / 代謝"
+          },
+          {
+            "id": "nejm-20260508-02",
+            "title": "Early-Onset Colorectal Cancer as an Emerging Disease of Metabolic Dysregulation",
+            "abstract": "This review synthesizes evidence on the alarming rise of early-onset colorectal cancer (EOCRC) in adults under 50, concurrent with surging rates of obesity, type 2 diabetes, and metabolic syndrome. Pathophysiological mechanisms include hyperinsulinemia, IGF-1 signaling, gut dysbiosis, and chronic low-grade inflammation. Western dietary patterns emerge as the dominant modifiable risk factor. The authors propose that metabolic health optimization — including GLP-1 receptor agonist therapy — may reduce EOCRC risk.",
+            "abstract_zh": "本綜述彙整早發性大腸癌（50歲以下，EOCRC）驚人上升趨勢的相關證據，與肥胖、第二型糖尿病及代謝症候群激增同步發生。病理機制包括高胰島素血症、IGF-1訊號、腸道菌相失衡，及脂肪組織功能異常驅動的慢性低度發炎。西式飲食為最主要可改變風險因子。作者提出代謝健康優化（含GLP-1受體促效劑）可能降低EOCRC風險，值得前瞻性研究驗證。",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12707992/",
+            "category": "腸道 / 代謝"
+          },
+          {
+            "id": "nejm-20260508-03",
+            "title": "GLP-1 Receptor Agonists Improve MASH and Liver Fibrosis: A Meta-Analysis of Randomised Controlled Trials",
+            "abstract": "This updated meta-analysis pooling 14 RCTs (n=3,842) demonstrates that GLP-1 receptor agonists significantly reduce liver fat content, improve MASH histology, and lower fibrosis stage. Compared with placebo, GLP-1 RAs achieved MASH resolution in 47% vs 24% (RR 1.92) and fibrosis improvement in 39% vs 27% (RR 1.48). Subgroup analyses suggest greater benefit in patients with higher baseline BMI and concurrent type 2 diabetes. No increased risk of serious adverse events was observed.",
+            "abstract_zh": "本更新版統合分析彙整14項隨機對照試驗（n=3,842），顯示GLP-1受體促效劑可顯著降低肝臟脂肪含量、改善MASH組織學並降低纖維化分期。相較安慰劑，GLP-1 RA達到MASH緩解為47% vs 24%（RR 1.92），纖維化改善為39% vs 27%（RR 1.48）。基線BMI較高及合併第二型糖尿病患者獲益更大。未觀察到嚴重不良事件風險增加。",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12309150/",
+            "category": "肝臟 / 代謝"
+          }
+        ],
+        "lancet": [
+          {
+            "id": "lancet-20260508-01",
+            "title": "Pharmacotherapies in non-cirrhotic MASH: UK expert consensus (Lancet Gastroenterology & Hepatology, May 2026)",
+            "abstract": "This UK expert consensus (May 2026) addresses real-world implementation of licensed pharmacotherapies for MASH — resmetirom and semaglutide — in non-cirrhotic patients. Key recommendations include: FIB-4 screening in primary care for at-risk populations; referral pathways based on FIB-4 and VCTE thresholds; patient selection for resmetirom (MASH + F2-F3 fibrosis confirmed by non-invasive tests or biopsy); and monitoring protocols. Practical guidance on stopping rules, side effect management, and treatment duration is provided.",
+            "abstract_zh": "本2026年5月英國專家共識針對非肝硬化MASH患者的首批核准藥物——Resmetirom與Semaglutide——提供實務臨床建議。重點包括：基層醫療針對高風險族群的FIB-4篩檢流程；根據FIB-4與彈性超音波結果的轉介路徑；Resmetirom適用條件（MASH合併F2-F3纖維化，以非侵入性指標或切片確認）；及監測協議。同時提供停藥準則、副作用管理及療程時長的實務指引。",
+            "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(26)00077-4/abstract",
+            "category": "肝臟 / 政策"
+          },
+          {
+            "id": "lancet-20260508-02",
+            "title": "Current and Emerging Therapeutic Landscape for Metabolic Dysfunction-Associated Steatohepatitis (Lancet GH, 2025)",
+            "abstract": "MASLD affects up to one in three adults globally; without intervention, decompensated cirrhosis and liver cancer burden will substantially increase by 2030. Two phase 3 breakthroughs define the therapeutic landscape: resmetirom (FDA-approved March 2024) achieving ~30% vs 10% MASH resolution; and semaglutide 2.4 mg weekly achieving 62.9% vs 34.3% MASH resolution in the ESSENCE trial. Pipeline agents — tirzepatide, survodutide, efruxifermin, lanifibranor — show additive efficacy. Combination therapy trials (incretin + liver-directed agent) are the next frontier.",
+            "abstract_zh": "MASLD影響全球多達三分之一成人；若無干預，2030年前失代償性肝硬化與肝癌負擔將顯著增加。兩項第三期突破性試驗確立治療格局：Resmetirom（2024年3月FDA核准）達MASH緩解約30% vs 安慰劑10%；Semaglutide 2.4mg每週一次在ESSENCE試驗達62.9% vs 34.3%。管線藥物Tirzepatide、Survodutide、Efruxifermin、Lanifibranor顯示加成療效。增量素+肝臟導向藥物的聯合治療試驗為下一個前沿。",
+            "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(25)00260-2/abstract",
+            "category": "肝臟 / 代謝"
+          }
+        ]
+      }
+    }
+  ]
+};
+
+// ─── Helpers ────────────────────────────────────────────────────
+function escapeHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function linkIcon() {
+  return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+}
+
+function arrowIcon() {
+  return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+}
+
+// ─── Render Taiwan News ──────────────────────────────────────────
+function renderTaiwanNews(items, container) {
+  container.innerHTML = items.map((n, i) => `
+    <a class="news-card scroll-reveal" href="${escapeHtml(n.url)}" target="_blank" rel="noopener" id="${escapeHtml(n.id)}">
+      <span class="news-number">0${i+1}</span>
+      <div class="news-body">
+        <div class="news-tags">
+          <span class="tag tag-tw">${escapeHtml(n.tag || '醫療')}</span>
+          <span class="tag tag-source">${escapeHtml(n.source)}</span>
+        </div>
+        <p class="news-title">${escapeHtml(n.title)}</p>
+        <p class="news-summary">${escapeHtml(n.summary)}</p>
+      </div>
+      <span class="news-link-icon">${linkIcon()}</span>
+    </a>
+  `).join('');
+}
+
+// ─── Render Academic Cards ───────────────────────────────────────
+function renderAcademic(items, container, type) {
+  container.innerHTML = items.map(a => `
+    <div class="academic-card ${type} scroll-reveal" id="${escapeHtml(a.id)}">
+      <div class="academic-journal">
+        <span class="journal-badge ${type}">${type === 'nejm' ? 'NEJM' : 'The Lancet'}</span>
+        <span class="academic-category">${escapeHtml(a.category)}</span>
+      </div>
+      <p class="academic-title">${escapeHtml(a.title)}</p>
+      <div>
+        <div class="abstract-tabs">
+          <button class="tab-btn active" onclick="switchTab(this,'en')">EN</button>
+          <button class="tab-btn" onclick="switchTab(this,'zh')">中文</button>
+        </div>
+        <p class="abstract-text abstract-en">${escapeHtml(a.abstract)}</p>
+        <p class="abstract-text abstract-zh">${escapeHtml(a.abstract_zh)}</p>
+      </div>
+      <a class="read-more" href="${escapeHtml(a.url)}" target="_blank" rel="noopener">
+        閱讀全文 ${arrowIcon()}
+      </a>
+    </div>
+  `).join('');
+}
+
+// ─── Tab Switch ──────────────────────────────────────────────────
+function switchTab(btn, lang) {
+  const card = btn.closest('.academic-card');
+  card.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  card.querySelector('.abstract-en').style.display = lang === 'en' ? 'block' : 'none';
+  card.querySelector('.abstract-zh').style.display = lang === 'zh' ? 'block' : 'none';
+}
+
+// ─── History ─────────────────────────────────────────────────────
+function renderHistory(weeks) {
+  const tabs = document.getElementById('history-tabs');
+  const content = document.getElementById('history-content');
+  const show = weeks.slice(0, 3);
+
+  tabs.innerHTML = show.map((w, i) => `
+    <button class="history-tab${i===0?' active':''}" onclick="showHistoryPanel(${i})" id="htab-${i}">
+      ${escapeHtml(w.week_label)} &nbsp;·&nbsp; ${escapeHtml(w.date)}
+    </button>
+  `).join('');
+
+  content.innerHTML = show.map((w, i) => `
+    <div class="history-panel${i===0?' active':''}" id="hpanel-${i}">
+      <div class="news-grid" style="margin-bottom:1.5rem">
+        ${w.taiwan_news.slice(0,3).map((n,j) => `
+          <a class="news-card" href="${escapeHtml(n.url)}" target="_blank" rel="noopener" style="opacity:0.78">
+            <span class="news-number">0${j+1}</span>
+            <div class="news-body">
+              <div class="news-tags">
+                <span class="tag tag-tw">${escapeHtml(n.tag || '醫療')}</span>
+                <span class="tag tag-source">${escapeHtml(n.source)}</span>
+              </div>
+              <p class="news-title">${escapeHtml(n.title)}</p>
+            </div>
+          </a>
+        `).join('')}
+      </div>
+      <div class="academic-grid">
+        ${w.academic.nejm.slice(0,2).map(a => `
+          <div class="academic-card nejm" style="opacity:0.75">
+            <div class="academic-journal">
+              <span class="journal-badge nejm">NEJM</span>
+              <span class="academic-category">${escapeHtml(a.category)}</span>
+            </div>
+            <p class="academic-title">${escapeHtml(a.title)}</p>
+            <a class="read-more" href="${escapeHtml(a.url)}" target="_blank" rel="noopener">
+              閱讀全文 ${arrowIcon()}
+            </a>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function showHistoryPanel(idx) {
+  document.querySelectorAll('.history-tab').forEach((t,i) => t.classList.toggle('active', i===idx));
+  document.querySelectorAll('.history-panel').forEach((p,i) => p.classList.toggle('active', i===idx));
+}
+
+// ─── GSAP ScrollTrigger Animations ──────────────────────────────
+function initGSAP() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance
+  gsap.from('.hero-eyebrow', { opacity: 0, y: 20, duration: 0.7, delay: 0.1, ease: 'power2.out' });
+  gsap.from('.hero-title',   { opacity: 0, y: 32, duration: 0.9, delay: 0.25, ease: 'power3.out' });
+  gsap.from('.hero-subtitle',{ opacity: 0, y: 20, duration: 0.7, delay: 0.42, ease: 'power2.out' });
+  gsap.from('.hero-meta .hero-badge', {
+    opacity: 0, y: 16, duration: 0.5, delay: 0.55, stagger: 0.12, ease: 'power2.out'
+  });
+
+  // Section headers — fade up
+  gsap.utils.toArray('.section-header').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+      opacity: 0, y: 28, duration: 0.7, ease: 'power2.out'
+    });
+  });
+
+  // News cards — stagger slide up
+  const newsCards = gsap.utils.toArray('.section#taiwan .news-card');
+  if (newsCards.length) {
+    gsap.from(newsCards, {
+      scrollTrigger: { trigger: newsCards[0], start: 'top 90%', toggleActions: 'play none none none' },
+      opacity: 0, y: 40, duration: 0.55, stagger: 0.1, ease: 'power3.out'
+    });
+  }
+
+  // Academic cards — fade + scale
+  gsap.utils.toArray('.academic-card').forEach((card, i) => {
+    gsap.from(card, {
+      scrollTrigger: { trigger: card, start: 'top 92%', toggleActions: 'play none none none' },
+      opacity: 0, y: 35, scale: 0.97, duration: 0.6, delay: (i % 3) * 0.12, ease: 'power2.out'
+    });
+  });
+
+  // Dividers — width reveal (Apple-style)
+  gsap.utils.toArray('.divider').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none none' },
+      scaleX: 0, transformOrigin: 'left center', duration: 0.9, ease: 'power2.inOut'
+    });
+  });
+}
+
+// ─── Init ────────────────────────────────────────────────────────
+(function () {
+  const current = DATA.weeks[0];
+  if (!current) return;
+
+  const banner = document.getElementById('week-banner');
+  if (banner) banner.innerHTML =
+    `<strong>${current.week_label}</strong> &nbsp;·&nbsp; 更新日期：${current.date}` +
+    ` &nbsp;·&nbsp; <span>腸胃肝膽・代謝領域・自動整理</span>`;
+
+  // 主要卡片已由 update_medical_news.py 預渲染為 HTML，
+  // 只有當預渲染缺失時 (例如本機開發、新欄位) 才用 JS fallback 補上。
+  const twEl = document.getElementById('taiwan-news');
+  if (twEl && !twEl.querySelector('.news-card')) renderTaiwanNews(current.taiwan_news, twEl);
+  const twCount = document.getElementById('tw-count');
+  if (twCount) twCount.textContent = current.taiwan_news.length + ' 則';
+
+  const nejmEl = document.getElementById('nejm-articles');
+  if (nejmEl && !nejmEl.querySelector('.academic-card')) renderAcademic(current.academic.nejm, nejmEl, 'nejm');
+  const lancetEl = document.getElementById('lancet-articles');
+  if (lancetEl && !lancetEl.querySelector('.academic-card')) renderAcademic(current.academic.lancet, lancetEl, 'lancet');
+
+  renderHistory(DATA.weeks);
+
+  const fd = document.getElementById('footer-date');
+  if (fd) fd.textContent = '更新：' + current.date;
+
+  // Progress bar (rAF 節流)
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const el = document.getElementById('progress-bar');
+      if (el) {
+        const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        el.style.width = pct + '%';
+      }
+      ticking = false;
+    });
+  }, { passive: true });
+
+  // ─── FB iframe lazy-load (IntersectionObserver) ────────────
+  const fbIframe = document.getElementById('fb-iframe');
+  const fbFallback = document.getElementById('fb-fallback');
+  if (fbIframe) {
+    const loadFb = () => {
+      if (fbIframe.src) return;
+      fbIframe.src = fbIframe.dataset.src;
+      const timer = setTimeout(() => { if (fbFallback) fbFallback.style.display = 'block'; }, 6000);
+      fbIframe.addEventListener('load', () => clearTimeout(timer));
+      fbIframe.addEventListener('error', () => {
+        if (fbFallback) fbFallback.style.display = 'block';
+        fbIframe.style.display = 'none';
+      });
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { loadFb(); io.disconnect(); }
+        });
+      }, { rootMargin: '400px' });
+      io.observe(fbIframe);
+    } else {
+      loadFb();
+    }
+  }
+
+  // GSAP 已 defer 載入，於 DOMContentLoaded 後再初始化
+  function tryInitGSAP() {
+    if (window.gsap && window.ScrollTrigger) initGSAP();
+    else setTimeout(tryInitGSAP, 100);
+  }
+  // 等 LCP 過後再啟動動畫，避免動畫搶 main thread
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(tryInitGSAP, { timeout: 1500 });
+  } else {
+    setTimeout(tryInitGSAP, 800);
+  }
+})();
+</script>
+
+<!-- GSAP 移到頁尾並 defer：不阻擋首屏 LCP，於頁面互動後才執行動畫 -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+</html>

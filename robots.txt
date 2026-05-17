@@ -1,0 +1,11 @@
+# 邱芳瑋醫師・腸胃肝膽科 - https://fw-gi.com/
+User-agent: *
+Allow: /
+
+# 不索引內部開發資源
+Disallow: /.git/
+Disallow: /*.bat$
+Disallow: /*.py$
+Disallow: /*.json$
+
+Sitemap: https://fw-gi.com/sitemap.xml

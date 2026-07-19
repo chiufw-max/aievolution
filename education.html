@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>衛教文章｜邱芳瑋醫師・全方胃．恢腸肝膽</title>
+<meta name="description" content="邱芳瑋醫師・全方胃．恢腸肝膽衛教文章，涵蓋無痛胃腸鏡、脂肪肝 MASLD 等主題，以淺顯易懂的文字說明消化道疾病的預防、診斷與治療。">
+<link rel="canonical" href="https://fw-gi.com/education.html">
+<meta property="og:title" content="衛教文章｜邱芳瑋醫師・全方胃．恢腸肝膽">
+<meta property="og:description" content="邱芳瑋醫師撰寫的消化道衛教文章，涵蓋無痛胃腸鏡準備、脂肪肝 MASLD 等常見主題。">
+<meta property="og:url" content="https://fw-gi.com/education.html">
+<meta property="og:type" content="website">
+
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --teal:       #0F766E;
+  --teal-bright:#0D9488;
+  --teal-light: #5EADB3;
+  --amber:      #B45309;
+  --amber-bright:#D97706;
+  --bg:         #FEFCE8;
+  --border:     rgba(180,140,40,0.18);
+  --text:       #292524;
+  --text2:      #78716C;
+  --text-muted: #A8A29E;
+  --shadow:     0 2px 16px rgba(120,80,20,0.07);
+  --radius:     16px;
+}
+html { scroll-behavior: smooth; font-size: 17px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, 'Noto Sans TC', sans-serif;
+  line-height: 1.75;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body::before {
+  content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 50% at 10% 20%, rgba(253,230,138,0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 90% 80%, rgba(167,243,208,0.2) 0%, transparent 60%);
+}
+
+/* ─── Navigation ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 62px; padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(254,252,232,0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 12px rgba(120,80,20,0.06);
+}
+.nav-brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.nav-brand-icon {
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; box-shadow: 0 2px 8px rgba(13,148,136,0.28);
+}
+.nav-brand-text { font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; line-height: 1.2; }
+.nav-brand-sub { font-size: 1.02rem; color: var(--teal); font-weight: 500; letter-spacing: 0.02em; }
+.nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; }
+.nav-links a { color: var(--text2); text-decoration: none; font-size: 1rem; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--teal); }
+.nav-links a.active { color: var(--teal); font-weight: 700; }
+.nav-fb-link {
+  display: flex; align-items: center; gap: 0.4rem;
+  background: #1877F2; color: white !important;
+  padding: 0.32rem 0.95rem; border-radius: 100px;
+  font-size: 0.86rem; font-weight: 600; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(24,119,242,0.3); transition: opacity 0.2s;
+}
+.nav-fb-link:hover { opacity: 0.85; }
+.nav-hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.nav-hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text2); border-radius: 2px; transition: all 0.3s;
+}
+.mobile-menu {
+  display: none;
+  position: fixed; top: 62px; left: 0; right: 0; z-index: 199;
+  background: rgba(254,252,232,0.97);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2rem;
+  flex-direction: column; gap: 1rem;
+}
+.mobile-menu a {
+  color: var(--text2); text-decoration: none;
+  font-size: 1rem; font-weight: 500; padding: 0.4rem 0;
+}
+.mobile-menu a:hover { color: var(--teal); }
+.mobile-menu.open { display: flex; }
+@media (max-width: 680px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .nav-brand-sub { font-size: 0.68rem; white-space: nowrap; letter-spacing: 0.01em; }
+}
+
+/* ─── Page Layout ─── */
+.page-wrap {
+  position: relative; z-index: 1;
+  max-width: 800px; margin: 0 auto;
+  padding: 100px 2rem 5rem;
+}
+
+/* Hero */
+.page-hero {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700; color: var(--text);
+  letter-spacing: -0.02em; margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+.page-hero h1 span { color: var(--teal); }
+.page-hero p {
+  font-size: 1.05rem; color: var(--text2);
+  max-width: 520px; margin: 0 auto;
+  line-height: 1.85;
+}
+.page-divider {
+  width: 48px; height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-light));
+  border-radius: 2px; margin: 1.5rem auto 0;
+}
+
+/* ─── Article Cards ─── */
+.section-label {
+  font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;
+  color: var(--teal); text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+@media (max-width: 600px) {
+  .articles-grid { grid-template-columns: 1fr; }
+}
+.article-card {
+  display: flex; flex-direction: column;
+  background: white; border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  text-decoration: none; color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(13,148,136,0.14);
+}
+.card-accent {
+  height: 4px;
+  background: linear-gradient(90deg, var(--teal), var(--teal-light));
+}
+.card-body {
+  padding: 1.5rem 1.6rem 1.4rem;
+  flex: 1; display: flex; flex-direction: column;
+}
+.card-tag {
+  display: inline-block;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em;
+  color: var(--teal); background: rgba(13,148,136,0.08);
+  border: 1px solid rgba(13,148,136,0.2);
+  padding: 0.18rem 0.7rem; border-radius: 100px;
+  margin-bottom: 0.85rem;
+}
+.card-title {
+  font-size: 1.15rem; font-weight: 700; color: var(--text);
+  margin-bottom: 0.55rem; line-height: 1.4;
+}
+.card-desc {
+  font-size: 0.95rem; color: var(--text2);
+  line-height: 1.75; flex: 1;
+  margin-bottom: 1.2rem;
+}
+.card-read-more {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  font-size: 0.9rem; font-weight: 600; color: var(--teal);
+}
+.card-read-more svg { transition: transform 0.2s; }
+.article-card:hover .card-read-more svg { transform: translateX(3px); }
+
+/* ─── Upcoming Topics ─── */
+.upcoming-section {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+}
+.upcoming-section h3 {
+  font-size: 1rem; font-weight: 700; color: var(--text);
+  margin-bottom: 0.4rem;
+}
+.upcoming-section .sub {
+  font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem;
+}
+.topics-list {
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+}
+.topic-chip {
+  display: inline-block;
+  background: var(--bg); border: 1px solid var(--border);
+  padding: 0.38rem 0.95rem; border-radius: 100px;
+  font-size: 0.95rem; font-weight: 500; color: var(--text2);
+  box-shadow: var(--shadow);
+}
+
+/* ─── Footer ─── */
+footer {
+  position: relative; z-index: 1;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  background: rgba(255,251,235,0.85);
+}
+footer p { font-size: 1rem; color: var(--text-muted); line-height: 1.8; }
+footer a { color: var(--teal); text-decoration: none; font-weight: 500; }
+footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<!-- ─── Navigation ─── -->
+<nav>
+  <a class="nav-brand" href="/">
+    <div class="nav-brand-icon"><img src="logo3.jpg?v=1" alt="邱芳瑋醫師 Logo" width="38" height="38" style="width:100%;height:100%;object-fit:contain;display:block;border-radius:10px;"></div>
+    <div>
+      <div class="nav-brand-text">邱芳瑋醫師・衛教文章</div>
+      <div class="nav-brand-sub">全方胃．恢腸肝膽・聽你說「腸」心事</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">首頁</a></li>
+    <li><a href="/weekly.html">醫學週報</a></li>
+    <li><a href="/education.html" class="active">衛教文章</a></li>
+    <li>
+      <a class="nav-fb-link" href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        粉絲團
+      </a>
+    </li>
+  </ul>
+  <button class="nav-hamburger" aria-label="選單" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/" onclick="closeMenu()">首頁</a>
+  <a href="/weekly.html" onclick="closeMenu()">醫學週報</a>
+  <a href="/education.html" onclick="closeMenu()">衛教文章</a>
+  <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">Facebook 粉絲團</a>
+</div>
+
+<!-- ─── Main Content ─── -->
+<main class="page-wrap" id="main">
+
+  <!-- Hero -->
+  <div class="page-hero">
+    <h1>衛教<span>文章</span></h1>
+    <p>邱芳瑋醫師以淺顯易懂的文字，說明常見消化道疾病的預防、診斷與治療，協助您真正了解自己的消化健康。</p>
+    <div class="page-divider"></div>
+  </div>
+
+  <!-- Article Cards -->
+  <div class="section-label">最新文章</div>
+  <div class="articles-grid">
+
+    <a class="article-card" href="/education/painless-endoscopy.html">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <span class="card-tag">胃腸鏡</span>
+        <div class="card-title">無痛胃腸鏡・術前準備完全指南</div>
+        <p class="card-desc">從飲食限制、麻醉方式到術後注意事項，完整說明無痛內視鏡前後每個環節，讓您安心接受檢查。</p>
+        <span class="card-read-more">
+          閱讀全文
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+    <a class="article-card" href="/education/masld.html">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <span class="card-tag">肝臟・代謝</span>
+        <div class="card-title">脂肪肝・MASLD 完整衛教</div>
+        <p class="card-desc">從脂肪肝的定義、診斷標準，到生活型態調整與藥物治療的最新觀念，全面了解代謝相關脂肪肝病。</p>
+        <span class="card-read-more">
+          閱讀全文
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Upcoming Topics -->
+  <div class="upcoming-section">
+    <h3>更多主題</h3>
+    <p class="sub">陸續撰寫中，敬請期待</p>
+    <div class="topics-list">
+      <span class="topic-chip">胃食道逆流</span>
+      <span class="topic-chip">消化性潰瘍</span>
+      <span class="topic-chip">B 型肝炎照護</span>
+      <span class="topic-chip">膽結石</span>
+      <span class="topic-chip">大腸癌篩檢</span>
+      <span class="topic-chip">大腸激躁症</span>
+      <span class="topic-chip">幽門螺旋桿菌</span>
+      <span class="topic-chip">減重代謝</span>
+    </div>
+  </div>
+
+</main>
+
+<!-- ─── Footer ─── -->
+<footer>
+  <p>
+    邱芳瑋醫師・全方胃．恢腸肝膽 &nbsp;|&nbsp;
+    <a href="/">首頁</a> &nbsp;·&nbsp;
+    <a href="/weekly.html">醫學週報</a> &nbsp;·&nbsp;
+    <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">Facebook 粉絲團</a>
+    <br>內容僅供健康資訊參考，不構成醫療建議。
+  </p>
+</footer>
+
+<script>
+function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+function closeMenu()  { document.getElementById('mobile-menu').classList.remove('open'); }
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.querySelector('.nav-hamburger');
+  if (menu && menu.classList.contains('open') && !menu.contains(e.target) && btn && !btn.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+</script>
+
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+</html>

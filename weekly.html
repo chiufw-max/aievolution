@@ -1,0 +1,2759 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>邱芳瑋醫師・醫學週報｜全方胃．恢腸肝膽最新研究每週更新</title>
+<meta name="description" content="邱芳瑋醫師・全方胃．恢腸肝膽主持，每週自動整合台灣醫學新聞與頂尖期刊 NEJM、Lancet，專注消化道・肝臟・膽道・減重・代謝最新研究。">
+<meta name="keywords" content="全方胃,恢腸肝膽,腸胃科,肝膽科,醫學週報,NEJM,Lancet,邱芳瑋醫師,消化道,減重,MASH,GLP-1">
+<link rel="canonical" href="https://fw-gi.com/weekly.html">
+<meta property="og:title" content="邱芳瑋醫師・醫學週報｜全方胃．恢腸肝膽最新研究">
+<meta property="og:description" content="每週整合台灣醫學新聞與 NEJM・Lancet，全方胃．恢腸肝膽・代謝・減重最新研究">
+<meta property="og:url" content="https://fw-gi.com/weekly.html">
+<meta property="og:type" content="website">
+
+<!-- 預連線資源節省 TLS 握手時間 -->
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://www.facebook.com">
+<link rel="preconnect" href="https://www.facebook.com" crossorigin>
+<style>
+/* ─── Reset & Base ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #FEFCE8;
+  --bg2: #FEF3C7;
+  --surface: #FFFFFF;
+  --surface-hover: #FFFBF0;
+  --border: rgba(180,140,40,0.18);
+  --border-hover: rgba(13,148,136,0.35);
+  --teal: #0F766E;          /* WCAG AA 5.47:1（原 #0D9488 為 3.74:1） */
+  --teal-bright: #0D9488;   /* 裝飾用：漸層、邊框、陰影 */
+  --teal-light: #5EADB3;
+  --amber: #B45309;         /* WCAG AA 5.13:1（原 #D97706 為 3.40:1） */
+  --amber-bright: #D97706;
+  --rose: #9F1239;          /* WCAG AA 6.32:1（原 #BE185D 為 5.07:1，仍可） */
+  --emerald: #047857;       /* WCAG AA 5.40:1 */
+  --text: #292524;
+  --text2: #78716C;
+  --text-muted: #A8A29E;
+  --shadow: 0 2px 12px rgba(120,80,20,0.07);
+  --shadow-hover: 0 8px 28px rgba(13,148,136,0.13);
+  --radius: 14px;
+  --radius-sm: 9px;
+}
+
+html { scroll-behavior: smooth; font-size: 17px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, 'Noto Sans TC', sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ─── Scroll Progress Bar ─── */
+#progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--amber), var(--teal), var(--teal-light));
+  z-index: 1000;
+  transition: width 0.1s linear;
+  box-shadow: 0 0 6px rgba(13,148,136,0.4);
+}
+
+/* ─── Warm Background ─── */
+.bg-warm {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 50% at 5% 15%, rgba(253,230,138,0.45) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 95% 85%, rgba(167,243,208,0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 55% at 50% 50%, rgba(254,243,199,0.28) 0%, transparent 70%);
+}
+
+/* Subtle warm grid */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(217,119,6,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217,119,6,0.035) 1px, transparent 1px);
+  background-size: 52px 52px;
+}
+
+/* Botanical SVG decoration */
+.leaf-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ─── Navigation ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 200;
+  padding: 0 1.75rem;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,251,235,0.93);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 10px rgba(120,80,20,0.06);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  text-decoration: none;
+}
+
+.nav-brand-icon {
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px rgba(13,148,136,0.25);
+}
+
+.nav-brand-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.nav-brand-sub {
+  font-size: 1.02rem;
+  color: var(--teal);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.6rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text2);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--teal); }
+.nav-links a.active { font-weight: 700; }
+
+/* ── 次標籤（同頁錨點：台灣新聞/NEJM/Lancet/歷史）── */
+.nav-links .nav-sub-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-left: 0.9rem;
+  margin-left: 0.2rem;
+  border-left: 1px solid var(--border);
+}
+.nav-links .nav-sub-group a {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.nav-links .nav-sub-group a:hover { color: var(--teal); }
+
+.nav-fb-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1877F2;
+  color: white !important;
+  padding: 0.32rem 0.9rem;
+  border-radius: 100px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(24,119,242,0.3);
+}
+.nav-fb-link:hover { opacity: 0.85; }
+.nav-hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.nav-hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text2); border-radius: 2px; transition: all 0.3s;
+}
+.mobile-menu {
+  display: none;
+  position: fixed; top: 62px; left: 0; right: 0; z-index: 199;
+  background: rgba(254,252,232,0.97);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2rem;
+  flex-direction: column; gap: 1rem;
+}
+.mobile-menu a {
+  color: var(--text2); text-decoration: none;
+  font-size: 1rem; font-weight: 500; padding: 0.4rem 0;
+}
+.mobile-menu a:hover { color: var(--teal); }
+.mobile-menu.open { display: flex; }
+
+/* ─── Page Layout: main + FB sidebar ─── */
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content { min-width: 0; }
+
+/* ─── Facebook Sidebar ─── */
+.fb-sidebar {
+  position: sticky;
+  top: 62px;
+  height: calc(100vh - 62px);
+  overflow-y: auto;
+  border-left: 1px solid var(--border);
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.fb-sidebar-header {
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  background: linear-gradient(135deg, #1877F2 0%, #0B5CD7 100%);
+  color: white;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.fb-sidebar-header h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.01em;
+}
+
+.fb-sidebar-header p {
+  font-size: 1.02rem;
+  opacity: 0.85;
+}
+
+.fb-page-wrap {
+  flex: 1;
+  overflow: hidden;
+}
+
+.fb-page-wrap iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  border: none;
+  display: block;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.fb-direct-link {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border);
+  background: rgba(255,255,255,0.5);
+}
+
+.fb-direct-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #1877F2;
+  color: white;
+  padding: 0.42rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.86rem;
+  transition: opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(24,119,242,0.28);
+}
+.fb-direct-link a:hover { opacity: 0.85; }
+
+/* ─── Week Banner ─── */
+.week-banner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.7rem 2rem;
+  margin-top: 62px;
+  background: linear-gradient(90deg, transparent, rgba(13,148,136,0.07), rgba(217,119,6,0.04), transparent);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  flex-wrap: wrap;
+}
+
+.week-banner strong { color: var(--teal); font-weight: 700; }
+
+/* ─── Hero ─── */
+.hero {
+  position: relative;
+  padding: 4.5rem 2.5rem 3rem;
+  background: linear-gradient(160deg, #FFFDE7 0%, #F0FDF4 60%, #ECFDF5 100%);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 280px; height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(13,148,136,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; left: 10%;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(217,119,6,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1rem;
+  background: rgba(13,148,136,0.08);
+  padding: 0.28rem 0.85rem;
+  border-radius: 100px;
+  border: 1px solid rgba(13,148,136,0.2);
+  font-weight: 600;
+  opacity: 0;
+  animation: fade-up 0.8s 0.3s ease forwards;
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+  opacity: 0;
+  animation: fade-up 0.8s 0.5s ease forwards;
+}
+
+.hero-title .highlight { color: var(--teal); }
+
+.hero-subtitle {
+  font-size: 0.93rem;
+  color: var(--text2);
+  margin-bottom: 2rem;
+  max-width: 580px;
+  opacity: 0;
+  animation: fade-up 0.8s 0.65s ease forwards;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fade-up 0.8s 0.8s ease forwards;
+}
+
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  color: var(--text2);
+  background: white;
+  border: 1px solid var(--border);
+  padding: 0.32rem 0.85rem;
+  border-radius: 100px;
+  box-shadow: var(--shadow);
+  font-weight: 500;
+}
+
+.hero-badge .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  animation: pulse-dot 2s ease infinite;
+}
+
+.dot-teal { background: var(--teal); }
+.dot-amber { background: var(--amber); }
+.dot-rose { background: var(--rose); }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.5); }
+}
+
+/* ─── Section Layout ─── */
+.section {
+  position: relative;
+  z-index: 1;
+  padding: 3.5rem 2.5rem;
+}
+
+.section-header {
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.section-label {
+  font-size: 0.63rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.section-count {
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  background: rgba(13,148,136,0.07);
+  padding: 0.22rem 0.7rem;
+  border-radius: 100px;
+  border: 1px solid rgba(13,148,136,0.12);
+}
+
+/* ─── Divider ─── */
+.divider {
+  position: relative;
+  z-index: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 0 2.5rem;
+}
+
+/* ─── Scroll-Driven Animations ─── */
+@supports (animation-timeline: scroll()) {
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: reveal-card linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+  }
+  @keyframes reveal-card {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .scroll-reveal-left {
+    opacity: 0;
+    transform: translateX(-24px);
+    animation: reveal-left linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+  }
+  @keyframes reveal-left {
+    from { opacity: 0; transform: translateX(-24px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  .stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger-children > *:nth-child(2) { animation-delay: 70ms; }
+  .stagger-children > *:nth-child(3) { animation-delay: 140ms; }
+  .stagger-children > *:nth-child(4) { animation-delay: 210ms; }
+  .stagger-children > *:nth-child(5) { animation-delay: 280ms; }
+}
+
+@supports not (animation-timeline: scroll()) {
+  .scroll-reveal, .scroll-reveal-left {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .scroll-reveal.visible, .scroll-reveal-left.visible {
+    opacity: 1; transform: none;
+  }
+}
+
+/* ─── News Cards ─── */
+.news-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.news-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.9rem 1.2rem;
+  align-items: start;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.22s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.news-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--teal), var(--teal-light));
+  opacity: 0;
+  transition: opacity 0.22s;
+}
+
+.news-card:hover {
+  border-color: rgba(13,148,136,0.28);
+  transform: translateY(-2px) translateX(2px);
+  box-shadow: var(--shadow-hover);
+}
+.news-card:hover::before { opacity: 1; }
+
+.news-number {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--teal);
+  letter-spacing: 0.04em;
+  padding-top: 0.1rem;
+  opacity: 0.55;
+  min-width: 22px;
+}
+
+.news-tags {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.61rem;
+  padding: 0.16rem 0.52rem;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.tag-tw { background: rgba(5,150,105,0.1); color: #047857; border: 1px solid rgba(5,150,105,0.2); }
+.tag-source { background: rgba(15,118,110,0.09); color: var(--teal); border: 1px solid rgba(15,118,110,0.18); }
+.tag-category { background: rgba(180,83,9,0.09); color: var(--amber); border: 1px solid rgba(180,83,9,0.2); }
+
+.news-title {
+  font-size: 0.96rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 0.45rem;
+  color: var(--text);
+}
+
+.news-summary {
+  font-size: 0.91rem;
+  color: var(--text2);
+  line-height: 1.65;
+}
+
+.news-link-icon {
+  color: var(--text-muted);
+  transition: color 0.2s, transform 0.2s;
+  padding-top: 0.1rem;
+  flex-shrink: 0;
+}
+.news-card:hover .news-link-icon { color: var(--teal); transform: translate(2px, -2px); }
+
+/* ─── Academic Cards ─── */
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.academic-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: all 0.22s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.academic-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+
+.academic-card.nejm::after { background: linear-gradient(90deg, #0D9488, #5EADB3); }
+.academic-card.lancet::after { background: linear-gradient(90deg, #BE185D, #F9A8D4); }
+.academic-card.jama::after { background: linear-gradient(90deg, #1E40AF, #60A5FA); }
+.academic-card.gastro::after { background: linear-gradient(90deg, #C2410C, #FB923C); }
+.academic-card.hepato::after { background: linear-gradient(90deg, #6B21A8, #C084FC); }
+
+.academic-card:hover {
+  border-color: rgba(13,148,136,0.28);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.academic-journal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journal-badge {
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.62rem;
+  border-radius: 100px;
+}
+
+.journal-badge.nejm {
+  background: rgba(15,118,110,0.1);
+  color: var(--teal);
+  border: 1px solid rgba(15,118,110,0.22);
+}
+
+.journal-badge.lancet {
+  background: rgba(159,18,57,0.09);
+  color: var(--rose);
+  border: 1px solid rgba(159,18,57,0.2);
+}
+
+.journal-badge.jama {
+  background: rgba(30,64,175,0.10);
+  color: #1E3A8A;
+  border: 1px solid rgba(30,64,175,0.22);
+}
+
+.journal-badge.gastro {
+  background: rgba(194,65,12,0.10);
+  color: #9A3412;
+  border: 1px solid rgba(194,65,12,0.22);
+}
+
+.journal-badge.hepato {
+  background: rgba(107,33,168,0.10);
+  color: #6B21A8;
+  border: 1px solid rgba(107,33,168,0.22);
+}
+
+.journal-badge.diabetes {
+  background: rgba(202,138,4,0.10);
+  color: #92400E;
+  border: 1px solid rgba(202,138,4,0.22);
+}
+
+.journal-badge.ckd {
+  background: rgba(2,132,199,0.10);
+  color: #075985;
+  border: 1px solid rgba(2,132,199,0.22);
+}
+
+.academic-category {
+  font-size: 0.67rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.academic-title {
+  font-size: 0.91rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.abstract-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.tab-btn {
+  font-size: 1.02rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.62rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  background: rgba(13,148,136,0.1);
+  border-color: rgba(13,148,136,0.3);
+  color: var(--teal);
+}
+
+.abstract-text {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+.abstract-en { display: block; }
+.abstract-zh { display: none; }
+
+.read-more {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.73rem;
+  color: var(--teal);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.read-more svg { transition: transform 0.2s; }
+.academic-card:hover .read-more svg { transform: translateX(4px); }
+
+/* ─── History Section ─── */
+.history-section {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2.5rem;
+}
+
+.history-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.history-tab {
+  font-size: 0.85rem;
+  padding: 0.42rem 1.1rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  box-shadow: var(--shadow);
+}
+
+.history-tab.active {
+  background: linear-gradient(135deg, rgba(13,148,136,0.12), rgba(94,173,179,0.07));
+  border-color: rgba(13,148,136,0.35);
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.history-panel { display: none; }
+.history-panel.active { display: block; }
+
+/* ─── Footer ─── */
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 2.5rem 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  background: rgba(255,251,235,0.85);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 2;
+}
+
+.footer-text a {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-text a:hover { text-decoration: underline; }
+
+/* ─── Animations ─── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(180,140,40,0.22); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--teal); }
+
+/* ─── Responsive ─── */
+@media (max-width: 960px) {
+  .page-layout { grid-template-columns: 1fr; }
+  .fb-sidebar {
+    position: static;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+  .fb-page-wrap iframe { min-height: 500px; }
+}
+@media (max-width: 680px) {
+  .academic-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .news-card { grid-template-columns: auto 1fr; }
+  .news-link-icon { display: none; }
+  .section { padding: 2.5rem 1.25rem; }
+  .history-section { padding: 2rem 1.25rem; }
+  .hero { padding: 3rem 1.25rem 2rem; }
+  .nav-brand-sub { font-size: 0.68rem; white-space: nowrap; letter-spacing: 0.01em; }
+}
+</style>
+</head>
+<body>
+
+<!-- Scroll progress -->
+<div id="progress-bar"></div>
+
+<!-- Warm background layers -->
+<div class="bg-warm"></div>
+<div class="leaf-bg" aria-hidden="true">
+  <svg width="100%" height="100%" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice"
+    xmlns="http://www.w3.org/2000/svg" style="opacity:0.06">
+    <g fill="#0D9488">
+      <ellipse cx="80" cy="220" rx="65" ry="22" transform="rotate(-35 80 220)"/>
+      <ellipse cx="95" cy="215" rx="58" ry="17" transform="rotate(-35 95 215)" fill="none" stroke="#0D9488" stroke-width="1.5"/>
+      <ellipse cx="1320" cy="130" rx="72" ry="26" transform="rotate(22 1320 130)"/>
+      <ellipse cx="1310" cy="760" rx="58" ry="21" transform="rotate(-18 1310 760)"/>
+      <ellipse cx="55" cy="710" rx="68" ry="24" transform="rotate(28 55 710)"/>
+    </g>
+    <g stroke="#D97706" fill="none">
+      <circle cx="180" cy="820" r="65" stroke-width="1.8" stroke-dasharray="7 5"/>
+      <circle cx="1220" cy="390" r="88" stroke-width="1.4" stroke-dasharray="5 7"/>
+    </g>
+    <g fill="#059669">
+      <path d="M42,410 Q75,360 108,410 Q75,460 42,410Z" transform="rotate(-22 75 410)"/>
+      <path d="M1355,620 Q1378,568 1401,620 Q1378,672 1355,620Z" transform="rotate(18 1378 620)"/>
+      <path d="M700,20 Q730,-18 760,20 Q730,58 700,20Z" transform="rotate(-10 730 20)"/>
+    </g>
+  </svg>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <a class="nav-brand" href="/">
+    <div class="nav-brand-icon"><img src="logo3.jpg?v=1" alt="邱芳瑋醫師 Logo" width="38" height="38" style="width:100%;height:100%;object-fit:contain;display:block;border-radius:10px;"></div>
+    <div>
+      <div class="nav-brand-text">邱芳瑋醫師・醫學週報</div>
+      <div class="nav-brand-sub">全方胃．恢腸肝膽・聽你說「腸」心事</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">首頁</a></li>
+    <li><a href="/weekly.html" class="active">醫學週報</a></li>
+    <li class="nav-sub-group" aria-label="本頁段落">
+      <a href="#taiwan">台灣新聞</a>
+      <a href="#nejm">NEJM</a>
+      <a href="#lancet">Lancet</a>
+      <a href="#jama">JAMA</a>
+      <a href="#gastro">Gastro</a>
+      <a href="#hepato">Hepato</a>
+      <a href="#diabetes">糖尿病</a>
+      <a href="#ckd">腎臟</a>
+      <a href="#history">歷史</a>
+    </li>
+    <li><a href="/education.html">衛教文章</a></li>
+    <li>
+      <a class="nav-fb-link" href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        粉絲團
+      </a>
+    </li>
+  </ul>
+  <!-- Mobile hamburger -->
+  <button class="nav-hamburger" aria-label="選單" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/" onclick="closeMenu()">🏠 首頁</a>
+  <a href="/weekly.html" onclick="closeMenu()">📰 醫學週報</a>
+  <a href="/education.html" onclick="closeMenu()">📚 衛教文章</a>
+  <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">👍 Facebook 粉絲團</a>
+</div>
+
+<!-- Week banner -->
+<div class="week-banner" id="week-banner"><strong>2026 第37週</strong> &nbsp;·&nbsp; 更新日期：2026-09-11 &nbsp;·&nbsp; <span>腸胃肝膽・代謝領域・自動整理</span></div>
+
+<!-- ═══ Two-column page layout ═══ -->
+<div class="page-layout">
+
+  <!-- ── Main content ── -->
+  <main class="main-content" id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <p class="hero-eyebrow">每週自動更新 · AI 整理</p>
+      <h1 class="hero-title">腸胃肝膽健康<span class="highlight">・醫學週報</span></h1>
+      <p class="hero-subtitle">整合台灣熱門醫學新聞與頂尖期刊（NEJM・Lancet）肝・膽・胃・腸・減重・代謝領域最新研究，每週自動更新</p>
+      <div class="hero-meta">
+        <div class="hero-badge"><span class="dot dot-teal"></span>台灣熱門新聞 TOP 5</div>
+        <div class="hero-badge"><span class="dot dot-amber"></span>NEJM 近期研究</div>
+        <div class="hero-badge"><span class="dot dot-rose"></span>Lancet 近期研究</div>
+      </div>
+    </section>
+
+    <!-- Taiwan News (預渲染：本週靜態 HTML，後續週次由 update_medical_news.py 重寫) -->
+    <section class="section" id="taiwan">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">本週熱門</p>
+          <h2 class="section-title">台灣醫學新聞 TOP 5</h2>
+        </div>
+        <span class="section-count" id="tw-count">5 則</span>
+      </div>
+      <div class="news-grid stagger-children" id="taiwan-news">
+        <!-- BEGIN PRERENDER:taiwan -->
+<a class="news-card scroll-reveal" href="https://appi.news/articles/drug-shortage-2026-09-05/" target="_blank" rel="noopener" id="tw-20260911-01">
+  <span class="news-number">01</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">健康政策</span>
+      <span class="tag tag-source">APPI News</span>
+    </div>
+    <p class="news-title">食藥署缺藥清單再添12項 大腸癌化療藥、B肝免疫球蛋白入列</p>
+    <p class="news-summary">食藥署最新短缺清單新增12項「經評估有替代藥品」品項，公告日介於7/16至8/31，其中9項載有恢復時程。含大腸癌化療藥抗癌妥（irinotecan，預計2027年2月恢復）與B型肝炎免疫球蛋白。目前列管短缺共254項。民眾若用藥在清單上，應帶藥袋回診詢問醫師或藥師，切勿自行換藥或停藥。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://cnews.com.tw/003260907a05/" target="_blank" rel="noopener" id="tw-20260911-02">
+  <span class="news-number">02</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">藥物治療</span>
+      <span class="tag tag-source">匯流新聞網 CNEWS</span>
+    </div>
+    <p class="news-title">台大本土研究：中重度異位性皮膚炎每月自費吃掉六成薪水</p>
+    <p class="news-summary">台大醫院皮膚部主任朱家瑜發表台灣本土中重度異位性皮膚炎疾病負擔研究：28%病友每月皮膚治療自費超過2萬元，54%另花逾5千元於防蟎、空氣清淨機，合計月支出突破2.5萬元，相當於國人薪資中位數（3.98萬元）的63%。72%病友曾看過6位以上醫師，88%生活品質自評低於40分。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://www.cdc.gov.tw/Bulletin/Detail/DhYHJ_ADrxLmj217Q0dMtw?typeid=9" target="_blank" rel="noopener" id="tw-20260911-03">
+  <span class="news-number">03</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">健康政策</span>
+      <span class="tag tag-source">衛生福利部疾病管制署</span>
+    </div>
+    <p class="news-title">疾管署：腸病毒疫情隨開學上升 單週門急診8475人次增17.7%</p>
+    <p class="news-summary">疾管署9月8日表示，第35週（8/30-9/5）腸病毒門急診就診8,475人次，較前一週7,199人次上升17.7%。近四週社區以克沙奇A6型為多，其次為D68型及A16型；今年累計7例重症（含1例死亡）。酒精對腸病毒效果有限，建議以500ppm含氯漂白水消毒幼兒常接觸物品，5歲以下為重症高危險群。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://cnews.com.tw/003260911a02/" target="_blank" rel="noopener" id="tw-20260911-04">
+  <span class="news-number">04</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">減重代謝</span>
+      <span class="tag tag-source">匯流新聞網 CNEWS</span>
+    </div>
+    <p class="news-title">中秋熱量陷阱！國健署：一個松子蓮蓉月餅等於2.5碗白飯</p>
+    <p class="news-summary">國健署9月11日提醒，180公克傳統松子蓮蓉月餅熱量約720大卡，相當於2.5碗白飯。署長沈靜芬建議掌握「巧吃點、均衡點、清新點」：月餅切小塊分食、搭配無糖茶；烤肉減少紅肉與加工食品、增加蔬菜。高溫烤肉易生異環胺，油脂滴落火焰則產生多環芳香烴，食材焦黑應去除後再食用。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+<a class="news-card scroll-reveal" href="https://appi.news/articles/ckd-early-warning-signs/" target="_blank" rel="noopener" id="tw-20260911-05">
+  <span class="news-number">05</span>
+  <div class="news-body">
+    <div class="news-tags">
+      <span class="tag tag-tw">減重代謝</span>
+      <span class="tag tag-source">APPI News</span>
+    </div>
+    <p class="news-title">台灣慢性腎病盛行率11.9% 逾九成不自知 記住「泡水高貧倦」</p>
+    <p class="news-summary">台灣腎臟醫學會指出慢性腎病盛行率約11.9%、推估200萬人，但超過九成患者不知罹病，因腎臟無痛覺神經、早期幾乎無症狀。腎臟病防治基金會提出警訊口訣「泡、水、高、貧、倦」。CKD依eGFR分五期，60、30、15為三條分界；高危族群建議每年一次eGFR加UACR雙指標檢測，30歲起善用健檢。</p>
+  </div>
+  <span class="news-link-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span>
+</a>
+        <!-- END PRERENDER:taiwan -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- NEJM -->
+    <section class="section" id="nejm">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">NEJM 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="nejm-articles">
+        <!-- BEGIN PRERENDER:nejm -->
+<div class="academic-card nejm scroll-reveal" id="nejm-20260911-01">
+  <div class="academic-journal">
+    <span class="journal-badge nejm">NEJM</span>
+    <span class="academic-category">心血管介入</span>
+  </div>
+  <p class="academic-title">Complete Revascularization Guided by Functional Coronary Angiography in STEMI</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">In 1823 patients with STEMI and multivessel disease, complete revascularization guided by functional coronary angiography was compared with conventional angiography guidance. At a median 17.9 months, primary events (death, MI, cerebrovascular accident, or ischemia-driven revascularization) occurred in 8.9% versus 13.7% (HR 0.62). Contrast-associated acute kidney injury or major bleeding also favored the physiology-guided group (4.6% vs 7.1%, HR 0.63).</p>
+    <p class="abstract-text abstract-zh">1823名ST段上升心肌梗塞合併多血管病變病人隨機分為生理學指引或傳統攝影指引完全血管重建。中位追蹤17.9個月，主要終點（死亡、心肌梗塞、腦血管事件或缺血導致再介入）發生率8.9%對13.7%（HR 0.62）。顯影劑腎損傷或大出血也較低（4.6%對7.1%，HR 0.63），支持以功能性評估挑選非罪犯病灶。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1056/NEJMoa2605373" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card nejm scroll-reveal" id="nejm-20260911-02">
+  <div class="academic-journal">
+    <span class="journal-badge nejm">NEJM</span>
+    <span class="academic-category">呼吸道疾病</span>
+  </div>
+  <p class="academic-title">Tozorakimab to Prevent COPD Exacerbations</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Two replicate phase 3 trials (OBERON, TITANIA) randomized adults with exacerbating COPD to subcutaneous tozorakimab, an anti-interleukin-33 antibody, 300 mg every 4 weeks or placebo for 52 weeks, without eosinophil entry criteria. Annualized moderate or severe exacerbations fell in the overall population (rate ratios 0.70 and 0.71) and among former smokers (0.71 and 0.66). Adverse event rates were comparable with placebo.</p>
+    <p class="abstract-text abstract-zh">兩項平行第三期試驗（OBERON、TITANIA）將有急性發作史的COPD成人隨機分配皮下tozorakimab（抗IL-33單株抗體）300毫克每4週一次或安慰劑，共52週，且未設嗜異性白血球門檻。整體族群中重度急性發作年化率降低（rate ratio 0.70與0.71），戒菸族群亦降低（0.71與0.66），不良事件發生率與安慰劑相當。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1056/NEJMoa2606998" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card nejm scroll-reveal" id="nejm-20260911-03">
+  <div class="academic-journal">
+    <span class="journal-badge nejm">NEJM</span>
+    <span class="academic-category">血液腫瘤</span>
+  </div>
+  <p class="academic-title">Treatment Decisions in Multiple Myeloma</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This review offers a practical framework for multiple myeloma, now moving toward functional cure. Cytogenetic and genomic risk, functional fitness, and measurable residual disease individualize newly diagnosed therapy, where quadruplet induction is standard and the role of autologous transplantation is being reassessed. At relapse, sequencing of BCMA-directed CAR T cells, bispecific antibodies, and antibody-drug conjugates should weigh T-cell fitness and antigen escape.</p>
+    <p class="abstract-text abstract-zh">本篇綜論提出多發性骨髓瘤的實用決策架構，該病已朝「功能性治癒」邁進。初診病人應以細胞遺傳學與基因體風險、功能體能狀態及可測量殘存疾病個人化治療，四藥induction已成標準，自體移植角色正重新評估。復發時CAR-T、雙特異性抗體與抗體藥物複合體的排序須考量T細胞活力與抗原逃脫。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1056/NEJMra2605253" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:nejm -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Lancet -->
+    <section class="section" id="lancet">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">Lancet 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="lancet-articles">
+        <!-- BEGIN PRERENDER:lancet -->
+<div class="academic-card lancet scroll-reveal" id="lancet-20260911-01">
+  <div class="academic-journal">
+    <span class="journal-badge lancet">Lancet</span>
+    <span class="academic-category">胃癌治療</span>
+  </div>
+  <p class="academic-title">Perioperative durvalumab plus FLOT for resectable gastric and gastro-oesophageal junction adenocarcinoma (MATTERHORN): final overall survival results</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">MATTERHORN randomized 948 adults with resectable stage II-IVa gastric or gastro-oesophageal junction adenocarcinoma across 147 centres in 20 countries to perioperative durvalumab plus FLOT chemotherapy or placebo plus FLOT. Overall survival improved significantly with durvalumab (hazard ratio 0.78, 95% CI 0.63-0.96; p=0.021). Treatment-related deaths occurred in 1% versus under 1%, establishing this regimen as a new standard option.</p>
+    <p class="abstract-text abstract-zh">MATTERHORN在20國147中心納入948名可手術第II至IVa期胃癌或胃食道接合處腺癌病人，隨機分為術前後durvalumab併FLOT化療或安慰劑併FLOT。durvalumab組總存活期顯著改善（HR 0.78，95% CI 0.63-0.96，p=0.021），治療相關死亡為1%對不到1%。此組合成為可切除胃癌的新標準治療選項之一。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1016/S0140-6736(26)01254-7" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card lancet scroll-reveal" id="lancet-20260911-02">
+  <div class="academic-journal">
+    <span class="journal-badge lancet">Lancet</span>
+    <span class="academic-category">肺癌治療</span>
+  </div>
+  <p class="academic-title">Induction and consolidation atezolizumab with stereotactic body radiation therapy versus radiation alone in high-risk, early-stage non-small-cell lung cancer (SWOG/NRG S1914)</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">In 402 evaluable patients with medically inoperable T1-T3N0M0 non-small-cell lung cancer and recurrence risk factors, adding neoadjuvant, concurrent, and adjuvant atezolizumab to stereotactic body radiation therapy did not improve overall survival (hazard ratio 1.04). Two-year overall survival was 82% in both groups, while grade 3 or higher adverse events rose from 3% to 12%. Accrual closed early for futility.</p>
+    <p class="abstract-text abstract-zh">402名無法手術的T1-T3N0M0非小細胞肺癌且具復發風險因子病人中，在立體定位放射治療前後加上atezolizumab並未改善總存活期（HR 1.04），兩組兩年存活率均為82%，但3級以上不良事件由3%升至12%，試驗於第一次期中分析因無效而提早停止收案。提醒早期肺癌加免疫治療仍缺證據。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1016/S0140-6736(26)01655-7" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:lancet -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- JAMA -->
+    <section class="section" id="jama">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">JAMA 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="jama-articles">
+        <!-- BEGIN PRERENDER:jama -->
+<div class="academic-card jama scroll-reveal" id="jama-20260911-01">
+  <div class="academic-journal">
+    <span class="journal-badge jama">JAMA</span>
+    <span class="academic-category">腦中風</span>
+  </div>
+  <p class="academic-title">Loberamisal for Acute Ischemic Stroke: The LAIS Randomized Clinical Trial</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This phase 3 trial at 32 Chinese hospitals randomized 997 adults with acute ischemic stroke (NIHSS 7-20) presenting within 48 hours to intravenous loberamisal 40 mg daily for 10 days or placebo. At 90 days, 69.7% versus 56.3% achieved a modified Rankin Scale score of 0 to 1 (relative risk 1.24; risk difference 13.3 percentage points). Adverse events were similar between groups.</p>
+    <p class="abstract-text abstract-zh">中國32家醫院第三期試驗納入997名發病48小時內、NIHSS 7至20分的急性缺血性腦中風病人，隨機給予靜脈loberamisal 40毫克每日一次共10天或安慰劑。90天時達完全功能恢復（mRS 0-1分）者為69.7%對56.3%（相對風險1.24，絕對差13.3個百分點），兩組不良事件相當，仍待其他族群驗證。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1001/jama.2026.16557" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card jama scroll-reveal" id="jama-20260911-02">
+  <div class="academic-journal">
+    <span class="journal-badge jama">JAMA</span>
+    <span class="academic-category">肺癌治療</span>
+  </div>
+  <p class="academic-title">Osimertinib With or Without Chemotherapy in Advanced Non-Small Cell Lung Cancer With EGFR and Concurrent TP53 Mutations</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This multicentre phase 3 trial randomized 294 treatment-naive patients with stage IV non-squamous non-small cell lung cancer harbouring both EGFR-sensitizing and TP53 mutations to osimertinib plus pemetrexed-carboplatin or osimertinib alone. Median progression-free survival was 34.0 versus 15.6 months (hazard ratio 0.44; p&lt;0.001), consistent across subgroups including brain metastases. Grade 3 or higher toxicity was higher with combination therapy.</p>
+    <p class="abstract-text abstract-zh">多中心第三期試驗納入294名未曾治療、第IV期非鱗狀非小細胞肺癌且同時帶EGFR致敏突變與TP53突變病人，隨機分為osimertinib併pemetrexed加carboplatin或單用osimertinib。中位無惡化存活期34.0對15.6個月（HR 0.44，p&lt;0.001），各次族群包含腦轉移者一致；合併治療3級以上毒性較高。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1001/jama.2026.10599" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card jama scroll-reveal" id="jama-20260911-03">
+  <div class="academic-journal">
+    <span class="journal-badge jama">JAMA</span>
+    <span class="academic-category">重症營養</span>
+  </div>
+  <p class="academic-title">Gastric Residual Volume Assessment in Critically Ill Children: The GASTRIC-PICU Randomized Clinical Trial</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This pragmatic noninferiority trial in 24 paediatric intensive care units randomized 4700 mechanically ventilated children starting enteral feeds to no routine gastric residual volume assessment or six-hourly assessment. Ventilator-free days and survival at 30 days were noninferior (median 25 days in both groups; adjusted odds ratio 0.95). Energy requirements met by 72 hours rose from 76.8% to 80.3%, favouring omission of routine checks.</p>
+    <p class="abstract-text abstract-zh">24家兒科加護病房的實務型非劣效試驗，將4700名接受插管通氣並開始腸道餵食的兒童隨機分為不常規測胃殘餘量或每6小時測量。30天無呼吸器天數與存活為非劣效（兩組中位均25天，調整後OR 0.95）；72小時內達熱量需求比例由76.8%升至80.3%，支持取消常規測量以改善營養輸送。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1001/jama.2026.10639" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card jama scroll-reveal" id="jama-20260911-04">
+  <div class="academic-journal">
+    <span class="journal-badge jama">JAMA</span>
+    <span class="academic-category">疫苗與感染症</span>
+  </div>
+  <p class="academic-title">Influenza Vaccine Effectiveness and Safety for the 2026-2027 Respiratory Season</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This systematic review of 69 studies published August 2025 to June 2026 found influenza vaccines reduced influenza-related hospitalization (vaccine effectiveness 19% to 43%) and mortality (29% to 66%) in older adults. Effectiveness against laboratory-confirmed influenza-associated death in children aged 6 months to 17 years was 80%. A self-controlled case series of nearly 10 million people found no increase in serious adverse events.</p>
+    <p class="abstract-text abstract-zh">系統回顧納入2025年8月至2026年6月發表的69篇研究，顯示流感疫苗可降低老年人流感相關住院（疫苗效益19%至43%）與死亡（29%至66%）。6個月至17歲兒少對實驗室確診流感相關死亡的疫苗效益達80%。近1000萬人自我對照病例系列未發現嚴重不良事件增加，包含與RSV或COVID疫苗併用。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1001/jama.2026.18126" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:jama -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Gastroenterology -->
+    <section class="section" id="gastro">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">Gastroenterology 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="gastro-articles">
+        <!-- BEGIN PRERENDER:gastro -->
+<div class="academic-card gastro scroll-reveal" id="gastro-20260911-01">
+  <div class="academic-journal">
+    <span class="journal-badge gastro">Gastroenterology</span>
+    <span class="academic-category">大腸癌篩檢</span>
+  </div>
+  <p class="academic-title">Interventions for Increasing Colorectal Cancer Screening Uptake: A Systematic Review and Network Meta-Analysis</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This network meta-analysis of 76 randomized trials compared eight strategies for increasing colorectal cancer screening uptake. Patient navigation (risk ratio 1.58) and mailed faecal immunochemical test outreach (1.36) significantly outperformed usual care, while choice-based and colonoscopy outreach did not. Mailed FIT was most effective where baseline uptake was below 30% (risk ratio 3.12); educational multimedia performed best in higher-uptake populations.</p>
+    <p class="abstract-text abstract-zh">網絡統合分析納入76項隨機試驗，比較八種提高大腸癌篩檢參與率的策略。病人導航（RR 1.58）與郵寄糞便免疫化學檢查（FIT）外展（RR 1.36）顯著優於常規照護，選擇式與大腸鏡外展則無差異。基礎參與率低於30%者以郵寄FIT最有效（RR 3.12），參與率較高族群則以教育多媒體表現最佳。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1053/j.gastro.2026.02.047" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card gastro scroll-reveal" id="gastro-20260911-02">
+  <div class="academic-journal">
+    <span class="journal-badge gastro">Gastroenterology</span>
+    <span class="academic-category">食道疾病</span>
+  </div>
+  <p class="academic-title">Achalasia and Risk of Esophageal Squamous Cell Carcinoma and Adenocarcinoma in a Multinational Study</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This population-based case-control study in five Nordic countries matched 35,604 esophageal cancer cases to 355,869 controls from 1987 to 2023. Achalasia was strongly associated with esophageal squamous cell carcinoma (odds ratio 9.46), rising to 16.33 after myotomy or dilation. The association with adenocarcinoma was moderate (3.05) but attenuated to 1.44 after adjustment for gastroesophageal reflux disease.</p>
+    <p class="abstract-text abstract-zh">北歐五國族群性病例對照研究，1987至2023年將35,604名食道癌病例與355,869名對照配對。食道賁門失能症與食道鱗狀細胞癌風險強烈相關（OR 9.46），接受肌肉切開或擴張術者更高達16.33。與腺癌的關聯中等（OR 3.05），但校正胃食道逆流後降至1.44，顯示腺癌風險多由逆流解釋。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1053/j.gastro.2026.03.024" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card gastro scroll-reveal" id="gastro-20260911-03">
+  <div class="academic-journal">
+    <span class="journal-badge gastro">Gastroenterology</span>
+    <span class="academic-category">發炎性腸道疾病</span>
+  </div>
+  <p class="academic-title">Short-Term Success, Long-Term Failure: Strain Turnover and Virulence Re-Emergence May Drive Relapse in Pouchitis</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Twenty-one patients with pouchitis after ileal pouch-anal anastomosis received two weeks of metronidazole plus ciprofloxacin or doxycycline, providing 130 stool samples over one year. Faecal calprotectin fell from 728 to 265 micrograms per gram and bacterial exotoxin genes declined, but both rebounded by six weeks. Antibiotic resistance gene abundance rose without new diversity, indicating expansion of pre-existing resistant strains.</p>
+    <p class="abstract-text abstract-zh">21名接受迴腸儲袋肛門吻合術後儲袋炎病人，接受兩週metronidazole併ciprofloxacin或doxycycline，一年內提供130個糞便樣本。糞便鈣衛蛋白由728降至265微克／克，細菌外毒素基因亦下降，但兩者在治療停止6週後回升。抗生素抗藥基因豐度增加但多樣性未變，顯示原有抗藥菌株擴張，需更精準的菌相控制策略。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1053/j.gastro.2026.08.031" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card gastro scroll-reveal" id="gastro-20260911-04">
+  <div class="academic-journal">
+    <span class="journal-badge gastro">Gastroenterology</span>
+    <span class="academic-category">腸道與神經退化</span>
+  </div>
+  <p class="academic-title">Protein Misfolding Enteropathy Predicts and Prognosticates Neurodegenerative Disease Years Before Symptom Onset</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Archival gastrointestinal biopsies from 196 individuals with unexplained symptoms and 13 to 15 years of follow-up were stained for misfolded TDP-43, tau, and alpha-synuclein. Protein misfolding enteropathy appeared in 60% and predicted non-Alzheimer dementia or alpha-synucleinopathies with over 80% sensitivity but low specificity. Two or more markers reduced survival dose-dependently, and changes preceded neurologic symptoms by 6.9 years.</p>
+    <p class="abstract-text abstract-zh">196名不明原因腸胃症狀者的存檔腸道切片，追蹤13至15年，以染色檢測錯誤摺疊的TDP-43、tau與α-synuclein。60%有蛋白質錯誤摺疊腸病變，預測非阿茲海默型失智或α-synuclein病的敏感度超過80%但特異度偏低。帶兩種以上標記者存活隨劑量遞減，病理變化平均早於神經症狀6.9年出現。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1053/j.gastro.2026.04.003" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:gastro -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Hepatology -->
+    <section class="section" id="hepato">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">頂尖期刊</p>
+          <h2 class="section-title">Hepatology 近期研究</h2>
+        </div>
+        <span class="section-count">肝・膽・胃・腸・減重・代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="hepato-articles">
+        <!-- BEGIN PRERENDER:hepato -->
+<div class="academic-card hepato scroll-reveal" id="hepato-20260911-01">
+  <div class="academic-journal">
+    <span class="journal-badge hepato">Hepatology</span>
+    <span class="academic-category">脂肪肝與肝癌</span>
+  </div>
+  <p class="academic-title">Hepatocyte MLKL drives obesity-driven hepatocellular carcinoma progression via mitochondrial dysfunction independent of necroptosis in MASLD</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">In a long-term western-diet model of MASLD-related hepatocellular carcinoma, hepatocyte-specific MLKL knockout mice developed fewer and smaller tumours with reduced proliferation and stemness, without changes in inflammation or fibrosis. MLKL acted independently of necroptosis by suppressing mitofusin 2 and impairing mitochondrial respiration. The MLKL inhibitor necrosulfonamide suppressed HepG2 xenograft growth, and high MLKL expression in human HCC correlated with poorer survival.</p>
+    <p class="abstract-text abstract-zh">在長期西方飲食誘發的MASLD肝癌小鼠模式中，肝細胞特異性剔除MLKL的小鼠腫瘤數量較少、體積較小，增生與幹性降低，但發炎與纖維化不變。MLKL透過抑制mitofusin 2、損害粒線體呼吸促癌，與壞死性凋亡無關。MLKL抑制劑necrosulfonamide可抑制HepG2異種移植瘤生長，人類肝癌MLKL高表現者存活較差。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1097/HEP.0000000000001830" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card hepato scroll-reveal" id="hepato-20260911-02">
+  <div class="academic-journal">
+    <span class="journal-badge hepato">Hepatology</span>
+    <span class="academic-category">肝纖維化機轉</span>
+  </div>
+  <p class="academic-title">Hepatocyte hnRNPK preserves mitochondrial integrity to restrain liver injury and fibrosis</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Reduced hepatocyte hnRNPK was a conserved hallmark of liver fibrosis across MASH, alcohol-related liver disease, hepatitis B, and drug-induced injury in humans and mice. Hepatocyte-specific Hnrnpk deletion caused aberrant Opa1 splicing, L-OPA1 depletion, and severe mitochondrial fragmentation, activating stellate cells via the mtDNA-cGAS-STING pathway. Restoring the hnRNPK-Opa1 axis with AAV vectors or promoting mitochondrial fusion arrested and regressed established fibrosis in multiple mouse models.</p>
+    <p class="abstract-text abstract-zh">無論MASH、酒精性肝病、B型肝炎或藥物性肝損傷，人類與小鼠肝纖維化都共同呈現肝細胞hnRNPK減少。肝細胞特異性剔除Hnrnpk導致Opa1剪接異常、L-OPA1耗竭與嚴重粒線體碎裂，經mtDNA-cGAS-STING路徑活化肝星狀細胞。以AAV回補hnRNPK-Opa1軸或促進粒線體融合，可在多種小鼠模式中阻止並逆轉既有纖維化。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1097/HEP.0000000000001836" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card hepato scroll-reveal" id="hepato-20260911-03">
+  <div class="academic-journal">
+    <span class="journal-badge hepato">Hepatology</span>
+    <span class="academic-category">肝纖維化機轉</span>
+  </div>
+  <p class="academic-title">With no lysine kinase 1 in hepatic stellate cells promotes mouse and human liver fibrosis through glycolytic triosephosphate isomerase 1</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">A phospho-kinase array identified WNK1 as a kinase activated by PDGF-B in primary human hepatic stellate cells. Chemical genetics revealed the glycolytic enzyme triosephosphate isomerase 1 as a direct WNK1 substrate within phase-separated condensates. WNK1 inhibition reduced stellate cell glycolysis, proliferation, and migration, attenuated fibrosis in carbon tetrachloride and diet-induced mouse models, and reduced fibrogenesis in human precision-cut liver slices.</p>
+    <p class="abstract-text abstract-zh">研究以磷酸化激酶陣列在原代人類肝星狀細胞中發現WNK1是PDGF-B活化的新激酶，並以化學遺傳學證實糖解酵素TPI1是其直接受質，兩者在相分離凝聚體中交互作用。抑制WNK1可降低星狀細胞糖解、增生與遷移，在四氯化碳與飲食誘發小鼠模式中減輕纖維化，並在人類精密肝切片中降低纖維生成，提示WNK1-TPI1軸為潛在治療標靶。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1097/HEP.0000000000001833" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card hepato scroll-reveal" id="hepato-20260911-04">
+  <div class="academic-journal">
+    <span class="journal-badge hepato">Hepatology</span>
+    <span class="academic-category">膽道疾病</span>
+  </div>
+  <p class="academic-title">Association between statin use and hepatic decompensation in patients with primary biliary cholangitis: A target trial emulation study</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Using electronic health records from Boston and Seoul, this sequential target trial emulation matched 443 statin users with primary biliary cholangitis to 886 non-users. Over a median 3.8 years, hepatic decompensation occurred in 5.4% versus 7.6% (hazard ratio 0.61), and major adverse liver outcomes were also reduced (hazard ratio 0.58). Results were consistent across both data sources and cirrhosis status.</p>
+    <p class="abstract-text abstract-zh">研究運用波士頓與首爾兩家醫院電子病歷，以序列目標試驗模擬設計，將443名使用statin的原發性膽道膽管炎病人與886名未使用者配對。中位追蹤3.8年，肝功能失償發生率5.4%對7.6%（HR 0.61），主要不良肝臟結果亦降低（HR 0.58）。兩資料來源及有無肝硬化的分層結果方向一致，支持潛在保護效果。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1097/HEP.0000000000001701" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:hepato -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Diabetes / Metabolic -->
+    <section class="section" id="diabetes">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">主題專區</p>
+          <h2 class="section-title">糖尿病・代謝 近期研究</h2>
+        </div>
+        <span class="section-count">糖尿病・GLP-1・代謝症候群・心腎代謝</span>
+      </div>
+      <div class="academic-grid stagger-children" id="diabetes-articles">
+        <!-- BEGIN PRERENDER:diabetes -->
+<div class="academic-card diabetes scroll-reveal" id="diabetes-20260911-01">
+  <div class="academic-journal">
+    <span class="journal-badge diabetes">Diabetologia</span>
+    <span class="academic-category">第1型糖尿病</span>
+  </div>
+  <p class="academic-title">Preserving beta cell function in children and adolescents with newly diagnosed stage 3 type 1 diabetes: per-protocol population analysis from the PROTECT randomised trial</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">In the per-protocol population of 275 participants aged 8 to 17 with stage 3 type 1 diabetes, two 12-day courses of teplizumab preserved beta cell function versus placebo, with a least squares mean difference in stimulated C-peptide of 0.14 nmol/L at week 78. Teplizumab also reduced exogenous insulin dose and increased time in range, regardless of HLA subtype or baseline autoantibodies.</p>
+    <p class="abstract-text abstract-zh">PROTECT試驗依從治療族群共275名8至17歲第3期第1型糖尿病患者，接受兩次12天療程teplizumab者在第78週刺激後C-peptide相較安慰劑高0.14 nmol/L。teplizumab組外源性胰島素劑量較低（差異-0.17 U/kg/天），血糖目標範圍時間增加6.17%，且不受HLA-DR3/DR4或基線自體抗體型別影響。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1007/s00125-026-06849-5" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card diabetes scroll-reveal" id="diabetes-20260911-02">
+  <div class="academic-journal">
+    <span class="journal-badge diabetes">Lancet Diabetes &amp; Endocrinology</span>
+    <span class="academic-category">胰島素治療</span>
+  </div>
+  <p class="academic-title">Human versus analogue insulin for children and young adults with type 1 diabetes in low-resource settings (HumAn-1): a multicentre, open-label, randomised controlled trial</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">HumAn-1 randomized 400 participants aged 7 to 25 with type 1 diabetes in Bangladesh and Tanzania to insulin glargine or continued isophane-based usual care. At six months, blinded continuous glucose monitoring showed no difference in time below 3 mmol/L (adjusted mean difference 0.22%) or time in target range (0.55%). Serious adverse events were uncommon in both groups.</p>
+    <p class="abstract-text abstract-zh">HumAn-1在孟加拉與坦尚尼亞納入400名7至25歲第1型糖尿病患者，隨機分配insulin glargine或繼續以中效人類胰島素（isophane）為主的常規照護。6個月時以盲化連續血糖監測評估，低於3 mmol/L時間（調整後差異0.22%）與目標範圍時間（0.55%）均無差異，兩組嚴重不良事件均少見。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1016/S2213-8587(26)00097-5" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card diabetes scroll-reveal" id="diabetes-20260911-03">
+  <div class="academic-journal">
+    <span class="journal-badge diabetes">Diabetes Care</span>
+    <span class="academic-category">糖尿病神經病變</span>
+  </div>
+  <p class="academic-title">Evaluating Improvement in Pain and Sensory Function When Using High-Frequency (10-kHz) Spinal Cord Stimulation in Individuals With Painful Diabetic Neuropathy: A Multicenter Randomized Controlled Trial (PDN-Sensory)</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">PDN-Sensory randomized 91 participants with painful diabetic neuropathy to conventional medical management alone or with 10-kHz spinal cord stimulation. In a worst-case analysis, 27 of 34 stimulation participants achieved at least 50% pain relief versus 2 of 50 controls. Sensory improvement occurred in 55.2% versus 25.0%, and intraepidermal nerve fibre density rose by 0.58 fibres per millimetre versus declining slightly.</p>
+    <p class="abstract-text abstract-zh">PDN-Sensory試驗將91名疼痛性糖尿病神經病變患者隨機分為單純藥物治療或加上10-kHz脊髓刺激。最差情況分析中，接受暫時性試驗的34人有27人達疼痛緩解50%以上，對照組僅50人中2人。感覺功能改善比例55.2%對25.0%，表皮內神經纖維密度增加0.58條／毫米，對照組則略降，提示可能具疾病修飾作用。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.2337/dc26-0758" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:diabetes -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CKD / Nephrology -->
+    <section class="section" id="ckd">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">主題專區</p>
+          <h2 class="section-title">慢性腎臟病（CKD） 近期研究</h2>
+        </div>
+        <span class="section-count">CKD・透析・腎臟保護・SGLT2/finerenone</span>
+      </div>
+      <div class="academic-grid stagger-children" id="ckd-articles">
+        <!-- BEGIN PRERENDER:ckd -->
+<div class="academic-card ckd scroll-reveal" id="ckd-20260911-01">
+  <div class="academic-journal">
+    <span class="journal-badge ckd">JASN</span>
+    <span class="academic-category">心腎代謝症候群</span>
+  </div>
+  <p class="academic-title">Executive Summary of the ASN Kidney Health Guidance on the Cardiovascular-Kidney-Metabolic Syndrome</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This ASN guidance positions kidney disease at the centre of cardiovascular-kidney-metabolic syndrome. It recommends integrating the PREVENT equation with kidney outcome predictors for routine risk assessment, with lifestyle modification underpinning care. Renin-angiotensin system inhibitors and SGLT2 inhibitors are foundational, while GLP-1-based therapies and non-steroidal mineralocorticoid receptor antagonists may be added according to individual risk, avoiding therapeutic inertia.</p>
+    <p class="abstract-text abstract-zh">美國腎臟醫學會此份指引將腎臟疾病置於心腎代謝（CKM）症候群核心，建議routine風險評估整合PREVENT公式與腎臟結果預測工具，並以生活型態調整為基礎。RAS抑制劑與SGLT2抑制劑為基礎用藥，可依個人心血管與代謝風險加上GLP-1類藥物及非類固醇型礦物皮質素受體拮抗劑，並強調避免治療惰性。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.1681/ASN.0000001230" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card ckd scroll-reveal" id="ckd-20260911-02">
+  <div class="academic-journal">
+    <span class="journal-badge ckd">CJASN</span>
+    <span class="academic-category">飲食與腎臟病</span>
+  </div>
+  <p class="academic-title">Associations of Plant- and Animal-Sourced Ultra-Processed Foods and Incident CKD in the Cardiovascular Health Study</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">Among 2661 adults aged 65 and older followed a median 6.8 years, the highest tertiles of total and animal-sourced ultra-processed food intake carried 26% and 37% higher risk of incident chronic kidney disease. Plant-sourced ultra-processed food showed a modest association per standard deviation. Higher minimally processed food intake was associated with 20% lower risk, with no associations for eGFR change.</p>
+    <p class="abstract-text abstract-zh">2661名65歲以上成人中位追蹤6.8年，總超加工食品與動物來源超加工食品攝取最高三分位者，新發慢性腎臟病風險分別高出26%與37%。植物來源超加工食品每增加一個標準差風險略升（HR 1.07）。最低加工食品攝取較高者風險低20%，但與eGFR變化無關，提示植物食品的好處可能被過度加工削弱。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.2215/CJN.0000001207" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+<div class="academic-card ckd scroll-reveal" id="ckd-20260911-03">
+  <div class="academic-journal">
+    <span class="journal-badge ckd">CJASN</span>
+    <span class="academic-category">腎性貧血</span>
+  </div>
+  <p class="academic-title">Randomized Controlled Trial Comparing Lactoferrin Plus Iron to Iron Alone for Iron Deficiency Anemia in CKD</p>
+  <div>
+    <div class="abstract-tabs">
+      <button class="tab-btn active" type="button" onclick="switchTab(this,'en')">EN</button>
+      <button class="tab-btn" type="button" onclick="switchTab(this,'zh')">中文</button>
+    </div>
+    <p class="abstract-text abstract-en">This open-label trial randomized 185 patients with chronic kidney disease and iron deficiency anaemia, 90 not on dialysis and 95 dialysis-dependent, to oral liposomal iron with or without lactoferrin 100 mg twice daily for three months. Haemoglobin rose by 1.95 versus 1.33 g/dL in non-dialysis patients and 1.73 versus 1.11 g/dL in dialysis patients, with greater gains in iron indices.</p>
+    <p class="abstract-text abstract-zh">開放標籤試驗納入185名慢性腎臟病合併缺鐵性貧血病人（90名未洗腎、95名洗腎依賴），隨機給予口服微脂體鐵劑加或不加乳鐵蛋白100毫克每日兩次共3個月。未洗腎組血色素上升1.95對1.33 g/dL，洗腎組1.73對1.11 g/dL，鐵相關指標改善亦較佳，發炎指標有輕度改善但不一致。</p>
+  </div>
+  <a class="read-more" href="https://doi.org/10.2215/CJN.0000001204" target="_blank" rel="noopener">閱讀全文 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+</div>
+        <!-- END PRERENDER:ckd -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- History -->
+    <section class="history-section" id="history">
+      <div class="section-header scroll-reveal">
+        <div>
+          <p class="section-label">歷史紀錄</p>
+          <h2 class="section-title">近三期週報</h2>
+        </div>
+      </div>
+      <div class="history-tabs" id="history-tabs"></div>
+      <div id="history-content"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+        邱芳瑋醫師・醫學週報 &nbsp;|&nbsp; 資料來源：Yahoo健康、HEHO健康、聯合報、NEJM、Lancet<br>
+        內容僅供醫學資訊參考，不構成醫療建議。本頁由 Claude AI 自動整理生成。<br>
+        <a href="https://github.com/chiufw-max/aievolution" target="_blank" rel="noopener">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">Facebook 粉絲團</a>
+        &nbsp;·&nbsp;
+        <span id="footer-date">─</span>
+      </p>
+    </footer>
+
+  </main><!-- /main-content -->
+
+  <!-- ── Facebook Sidebar ── -->
+  <aside class="fb-sidebar">
+    <div class="fb-sidebar-header">
+      <h3>邱芳瑋醫師</h3>
+      <p>聽你說「腸」心事・粉絲團最新貼文</p>
+    </div>
+    <div class="fb-page-wrap" id="fb-page-wrap">
+      <!-- iframe：src 由 IntersectionObserver 在進入視口時才填入 (節省 LCP) -->
+      <iframe
+        id="fb-iframe"
+        title="邱芳瑋醫師 Facebook 粉絲團最新貼文"
+        data-src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61576486042172&tabs=timeline&width=340&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"
+        width="340" height="800"
+        loading="lazy"
+        style="border:none;overflow:hidden;border-radius:12px;display:block;"
+        scrolling="no" frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+      <!-- Fallback：iframe 無法載入時顯示 -->
+      <div id="fb-fallback" style="display:none;padding:2rem 1.5rem;text-align:center;color:#555;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="#1877F2" style="margin-bottom:1rem;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <p style="font-weight:700;font-size:1rem;margin-bottom:0.5rem;">邱芳瑋醫師</p>
+        <p style="font-size:0.82rem;margin-bottom:1.5rem;line-height:1.6;">全方胃．恢腸肝膽 · 聽你說「腸」心事<br>追蹤粉絲團，每週醫學新知不錯過</p>
+        <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener"
+          style="display:inline-block;background:#1877F2;color:white;padding:0.6rem 1.4rem;border-radius:8px;font-size:0.9rem;font-weight:600;text-decoration:none;">
+          前往粉絲團 →
+        </a>
+      </div>
+    </div>
+  </aside>
+
+</div><!-- /page-layout -->
+
+<script>
+// ─── Mobile menu ─────────────────────────────────────────────────
+function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('open'); }
+function closeMenu()  { document.getElementById('mobile-menu').classList.remove('open'); }
+document.addEventListener('click', function(e) {
+  var menu = document.getElementById('mobile-menu');
+  var btn = document.querySelector('.nav-hamburger');
+  if (menu && menu.classList.contains('open') && !menu.contains(e.target) && btn && !btn.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+// ─── Data ───────────────────────────────────────────────────────
+// Inline data (updated by Python script each week)
+const DATA = {
+  "weeks": [
+    {
+      "date": "2026-09-11",
+      "week_label": "2026 第37週",
+      "taiwan_news": [
+        {
+          "id": "tw-20260911-01",
+          "slot": "A",
+          "topic": "藥品短缺清單更新",
+          "pub_date": "2026-09-05",
+          "title": "食藥署缺藥清單再添12項 大腸癌化療藥、B肝免疫球蛋白入列",
+          "summary": "食藥署最新短缺清單新增12項「經評估有替代藥品」品項，公告日介於7/16至8/31，其中9項載有恢復時程。含大腸癌化療藥抗癌妥（irinotecan，預計2027年2月恢復）與B型肝炎免疫球蛋白。目前列管短缺共254項。民眾若用藥在清單上，應帶藥袋回診詢問醫師或藥師，切勿自行換藥或停藥。",
+          "url": "https://appi.news/articles/drug-shortage-2026-09-05/",
+          "source": "APPI News",
+          "category": "健康政策",
+          "tag": "健康政策"
+        },
+        {
+          "id": "tw-20260911-02",
+          "slot": "B",
+          "topic": "異膚本土疾病負擔研究",
+          "pub_date": "2026-09-07",
+          "title": "台大本土研究：中重度異位性皮膚炎每月自費吃掉六成薪水",
+          "summary": "台大醫院皮膚部主任朱家瑜發表台灣本土中重度異位性皮膚炎疾病負擔研究：28%病友每月皮膚治療自費超過2萬元，54%另花逾5千元於防蟎、空氣清淨機，合計月支出突破2.5萬元，相當於國人薪資中位數（3.98萬元）的63%。72%病友曾看過6位以上醫師，88%生活品質自評低於40分。",
+          "url": "https://cnews.com.tw/003260907a05/",
+          "source": "匯流新聞網 CNEWS",
+          "category": "藥物治療",
+          "tag": "藥物治療"
+        },
+        {
+          "id": "tw-20260911-03",
+          "slot": "C",
+          "topic": "腸病毒開學季疫情",
+          "pub_date": "2026-09-08",
+          "title": "疾管署：腸病毒疫情隨開學上升 單週門急診8475人次增17.7%",
+          "summary": "疾管署9月8日表示，第35週（8/30-9/5）腸病毒門急診就診8,475人次，較前一週7,199人次上升17.7%。近四週社區以克沙奇A6型為多，其次為D68型及A16型；今年累計7例重症（含1例死亡）。酒精對腸病毒效果有限，建議以500ppm含氯漂白水消毒幼兒常接觸物品，5歲以下為重症高危險群。",
+          "url": "https://www.cdc.gov.tw/Bulletin/Detail/DhYHJ_ADrxLmj217Q0dMtw?typeid=9",
+          "source": "衛生福利部疾病管制署",
+          "category": "健康政策",
+          "tag": "健康政策"
+        },
+        {
+          "id": "tw-20260911-04",
+          "slot": "D",
+          "topic": "中秋月餅烤肉熱量",
+          "pub_date": "2026-09-11",
+          "title": "中秋熱量陷阱！國健署：一個松子蓮蓉月餅等於2.5碗白飯",
+          "summary": "國健署9月11日提醒，180公克傳統松子蓮蓉月餅熱量約720大卡，相當於2.5碗白飯。署長沈靜芬建議掌握「巧吃點、均衡點、清新點」：月餅切小塊分食、搭配無糖茶；烤肉減少紅肉與加工食品、增加蔬菜。高溫烤肉易生異環胺，油脂滴落火焰則產生多環芳香烴，食材焦黑應去除後再食用。",
+          "url": "https://cnews.com.tw/003260911a02/",
+          "source": "匯流新聞網 CNEWS",
+          "category": "減重代謝",
+          "tag": "減重代謝"
+        },
+        {
+          "id": "tw-20260911-05",
+          "slot": "E",
+          "topic": "CKD早期警訊篩檢",
+          "pub_date": "2026-09-05",
+          "title": "台灣慢性腎病盛行率11.9% 逾九成不自知 記住「泡水高貧倦」",
+          "summary": "台灣腎臟醫學會指出慢性腎病盛行率約11.9%、推估200萬人，但超過九成患者不知罹病，因腎臟無痛覺神經、早期幾乎無症狀。腎臟病防治基金會提出警訊口訣「泡、水、高、貧、倦」。CKD依eGFR分五期，60、30、15為三條分界；高危族群建議每年一次eGFR加UACR雙指標檢測，30歲起善用健檢。",
+          "url": "https://appi.news/articles/ckd-early-warning-signs/",
+          "source": "APPI News",
+          "category": "減重代謝",
+          "tag": "減重代謝"
+        }
+      ],
+      "academic": {
+        "nejm": [
+          {
+            "id": "nejm-20260911-01",
+            "title": "Complete Revascularization Guided by Functional Coronary Angiography in STEMI",
+            "title_zh": "STEMI 以功能性冠狀動脈攝影指引完全血管重建（AIR-STEMI 試驗）",
+            "url": "https://doi.org/10.1056/NEJMoa2605373",
+            "journal": "NEJM",
+            "category": "心血管介入",
+            "abstract": "In 1823 patients with STEMI and multivessel disease, complete revascularization guided by functional coronary angiography was compared with conventional angiography guidance. At a median 17.9 months, primary events (death, MI, cerebrovascular accident, or ischemia-driven revascularization) occurred in 8.9% versus 13.7% (HR 0.62). Contrast-associated acute kidney injury or major bleeding also favored the physiology-guided group (4.6% vs 7.1%, HR 0.63).",
+            "abstract_zh": "1823名ST段上升心肌梗塞合併多血管病變病人隨機分為生理學指引或傳統攝影指引完全血管重建。中位追蹤17.9個月，主要終點（死亡、心肌梗塞、腦血管事件或缺血導致再介入）發生率8.9%對13.7%（HR 0.62）。顯影劑腎損傷或大出血也較低（4.6%對7.1%，HR 0.63），支持以功能性評估挑選非罪犯病灶。"
+          },
+          {
+            "id": "nejm-20260911-02",
+            "title": "Tozorakimab to Prevent COPD Exacerbations",
+            "title_zh": "Tozorakimab 預防慢性阻塞性肺病急性發作",
+            "url": "https://doi.org/10.1056/NEJMoa2606998",
+            "journal": "NEJM",
+            "category": "呼吸道疾病",
+            "abstract": "Two replicate phase 3 trials (OBERON, TITANIA) randomized adults with exacerbating COPD to subcutaneous tozorakimab, an anti-interleukin-33 antibody, 300 mg every 4 weeks or placebo for 52 weeks, without eosinophil entry criteria. Annualized moderate or severe exacerbations fell in the overall population (rate ratios 0.70 and 0.71) and among former smokers (0.71 and 0.66). Adverse event rates were comparable with placebo.",
+            "abstract_zh": "兩項平行第三期試驗（OBERON、TITANIA）將有急性發作史的COPD成人隨機分配皮下tozorakimab（抗IL-33單株抗體）300毫克每4週一次或安慰劑，共52週，且未設嗜異性白血球門檻。整體族群中重度急性發作年化率降低（rate ratio 0.70與0.71），戒菸族群亦降低（0.71與0.66），不良事件發生率與安慰劑相當。"
+          },
+          {
+            "id": "nejm-20260911-03",
+            "title": "Treatment Decisions in Multiple Myeloma",
+            "title_zh": "多發性骨髓瘤的治療決策",
+            "url": "https://doi.org/10.1056/NEJMra2605253",
+            "journal": "NEJM",
+            "category": "血液腫瘤",
+            "abstract": "This review offers a practical framework for multiple myeloma, now moving toward functional cure. Cytogenetic and genomic risk, functional fitness, and measurable residual disease individualize newly diagnosed therapy, where quadruplet induction is standard and the role of autologous transplantation is being reassessed. At relapse, sequencing of BCMA-directed CAR T cells, bispecific antibodies, and antibody-drug conjugates should weigh T-cell fitness and antigen escape.",
+            "abstract_zh": "本篇綜論提出多發性骨髓瘤的實用決策架構，該病已朝「功能性治癒」邁進。初診病人應以細胞遺傳學與基因體風險、功能體能狀態及可測量殘存疾病個人化治療，四藥induction已成標準，自體移植角色正重新評估。復發時CAR-T、雙特異性抗體與抗體藥物複合體的排序須考量T細胞活力與抗原逃脫。"
+          }
+        ],
+        "lancet": [
+          {
+            "id": "lancet-20260911-01",
+            "title": "Perioperative durvalumab plus FLOT for resectable gastric and gastro-oesophageal junction adenocarcinoma (MATTERHORN): final overall survival results",
+            "title_zh": "可手術胃癌與胃食道接合處腺癌術前後 durvalumab 併 FLOT（MATTERHORN）最終總存活期結果",
+            "url": "https://doi.org/10.1016/S0140-6736(26)01254-7",
+            "journal": "Lancet",
+            "category": "胃癌治療",
+            "abstract": "MATTERHORN randomized 948 adults with resectable stage II-IVa gastric or gastro-oesophageal junction adenocarcinoma across 147 centres in 20 countries to perioperative durvalumab plus FLOT chemotherapy or placebo plus FLOT. Overall survival improved significantly with durvalumab (hazard ratio 0.78, 95% CI 0.63-0.96; p=0.021). Treatment-related deaths occurred in 1% versus under 1%, establishing this regimen as a new standard option.",
+            "abstract_zh": "MATTERHORN在20國147中心納入948名可手術第II至IVa期胃癌或胃食道接合處腺癌病人，隨機分為術前後durvalumab併FLOT化療或安慰劑併FLOT。durvalumab組總存活期顯著改善（HR 0.78，95% CI 0.63-0.96，p=0.021），治療相關死亡為1%對不到1%。此組合成為可切除胃癌的新標準治療選項之一。"
+          },
+          {
+            "id": "lancet-20260911-02",
+            "title": "Induction and consolidation atezolizumab with stereotactic body radiation therapy versus radiation alone in high-risk, early-stage non-small-cell lung cancer (SWOG/NRG S1914)",
+            "title_zh": "高風險早期非小細胞肺癌：atezolizumab 併立體定位放射治療對單用放療（SWOG/NRG S1914）",
+            "url": "https://doi.org/10.1016/S0140-6736(26)01655-7",
+            "journal": "Lancet",
+            "category": "肺癌治療",
+            "abstract": "In 402 evaluable patients with medically inoperable T1-T3N0M0 non-small-cell lung cancer and recurrence risk factors, adding neoadjuvant, concurrent, and adjuvant atezolizumab to stereotactic body radiation therapy did not improve overall survival (hazard ratio 1.04). Two-year overall survival was 82% in both groups, while grade 3 or higher adverse events rose from 3% to 12%. Accrual closed early for futility.",
+            "abstract_zh": "402名無法手術的T1-T3N0M0非小細胞肺癌且具復發風險因子病人中，在立體定位放射治療前後加上atezolizumab並未改善總存活期（HR 1.04），兩組兩年存活率均為82%，但3級以上不良事件由3%升至12%，試驗於第一次期中分析因無效而提早停止收案。提醒早期肺癌加免疫治療仍缺證據。"
+          }
+        ],
+        "jama": [
+          {
+            "id": "jama-20260911-01",
+            "title": "Loberamisal for Acute Ischemic Stroke: The LAIS Randomized Clinical Trial",
+            "title_zh": "Loberamisal 治療急性缺血性腦中風：LAIS 隨機臨床試驗",
+            "url": "https://doi.org/10.1001/jama.2026.16557",
+            "journal": "JAMA",
+            "category": "腦中風",
+            "abstract": "This phase 3 trial at 32 Chinese hospitals randomized 997 adults with acute ischemic stroke (NIHSS 7-20) presenting within 48 hours to intravenous loberamisal 40 mg daily for 10 days or placebo. At 90 days, 69.7% versus 56.3% achieved a modified Rankin Scale score of 0 to 1 (relative risk 1.24; risk difference 13.3 percentage points). Adverse events were similar between groups.",
+            "abstract_zh": "中國32家醫院第三期試驗納入997名發病48小時內、NIHSS 7至20分的急性缺血性腦中風病人，隨機給予靜脈loberamisal 40毫克每日一次共10天或安慰劑。90天時達完全功能恢復（mRS 0-1分）者為69.7%對56.3%（相對風險1.24，絕對差13.3個百分點），兩組不良事件相當，仍待其他族群驗證。"
+          },
+          {
+            "id": "jama-20260911-02",
+            "title": "Osimertinib With or Without Chemotherapy in Advanced Non-Small Cell Lung Cancer With EGFR and Concurrent TP53 Mutations",
+            "title_zh": "EGFR 合併 TP53 突變晚期非小細胞肺癌：osimertinib 加或不加化療",
+            "url": "https://doi.org/10.1001/jama.2026.10599",
+            "journal": "JAMA",
+            "category": "肺癌治療",
+            "abstract": "This multicentre phase 3 trial randomized 294 treatment-naive patients with stage IV non-squamous non-small cell lung cancer harbouring both EGFR-sensitizing and TP53 mutations to osimertinib plus pemetrexed-carboplatin or osimertinib alone. Median progression-free survival was 34.0 versus 15.6 months (hazard ratio 0.44; p<0.001), consistent across subgroups including brain metastases. Grade 3 or higher toxicity was higher with combination therapy.",
+            "abstract_zh": "多中心第三期試驗納入294名未曾治療、第IV期非鱗狀非小細胞肺癌且同時帶EGFR致敏突變與TP53突變病人，隨機分為osimertinib併pemetrexed加carboplatin或單用osimertinib。中位無惡化存活期34.0對15.6個月（HR 0.44，p<0.001），各次族群包含腦轉移者一致；合併治療3級以上毒性較高。"
+          },
+          {
+            "id": "jama-20260911-03",
+            "title": "Gastric Residual Volume Assessment in Critically Ill Children: The GASTRIC-PICU Randomized Clinical Trial",
+            "title_zh": "重症兒童是否需常規測胃殘餘量：GASTRIC-PICU 隨機臨床試驗",
+            "url": "https://doi.org/10.1001/jama.2026.10639",
+            "journal": "JAMA",
+            "category": "重症營養",
+            "abstract": "This pragmatic noninferiority trial in 24 paediatric intensive care units randomized 4700 mechanically ventilated children starting enteral feeds to no routine gastric residual volume assessment or six-hourly assessment. Ventilator-free days and survival at 30 days were noninferior (median 25 days in both groups; adjusted odds ratio 0.95). Energy requirements met by 72 hours rose from 76.8% to 80.3%, favouring omission of routine checks.",
+            "abstract_zh": "24家兒科加護病房的實務型非劣效試驗，將4700名接受插管通氣並開始腸道餵食的兒童隨機分為不常規測胃殘餘量或每6小時測量。30天無呼吸器天數與存活為非劣效（兩組中位均25天，調整後OR 0.95）；72小時內達熱量需求比例由76.8%升至80.3%，支持取消常規測量以改善營養輸送。"
+          },
+          {
+            "id": "jama-20260911-04",
+            "title": "Influenza Vaccine Effectiveness and Safety for the 2026-2027 Respiratory Season",
+            "title_zh": "2026-2027 呼吸道季節流感疫苗效益與安全性系統回顧",
+            "url": "https://doi.org/10.1001/jama.2026.18126",
+            "journal": "JAMA",
+            "category": "疫苗與感染症",
+            "abstract": "This systematic review of 69 studies published August 2025 to June 2026 found influenza vaccines reduced influenza-related hospitalization (vaccine effectiveness 19% to 43%) and mortality (29% to 66%) in older adults. Effectiveness against laboratory-confirmed influenza-associated death in children aged 6 months to 17 years was 80%. A self-controlled case series of nearly 10 million people found no increase in serious adverse events.",
+            "abstract_zh": "系統回顧納入2025年8月至2026年6月發表的69篇研究，顯示流感疫苗可降低老年人流感相關住院（疫苗效益19%至43%）與死亡（29%至66%）。6個月至17歲兒少對實驗室確診流感相關死亡的疫苗效益達80%。近1000萬人自我對照病例系列未發現嚴重不良事件增加，包含與RSV或COVID疫苗併用。"
+          }
+        ],
+        "gastro": [
+          {
+            "id": "gastro-20260911-01",
+            "title": "Interventions for Increasing Colorectal Cancer Screening Uptake: A Systematic Review and Network Meta-Analysis",
+            "title_zh": "提高大腸癌篩檢參與率的介入措施：系統回顧與網絡統合分析",
+            "url": "https://doi.org/10.1053/j.gastro.2026.02.047",
+            "journal": "Gastroenterology",
+            "category": "大腸癌篩檢",
+            "abstract": "This network meta-analysis of 76 randomized trials compared eight strategies for increasing colorectal cancer screening uptake. Patient navigation (risk ratio 1.58) and mailed faecal immunochemical test outreach (1.36) significantly outperformed usual care, while choice-based and colonoscopy outreach did not. Mailed FIT was most effective where baseline uptake was below 30% (risk ratio 3.12); educational multimedia performed best in higher-uptake populations.",
+            "abstract_zh": "網絡統合分析納入76項隨機試驗，比較八種提高大腸癌篩檢參與率的策略。病人導航（RR 1.58）與郵寄糞便免疫化學檢查（FIT）外展（RR 1.36）顯著優於常規照護，選擇式與大腸鏡外展則無差異。基礎參與率低於30%者以郵寄FIT最有效（RR 3.12），參與率較高族群則以教育多媒體表現最佳。"
+          },
+          {
+            "id": "gastro-20260911-02",
+            "title": "Achalasia and Risk of Esophageal Squamous Cell Carcinoma and Adenocarcinoma in a Multinational Study",
+            "title_zh": "食道賁門失能症與食道鱗狀細胞癌、腺癌風險：多國研究",
+            "url": "https://doi.org/10.1053/j.gastro.2026.03.024",
+            "journal": "Gastroenterology",
+            "category": "食道疾病",
+            "abstract": "This population-based case-control study in five Nordic countries matched 35,604 esophageal cancer cases to 355,869 controls from 1987 to 2023. Achalasia was strongly associated with esophageal squamous cell carcinoma (odds ratio 9.46), rising to 16.33 after myotomy or dilation. The association with adenocarcinoma was moderate (3.05) but attenuated to 1.44 after adjustment for gastroesophageal reflux disease.",
+            "abstract_zh": "北歐五國族群性病例對照研究，1987至2023年將35,604名食道癌病例與355,869名對照配對。食道賁門失能症與食道鱗狀細胞癌風險強烈相關（OR 9.46），接受肌肉切開或擴張術者更高達16.33。與腺癌的關聯中等（OR 3.05），但校正胃食道逆流後降至1.44，顯示腺癌風險多由逆流解釋。"
+          },
+          {
+            "id": "gastro-20260911-03",
+            "title": "Short-Term Success, Long-Term Failure: Strain Turnover and Virulence Re-Emergence May Drive Relapse in Pouchitis",
+            "title_zh": "菌株輪替與毒力再現可能驅動儲袋炎復發",
+            "url": "https://doi.org/10.1053/j.gastro.2026.08.031",
+            "journal": "Gastroenterology",
+            "category": "發炎性腸道疾病",
+            "abstract": "Twenty-one patients with pouchitis after ileal pouch-anal anastomosis received two weeks of metronidazole plus ciprofloxacin or doxycycline, providing 130 stool samples over one year. Faecal calprotectin fell from 728 to 265 micrograms per gram and bacterial exotoxin genes declined, but both rebounded by six weeks. Antibiotic resistance gene abundance rose without new diversity, indicating expansion of pre-existing resistant strains.",
+            "abstract_zh": "21名接受迴腸儲袋肛門吻合術後儲袋炎病人，接受兩週metronidazole併ciprofloxacin或doxycycline，一年內提供130個糞便樣本。糞便鈣衛蛋白由728降至265微克／克，細菌外毒素基因亦下降，但兩者在治療停止6週後回升。抗生素抗藥基因豐度增加但多樣性未變，顯示原有抗藥菌株擴張，需更精準的菌相控制策略。"
+          },
+          {
+            "id": "gastro-20260911-04",
+            "title": "Protein Misfolding Enteropathy Predicts and Prognosticates Neurodegenerative Disease Years Before Symptom Onset",
+            "title_zh": "腸道蛋白質錯誤摺疊可在症狀出現前數年預測神經退化疾病",
+            "url": "https://doi.org/10.1053/j.gastro.2026.04.003",
+            "journal": "Gastroenterology",
+            "category": "腸道與神經退化",
+            "abstract": "Archival gastrointestinal biopsies from 196 individuals with unexplained symptoms and 13 to 15 years of follow-up were stained for misfolded TDP-43, tau, and alpha-synuclein. Protein misfolding enteropathy appeared in 60% and predicted non-Alzheimer dementia or alpha-synucleinopathies with over 80% sensitivity but low specificity. Two or more markers reduced survival dose-dependently, and changes preceded neurologic symptoms by 6.9 years.",
+            "abstract_zh": "196名不明原因腸胃症狀者的存檔腸道切片，追蹤13至15年，以染色檢測錯誤摺疊的TDP-43、tau與α-synuclein。60%有蛋白質錯誤摺疊腸病變，預測非阿茲海默型失智或α-synuclein病的敏感度超過80%但特異度偏低。帶兩種以上標記者存活隨劑量遞減，病理變化平均早於神經症狀6.9年出現。"
+          }
+        ],
+        "hepato": [
+          {
+            "id": "hepato-20260911-01",
+            "title": "Hepatocyte MLKL drives obesity-driven hepatocellular carcinoma progression via mitochondrial dysfunction independent of necroptosis in MASLD",
+            "title_zh": "肝細胞 MLKL 透過粒線體功能障礙（與壞死性凋亡無關）驅動肥胖相關 MASLD 肝癌進展",
+            "url": "https://doi.org/10.1097/HEP.0000000000001830",
+            "journal": "Hepatology",
+            "category": "脂肪肝與肝癌",
+            "abstract": "In a long-term western-diet model of MASLD-related hepatocellular carcinoma, hepatocyte-specific MLKL knockout mice developed fewer and smaller tumours with reduced proliferation and stemness, without changes in inflammation or fibrosis. MLKL acted independently of necroptosis by suppressing mitofusin 2 and impairing mitochondrial respiration. The MLKL inhibitor necrosulfonamide suppressed HepG2 xenograft growth, and high MLKL expression in human HCC correlated with poorer survival.",
+            "abstract_zh": "在長期西方飲食誘發的MASLD肝癌小鼠模式中，肝細胞特異性剔除MLKL的小鼠腫瘤數量較少、體積較小，增生與幹性降低，但發炎與纖維化不變。MLKL透過抑制mitofusin 2、損害粒線體呼吸促癌，與壞死性凋亡無關。MLKL抑制劑necrosulfonamide可抑制HepG2異種移植瘤生長，人類肝癌MLKL高表現者存活較差。"
+          },
+          {
+            "id": "hepato-20260911-02",
+            "title": "Hepatocyte hnRNPK preserves mitochondrial integrity to restrain liver injury and fibrosis",
+            "title_zh": "肝細胞 hnRNPK 維持粒線體完整性以抑制肝損傷與纖維化",
+            "url": "https://doi.org/10.1097/HEP.0000000000001836",
+            "journal": "Hepatology",
+            "category": "肝纖維化機轉",
+            "abstract": "Reduced hepatocyte hnRNPK was a conserved hallmark of liver fibrosis across MASH, alcohol-related liver disease, hepatitis B, and drug-induced injury in humans and mice. Hepatocyte-specific Hnrnpk deletion caused aberrant Opa1 splicing, L-OPA1 depletion, and severe mitochondrial fragmentation, activating stellate cells via the mtDNA-cGAS-STING pathway. Restoring the hnRNPK-Opa1 axis with AAV vectors or promoting mitochondrial fusion arrested and regressed established fibrosis in multiple mouse models.",
+            "abstract_zh": "無論MASH、酒精性肝病、B型肝炎或藥物性肝損傷，人類與小鼠肝纖維化都共同呈現肝細胞hnRNPK減少。肝細胞特異性剔除Hnrnpk導致Opa1剪接異常、L-OPA1耗竭與嚴重粒線體碎裂，經mtDNA-cGAS-STING路徑活化肝星狀細胞。以AAV回補hnRNPK-Opa1軸或促進粒線體融合，可在多種小鼠模式中阻止並逆轉既有纖維化。"
+          },
+          {
+            "id": "hepato-20260911-03",
+            "title": "With no lysine kinase 1 in hepatic stellate cells promotes mouse and human liver fibrosis through glycolytic triosephosphate isomerase 1",
+            "title_zh": "肝星狀細胞 WNK1 經由糖解酵素 TPI1 促進小鼠與人類肝纖維化",
+            "url": "https://doi.org/10.1097/HEP.0000000000001833",
+            "journal": "Hepatology",
+            "category": "肝纖維化機轉",
+            "abstract": "A phospho-kinase array identified WNK1 as a kinase activated by PDGF-B in primary human hepatic stellate cells. Chemical genetics revealed the glycolytic enzyme triosephosphate isomerase 1 as a direct WNK1 substrate within phase-separated condensates. WNK1 inhibition reduced stellate cell glycolysis, proliferation, and migration, attenuated fibrosis in carbon tetrachloride and diet-induced mouse models, and reduced fibrogenesis in human precision-cut liver slices.",
+            "abstract_zh": "研究以磷酸化激酶陣列在原代人類肝星狀細胞中發現WNK1是PDGF-B活化的新激酶，並以化學遺傳學證實糖解酵素TPI1是其直接受質，兩者在相分離凝聚體中交互作用。抑制WNK1可降低星狀細胞糖解、增生與遷移，在四氯化碳與飲食誘發小鼠模式中減輕纖維化，並在人類精密肝切片中降低纖維生成，提示WNK1-TPI1軸為潛在治療標靶。"
+          },
+          {
+            "id": "hepato-20260911-04",
+            "title": "Association between statin use and hepatic decompensation in patients with primary biliary cholangitis: A target trial emulation study",
+            "title_zh": "原發性膽道膽管炎病人使用statin與肝功能失償的關聯：目標試驗模擬研究",
+            "url": "https://doi.org/10.1097/HEP.0000000000001701",
+            "journal": "Hepatology",
+            "category": "膽道疾病",
+            "abstract": "Using electronic health records from Boston and Seoul, this sequential target trial emulation matched 443 statin users with primary biliary cholangitis to 886 non-users. Over a median 3.8 years, hepatic decompensation occurred in 5.4% versus 7.6% (hazard ratio 0.61), and major adverse liver outcomes were also reduced (hazard ratio 0.58). Results were consistent across both data sources and cirrhosis status.",
+            "abstract_zh": "研究運用波士頓與首爾兩家醫院電子病歷，以序列目標試驗模擬設計，將443名使用statin的原發性膽道膽管炎病人與886名未使用者配對。中位追蹤3.8年，肝功能失償發生率5.4%對7.6%（HR 0.61），主要不良肝臟結果亦降低（HR 0.58）。兩資料來源及有無肝硬化的分層結果方向一致，支持潛在保護效果。"
+          }
+        ],
+        "diabetes": [
+          {
+            "id": "diabetes-20260911-01",
+            "title": "Preserving beta cell function in children and adolescents with newly diagnosed stage 3 type 1 diabetes: per-protocol population analysis from the PROTECT randomised trial",
+            "title_zh": "新診斷第3期第1型糖尿病兒童青少年的β細胞功能保存：PROTECT 試驗依從治療族群分析",
+            "url": "https://doi.org/10.1007/s00125-026-06849-5",
+            "journal": "Diabetologia",
+            "category": "第1型糖尿病",
+            "abstract": "In the per-protocol population of 275 participants aged 8 to 17 with stage 3 type 1 diabetes, two 12-day courses of teplizumab preserved beta cell function versus placebo, with a least squares mean difference in stimulated C-peptide of 0.14 nmol/L at week 78. Teplizumab also reduced exogenous insulin dose and increased time in range, regardless of HLA subtype or baseline autoantibodies.",
+            "abstract_zh": "PROTECT試驗依從治療族群共275名8至17歲第3期第1型糖尿病患者，接受兩次12天療程teplizumab者在第78週刺激後C-peptide相較安慰劑高0.14 nmol/L。teplizumab組外源性胰島素劑量較低（差異-0.17 U/kg/天），血糖目標範圍時間增加6.17%，且不受HLA-DR3/DR4或基線自體抗體型別影響。"
+          },
+          {
+            "id": "diabetes-20260911-02",
+            "title": "Human versus analogue insulin for children and young adults with type 1 diabetes in low-resource settings (HumAn-1): a multicentre, open-label, randomised controlled trial",
+            "title_zh": "低資源地區第1型糖尿病兒童及青年使用人類胰島素或類似物（HumAn-1）隨機試驗",
+            "url": "https://doi.org/10.1016/S2213-8587(26)00097-5",
+            "journal": "Lancet Diabetes & Endocrinology",
+            "category": "胰島素治療",
+            "abstract": "HumAn-1 randomized 400 participants aged 7 to 25 with type 1 diabetes in Bangladesh and Tanzania to insulin glargine or continued isophane-based usual care. At six months, blinded continuous glucose monitoring showed no difference in time below 3 mmol/L (adjusted mean difference 0.22%) or time in target range (0.55%). Serious adverse events were uncommon in both groups.",
+            "abstract_zh": "HumAn-1在孟加拉與坦尚尼亞納入400名7至25歲第1型糖尿病患者，隨機分配insulin glargine或繼續以中效人類胰島素（isophane）為主的常規照護。6個月時以盲化連續血糖監測評估，低於3 mmol/L時間（調整後差異0.22%）與目標範圍時間（0.55%）均無差異，兩組嚴重不良事件均少見。"
+          },
+          {
+            "id": "diabetes-20260911-03",
+            "title": "Evaluating Improvement in Pain and Sensory Function When Using High-Frequency (10-kHz) Spinal Cord Stimulation in Individuals With Painful Diabetic Neuropathy: A Multicenter Randomized Controlled Trial (PDN-Sensory)",
+            "title_zh": "高頻（10-kHz）脊髓刺激改善疼痛性糖尿病神經病變的疼痛與感覺功能：PDN-Sensory 隨機試驗",
+            "url": "https://doi.org/10.2337/dc26-0758",
+            "journal": "Diabetes Care",
+            "category": "糖尿病神經病變",
+            "abstract": "PDN-Sensory randomized 91 participants with painful diabetic neuropathy to conventional medical management alone or with 10-kHz spinal cord stimulation. In a worst-case analysis, 27 of 34 stimulation participants achieved at least 50% pain relief versus 2 of 50 controls. Sensory improvement occurred in 55.2% versus 25.0%, and intraepidermal nerve fibre density rose by 0.58 fibres per millimetre versus declining slightly.",
+            "abstract_zh": "PDN-Sensory試驗將91名疼痛性糖尿病神經病變患者隨機分為單純藥物治療或加上10-kHz脊髓刺激。最差情況分析中，接受暫時性試驗的34人有27人達疼痛緩解50%以上，對照組僅50人中2人。感覺功能改善比例55.2%對25.0%，表皮內神經纖維密度增加0.58條／毫米，對照組則略降，提示可能具疾病修飾作用。"
+          }
+        ],
+        "ckd": [
+          {
+            "id": "ckd-20260911-01",
+            "title": "Executive Summary of the ASN Kidney Health Guidance on the Cardiovascular-Kidney-Metabolic Syndrome",
+            "title_zh": "美國腎臟醫學會心腎代謝症候群腎臟健康指引摘要",
+            "url": "https://doi.org/10.1681/ASN.0000001230",
+            "journal": "JASN",
+            "category": "心腎代謝症候群",
+            "abstract": "This ASN guidance positions kidney disease at the centre of cardiovascular-kidney-metabolic syndrome. It recommends integrating the PREVENT equation with kidney outcome predictors for routine risk assessment, with lifestyle modification underpinning care. Renin-angiotensin system inhibitors and SGLT2 inhibitors are foundational, while GLP-1-based therapies and non-steroidal mineralocorticoid receptor antagonists may be added according to individual risk, avoiding therapeutic inertia.",
+            "abstract_zh": "美國腎臟醫學會此份指引將腎臟疾病置於心腎代謝（CKM）症候群核心，建議routine風險評估整合PREVENT公式與腎臟結果預測工具，並以生活型態調整為基礎。RAS抑制劑與SGLT2抑制劑為基礎用藥，可依個人心血管與代謝風險加上GLP-1類藥物及非類固醇型礦物皮質素受體拮抗劑，並強調避免治療惰性。"
+          },
+          {
+            "id": "ckd-20260911-02",
+            "title": "Associations of Plant- and Animal-Sourced Ultra-Processed Foods and Incident CKD in the Cardiovascular Health Study",
+            "title_zh": "植物性與動物性超加工食品與新發慢性腎臟病的關聯：心血管健康研究",
+            "url": "https://doi.org/10.2215/CJN.0000001207",
+            "journal": "CJASN",
+            "category": "飲食與腎臟病",
+            "abstract": "Among 2661 adults aged 65 and older followed a median 6.8 years, the highest tertiles of total and animal-sourced ultra-processed food intake carried 26% and 37% higher risk of incident chronic kidney disease. Plant-sourced ultra-processed food showed a modest association per standard deviation. Higher minimally processed food intake was associated with 20% lower risk, with no associations for eGFR change.",
+            "abstract_zh": "2661名65歲以上成人中位追蹤6.8年，總超加工食品與動物來源超加工食品攝取最高三分位者，新發慢性腎臟病風險分別高出26%與37%。植物來源超加工食品每增加一個標準差風險略升（HR 1.07）。最低加工食品攝取較高者風險低20%，但與eGFR變化無關，提示植物食品的好處可能被過度加工削弱。"
+          },
+          {
+            "id": "ckd-20260911-03",
+            "title": "Randomized Controlled Trial Comparing Lactoferrin Plus Iron to Iron Alone for Iron Deficiency Anemia in CKD",
+            "title_zh": "乳鐵蛋白併鐵劑對單用鐵劑治療慢性腎臟病缺鐵性貧血的隨機對照試驗",
+            "url": "https://doi.org/10.2215/CJN.0000001204",
+            "journal": "CJASN",
+            "category": "腎性貧血",
+            "abstract": "This open-label trial randomized 185 patients with chronic kidney disease and iron deficiency anaemia, 90 not on dialysis and 95 dialysis-dependent, to oral liposomal iron with or without lactoferrin 100 mg twice daily for three months. Haemoglobin rose by 1.95 versus 1.33 g/dL in non-dialysis patients and 1.73 versus 1.11 g/dL in dialysis patients, with greater gains in iron indices.",
+            "abstract_zh": "開放標籤試驗納入185名慢性腎臟病合併缺鐵性貧血病人（90名未洗腎、95名洗腎依賴），隨機給予口服微脂體鐵劑加或不加乳鐵蛋白100毫克每日兩次共3個月。未洗腎組血色素上升1.95對1.33 g/dL，洗腎組1.73對1.11 g/dL，鐵相關指標改善亦較佳，發炎指標有輕度改善但不一致。"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "week_label": "2026 第36週",
+      "taiwan_news": [
+        {
+          "id": "tw-20260904-01",
+          "slot": "A",
+          "topic": "降血脂藥健保擴大給付",
+          "pub_date": "2026-09-01",
+          "title": "降血脂藥 9/1 擴大健保給付 依六級心血管風險設 LDL 門檻、105 萬人受惠",
+          "summary": "健保署依「2025台灣血脂管理臨床路徑共識」，自9月1日起擴增statin、ezetimibe及複方共57項藥品給付，依動脈硬化風險分六級訂定LDL-C起始值與目標，挹注22.8億元、估105萬人受惠；同批亦將罕見膽汁鬱積症止癢藥納保。",
+          "url": "https://www.storm.mg/lifestyle/11160787",
+          "source": "風傳媒",
+          "category": "藥物治療",
+          "tag": "藥物治療"
+        },
+        {
+          "id": "tw-20260904-02",
+          "slot": "B",
+          "topic": "胰臟癌RAS標靶本土試驗",
+          "pub_date": "2026-08-23",
+          "title": "胰臟癌新型 RAS 標靶藥物人體試驗 北榮 9 月起收案第四期病人",
+          "summary": "北榮胃腸肝膽科指出，新一代泛RAS標靶藥物讓晚期胰臟癌二線治療的生存期由約6個月延長到1年以上，美國FDA已進入審查。台灣5家醫學中心將展開人體試驗，北榮9月初加入，收案對象為剛診斷、尚未治療的第四期病人。",
+          "url": "https://health.ettoday.net/news/3224244",
+          "source": "ETtoday健康雲",
+          "category": "癌症",
+          "tag": "癌症"
+        },
+        {
+          "id": "tw-20260904-03",
+          "slot": "C",
+          "topic": "診所營養針C肝群聚",
+          "pub_date": "2026-09-02",
+          "title": "新北診所打營養針釀急性 C 肝群聚 11 例 疾管署回溯通知去年 7 月起注射民眾抽血",
+          "summary": "疾管署查核板橋一診所發現針頭重複取藥、未用安全針具、藥品與檢體同冰箱等多項缺失，累計11名急性C肝病例具注射暴露史，9人病毒序列相似度達99.7%以上。診所已勒令停業並罰30萬元；114年7月起曾在該診所打針者將獲通知至衛生所檢驗C肝、B肝、HIV與梅毒。",
+          "url": "https://www.cdc.gov.tw/Bulletin/Detail/oyHltiYvWT0gsGvRdEgTQg?typeid=9",
+          "source": "衛福部疾管署",
+          "category": "肝膽腸胃",
+          "tag": "肝膽腸胃"
+        },
+        {
+          "id": "tw-20260904-04",
+          "slot": "D",
+          "topic": "早餐組合血糖震盪",
+          "pub_date": "2026-09-04",
+          "title": "7 組早餐店常見組合讓血糖「坐雲霄飛車」 營養師：加顆蛋、飲料換無糖就差很多",
+          "summary": "營養師蕭瑋霖點名大冰奶配蛋餅、鐵板麵加紅茶、蘿蔔糕配米漿、厚片抹果醬、只喝果汁等組合幾乎全是精緻澱粉與糖，蛋白質近乎零，血糖飆升後暴跌會讓下一餐提早24分鐘餓。關鍵不是不能吃，而是別讓整份早餐只剩澱粉和糖。",
+          "url": "https://health.ettoday.net/news/3231558",
+          "source": "ETtoday健康雲",
+          "category": "減重代謝",
+          "tag": "減重代謝"
+        },
+        {
+          "id": "tw-20260904-05",
+          "slot": "E",
+          "topic": "健康幣制度上路",
+          "pub_date": "2026-09-01",
+          "title": "健康幣 10 月上路 癌篩、打疫苗換點數 未來可望折抵自費健檢",
+          "summary": "衛福部長石崇良說明，18歲以上持健保卡者（含外籍人士）完成癌症篩檢、疫苗接種等即可累積健康幣，超商1點抵1元，兩年內最高約1.3萬點且點數效期2年。除超商賣場外，藥局、健身房、醫院自費健檢與疫苗折抵都在洽談中，細節9月記者會公布。",
+          "url": "https://www.cna.com.tw/news/ahel/202609010165.aspx",
+          "source": "中央社",
+          "category": "健康政策",
+          "tag": "健康政策"
+        }
+      ],
+      "academic": {
+        "nejm": [
+          {
+            "id": "nejm-20260904-01",
+            "title": "Azacitidine-Venetoclax or Induction Chemotherapy for Acute Myeloid Leukemia",
+            "title_zh": "急性骨髓性白血病：Azacitidine 併用 Venetoclax vs. 傳統誘導化療",
+            "url": "https://doi.org/10.1056/NEJMoa2602804",
+            "journal": "NEJM",
+            "category": "血液腫瘤",
+            "abstract": "In this multicenter phase 2 PARADIGM trial, 172 previously untreated adults with AML eligible for induction chemotherapy were randomized to azacitidine plus venetoclax or induction chemotherapy. Median event-free survival was 14.5 vs 6.2 months (HR 0.57; P=0.002). Grade 3 or higher infection occurred in 28% vs 41%, and grade 3 or higher hemorrhage in 2% vs 12%.",
+            "abstract_zh": "PARADIGM 第二期隨機試驗納入172位適合接受誘導化療的新診斷急性骨髓性白血病成人。Azacitidine 併用 Venetoclax 組的中位無事件存活期為14.5個月，顯著優於傳統誘導化療的6.2個月（HR 0.57）。且第三級以上感染（28% vs 41%）與出血（2% vs 12%）皆較少，安全性更佳。"
+          },
+          {
+            "id": "nejm-20260904-02",
+            "title": "Catheter-Directed Thrombolysis in Intermediate-High-Risk Pulmonary Embolism",
+            "title_zh": "中高風險肺栓塞：導管導引溶栓治療的隨機試驗",
+            "url": "https://doi.org/10.1056/NEJMoa2608012",
+            "journal": "NEJM",
+            "category": "心血管急重症",
+            "abstract": "In the multicenter open-label PRAGUE-26 trial, 558 patients with intermediate-high-risk acute pulmonary embolism were randomized to catheter-directed thrombolysis with alteplase plus anticoagulation or anticoagulation alone. The 7-day composite of death, recurrent embolism, or cardiorespiratory decompensation occurred in 0.7% vs 6.8% (relative risk 0.10). Clinically relevant bleeding was similar (4.6% vs 5.0%).",
+            "abstract_zh": "PRAGUE-26 多中心試驗納入558位中高風險急性肺栓塞病人。相較單用抗凝血劑，導管導引 alteplase 溶栓合併抗凝顯著降低7天內死亡、再發栓塞或心肺功能崩潰的複合終點（0.7% vs 6.8%），主要來自心肺失代償減少，且臨床顯著出血比例相當（4.6% vs 5.0%）。"
+          },
+          {
+            "id": "nejm-20260904-03",
+            "title": "Daraxonrasib for Previously Treated RAS-Mutant Non-Small-Cell Lung Cancer",
+            "title_zh": "Daraxonrasib 治療曾接受治療的 RAS 突變非小細胞肺癌",
+            "url": "https://doi.org/10.1056/NEJMoa2504059",
+            "journal": "NEJM",
+            "category": "腫瘤標靶治療",
+            "abstract": "This phase 1-2 dose-escalation and expansion study evaluated daraxonrasib, an oral RAS(ON) multiselective tri-complex inhibitor, in 136 patients with previously treated advanced RAS-mutant NSCLC. Adverse events of grade 3 or higher occurred in 54%, most commonly pneumonia, diarrhea, rash and anemia. Objective response was seen in 31-37% of patients across dose levels.",
+            "abstract_zh": "這項第一/二期劑量爬升與擴展研究評估口服泛 RAS 抑制劑 daraxonrasib 於136位曾接受治療的晚期 RAS 突變非小細胞肺癌。300毫克以下劑量的第三級以上不良事件發生率為54%，以肺炎、腹瀉、皮疹與貧血較常見；客觀反應率則達31%至37%，顯示對此難治族群具抗腫瘤活性。"
+          }
+        ],
+        "lancet": [
+          {
+            "id": "lancet-20260904-01",
+            "title": "Safety and lipoprotein(a)-lowering effects of Kylo-11, a long-duration siRNA targeting lipoprotein(a): a phase 1 trial",
+            "title_zh": "長效型 siRNA 新藥 Kylo-11 降低脂蛋白(a)：首次人體第一期試驗",
+            "url": "https://doi.org/10.1016/S0140-6736(26)01484-4",
+            "journal": "Lancet",
+            "category": "心血管預防",
+            "abstract": "In this randomised, double-blind, placebo-controlled phase 1 trial, 70 adults with elevated lipoprotein(a) received a single subcutaneous dose of Kylo-11 or placebo across seven cohorts. There were no injection-site reactions, serious adverse events, drug-related adverse events, or deaths. At 48 weeks, median lipoprotein(a) reductions ranged from 53% at 9 mg to 97% at 600 mg.",
+            "abstract_zh": "這項隨機雙盲安慰劑對照第一期試驗納入70位脂蛋白(a)偏高的健康成人，單次皮下注射長效 siRNA 新藥 Kylo-11。研究未觀察到注射部位反應、嚴重不良事件或死亡；追蹤48週時，脂蛋白(a)中位降幅由9毫克組的53%到600毫克組的97%，顯示單次給藥即具長效降脂潛力。"
+          },
+          {
+            "id": "lancet-20260904-02",
+            "title": "Robotic-arm-assisted versus conventional total knee replacement (RACER-Knee): a randomised controlled trial",
+            "title_zh": "機械手臂輔助 vs. 傳統全膝關節置換（RACER-Knee 隨機試驗）",
+            "url": "https://doi.org/10.1016/S0140-6736(26)00986-4",
+            "journal": "Lancet",
+            "category": "骨科／醫療科技",
+            "abstract": "This pragmatic, participant- and assessor-masked superiority trial randomised 339 patients with advanced knee osteoarthritis at ten hospitals to robotic-arm-assisted or conventional total knee replacement. At 12 months the adjusted mean difference in Forgotten Joint Score was -1.5 (95% CI -7.5 to 4.5), favouring conventional surgery. Robotic surgery was more costly with similar safety profiles.",
+            "abstract_zh": "這項務實型雙盲隨機試驗於英國十家醫院納入339位嚴重膝關節炎病人，比較機械手臂輔助與傳統全膝關節置換。12個月時兩組 Forgotten Joint Score 校正後差異為-1.5分，未達臨床意義；機械手臂組費用較高、安全性相當，顯示常規使用機器人輔助未必帶來病人可感受的效益。"
+          }
+        ],
+        "jama": [
+          {
+            "id": "jama-20260904-01",
+            "title": "Addition of High-Dose Vitamin D3 to Standard Treatment in Metastatic Colorectal Cancer: The SOLARIS Randomized Clinical Trial",
+            "title_zh": "高劑量維生素D3加入標準治療於轉移性大腸直腸癌：SOLARIS 隨機試驗",
+            "url": "https://doi.org/10.1001/jama.2026.9350",
+            "journal": "JAMA",
+            "category": "消化道腫瘤",
+            "abstract": "In this double-blind phase 3 trial, 455 patients with previously untreated metastatic colorectal cancer received chemotherapy plus bevacizumab with either high-dose or standard-dose vitamin D3. Median progression-free survival was 11.8 vs 10.3 months (P=.25), with no significant differences in objective response rate or overall survival and no meaningful differences in grade 3 or higher adverse events.",
+            "abstract_zh": "SOLARIS 雙盲第三期試驗納入455位未曾治療的轉移性大腸直腸癌病人，於化療加 bevacizumab 之外隨機給予高劑量或標準劑量維生素D3。高劑量組中位無惡化存活期11.8個月 vs 10.3個月，未達統計意義，客觀反應率與總存活期亦無差異，顯示補充高劑量維生素D3並不能改善預後。"
+          },
+          {
+            "id": "jama-20260904-02",
+            "title": "Dapagliflozin and Acute Kidney Injury Following Cardiac Surgery: A Randomized Clinical Trial",
+            "title_zh": "心臟手術後急性腎損傷：術前給予 Dapagliflozin 的隨機試驗",
+            "url": "https://doi.org/10.1001/jama.2026.9268",
+            "journal": "JAMA",
+            "category": "腎臟／圍術期照護",
+            "abstract": "In this multicenter, double-blind, placebo-controlled trial in the Netherlands, 784 adults undergoing elective cardiac surgery were randomized to dapagliflozin 10 mg or placebo starting the day before surgery for four doses. Acute kidney injury within 7 postoperative days occurred in 28% vs 52% (relative risk 0.54; P<.001), with similar rates of atrial fibrillation and reoperation.",
+            "abstract_zh": "荷蘭多中心雙盲試驗納入784位接受擇期心臟手術的成人，自術前一天起給予四劑 dapagliflozin 10毫克或安慰劑。術後7天內急性腎損傷發生率由52%降至28%（相對風險0.54），心房顫動與再手術比例相當，顯示短期使用 SGLT2 抑制劑可能有效預防術後腎損傷。"
+          },
+          {
+            "id": "jama-20260904-03",
+            "title": "LDL Cholesterol Lowering With Evolocumab Before PCI for Acute Myocardial Infarction: The AMUNDSEN Randomized Clinical Trial",
+            "title_zh": "急性心肌梗塞介入前給予 Evolocumab 降血脂：AMUNDSEN 隨機試驗",
+            "url": "https://doi.org/10.1001/jama.2026.17302",
+            "journal": "JAMA",
+            "category": "心血管",
+            "abstract": "This international phase 4 trial randomized 2161 patients with high-risk acute myocardial infarction undergoing PCI to first-line evolocumab plus standard care or standard care alone. The LDL-C target was achieved in 82% vs 40% at 12 months. However, death or unplanned cardiovascular hospitalization occurred in 14.6% vs 15.4%, showing no clinical benefit within the first year.",
+            "abstract_zh": "AMUNDSEN 國際第四期試驗納入2161位接受心導管介入的高風險急性心肌梗塞病人，隨機於術前即開始使用 evolocumab 或僅標準治療。12個月時達到 LDL-C 目標者為82% vs 40%，但死亡或非計畫性心血管住院為14.6% vs 15.4%，第一年並未觀察到臨床效益。"
+          },
+          {
+            "id": "jama-20260904-04",
+            "title": "COVID-19 Vaccine Effectiveness and Safety for the 2026-2027 Respiratory Season",
+            "title_zh": "2026–2027 呼吸道季節 COVID-19 疫苗效力與安全性系統性回顧",
+            "url": "https://doi.org/10.1001/jama.2026.18191",
+            "journal": "JAMA",
+            "category": "感染症／公共衛生",
+            "abstract": "This systematic review screened 11,829 references and included 155 publications on US-licensed COVID-19 vaccines. Updated vaccines reduced hospitalization risk in older adults (VE 53.0%) and adults aged 18-64 years (VE 54.0%). Maternal vaccination reduced infant hospital contacts, and pediatric vaccination reduced emergency department visits. No new safety signals were identified.",
+            "abstract_zh": "這項系統性回顧篩選11,829篇文獻、納入155篇研究，評估美國核准 COVID-19 疫苗。更新版疫苗可降低65歲以上（VE 53%）與18–64歲成人（VE 54%）住院風險；孕期接種可減少嬰兒住院、兒童接種可減少急診就診，且未發現新的安全性警訊。"
+          }
+        ],
+        "gastro": [
+          {
+            "id": "gastro-20260904-01",
+            "title": "Impact of Family History on Colorectal Cancer Risk in Inflammatory Bowel Disease and in Matched General Population Comparators",
+            "title_zh": "發炎性腸道疾病病人的大腸癌家族史風險：全國性配對世代研究",
+            "url": "https://doi.org/10.1053/j.gastro.2026.08.029",
+            "journal": "Gastroenterology",
+            "category": "大腸癌／IBD",
+            "abstract": "This nationwide register-based cohort study followed 124,387 patients with inflammatory bowel disease and 1,213,641 matched comparators from 1996 to 2023. Colorectal cancer incidence was 1.17 vs 0.88 per 1000 person-years. Having two or more affected first-degree relatives conferred the greatest absolute risk increase (2.69 additional cases per 1000 person-years), whereas early-onset family history contributed modestly.",
+            "abstract_zh": "這項全國登記世代研究追蹤124,387位發炎性腸道疾病病人與121萬名配對對照，長達中位11年。IBD 病人大腸癌發生率為每千人年1.17，高於對照的0.88。有兩位以上一等親罹癌者絕對風險增加最多，而早發性家族史影響相對輕微，作者建議監測策略應更重視多位親屬罹癌的族群。"
+          },
+          {
+            "id": "gastro-20260904-02",
+            "title": "Individualized targeted exclusion diet based on confocal laser endomicroscopy does not improve irritable bowel syndrome symptoms",
+            "title_zh": "以共軛焦雷射內視鏡指引的個人化排除飲食無法改善腸躁症",
+            "url": "https://doi.org/10.1053/j.gastro.2026.08.026",
+            "journal": "Gastroenterology",
+            "category": "腸躁症／飲食",
+            "abstract": "In this double-blind randomized crossover trial, patients with irritable bowel syndrome underwent confocal laser endomicroscopy and then excluded foods that did (real diet) or did not (sham diet) provoke mucosal changes, four weeks each. Response rates did not differ (42% vs 36%). Altered mucosa was also seen in 100% of healthy volunteers, challenging the clinical use of this technique.",
+            "abstract_zh": "這項雙盲隨機交叉試驗讓腸躁症病人接受共軛焦雷射內視鏡，再依檢查結果排除「有反應」或「無反應」食物各四週。兩組臨床反應率分別為42%與36%，並無差異；且100%健康志願者也出現黏膜變化，顯示此技術辨識致敏食物的敏感度與特異度都不足，不宜用於臨床。"
+          },
+          {
+            "id": "gastro-20260904-03",
+            "title": "Recommendations for the Evaluation and Management of Inflammatory Bowel Disease With Irritable Bowel Syndrome-Like Symptoms: A Joint Rome Foundation and IOIBD Consensus",
+            "title_zh": "IBD 合併腸躁症樣症狀的評估與治療：Rome Foundation 與 IOIBD 共識建議",
+            "url": "https://doi.org/10.1053/j.gastro.2026.04.008",
+            "journal": "Gastroenterology",
+            "category": "IBD 治療共識",
+            "abstract": "A multidisciplinary international panel used a modified RAND/UCLA Appropriateness Method to develop consensus on inflammatory bowel disease with IBS-like symptoms. Of 105 statements scored, 86 were rated appropriate. Diagnosis should combine Rome clinical criteria with objective exclusion of inflammation. Recommended therapies include psyllium, short-term low-FODMAP diet, targeted drugs, and brain-gut behavioral therapies.",
+            "abstract_zh": "國際多專科小組以改良式 RAND/UCLA 方法制定「IBD 合併腸躁症樣症狀」共識，105條陳述中86條獲認可。診斷應結合 Rome 標準與客觀排除發炎，避免不必要地升階 IBD 藥物；建議治療包含洋車前子（無狹窄者）、短期低 FODMAP 飲食、標靶藥物與腦腸行為治療。"
+          },
+          {
+            "id": "gastro-20260904-04",
+            "title": "Management of Obesity: Review of Adjunctive Therapies and Clinical Management Pearls",
+            "title_zh": "肥胖治療全解析：輔助療法與臨床實務要點回顧",
+            "url": "https://doi.org/10.1053/j.gastro.2026.08.017",
+            "journal": "Gastroenterology",
+            "category": "肥胖／代謝",
+            "abstract": "This review outlines current and emerging obesity treatments, noting that lifestyle therapy alone achieves only modest weight loss while new-generation anti-obesity medications, endoscopic bariatric and metabolic therapies, and bariatric surgery are highly effective. Barriers include cost, insufficient insurance coverage, and limited numbers of trained providers. Gastroenterologists are well positioned to fill this gap since the most effective therapies are gut-directed.",
+            "abstract_zh": "這篇回顧整理現行與未來的肥胖治療。單靠生活型態調整減重幅度有限，新一代減重藥物、內視鏡減重代謝療法與代謝手術效果顯著，但受限於費用、保險給付與受訓醫師不足。作者指出最有效的療法多針對腸道或腸道荷爾蒙，胃腸科醫師正處於填補此缺口的關鍵位置。"
+          }
+        ],
+        "hepato": [
+          {
+            "id": "hepato-20260904-01",
+            "title": "Clinical utility of a 30% reduction in VCTE-derived liver stiffness measurement for identifying histologic improvement in MASH",
+            "title_zh": "肝纖維化掃描下降30%能否代表 MASH 組織學改善？",
+            "url": "https://doi.org/10.1097/HEP.0000000000001856",
+            "journal": "Hepatology",
+            "category": "MASH／非侵入性評估",
+            "abstract": "This prospective study included 160 adults with biopsy-proven MASH and stage 2-3 fibrosis from a phase 2b trial of pegozafermin, with paired VCTE and liver biopsy. The AUC of a 30% or greater relative decline in liver stiffness for detecting fibrosis regression was 0.68, with an adjusted odds ratio of 4.23. A validation cohort yielded an AUC of 0.62.",
+            "abstract_zh": "此前瞻研究納入160位經切片證實、纖維化第2至3期的 MASH 病人，比對治療前後的震動控制暫態彈性造影與肝切片。肝硬度下降達30%以上偵測纖維化改善的 AUC 為0.68（校正後勝算比4.23），驗證世代僅0.62，顯示此指標準確度中等，仍需更好的療效生物標記。"
+          },
+          {
+            "id": "hepato-20260904-02",
+            "title": "Beyond cirrhosis: Major adverse liver outcomes across homozygous and heterozygous Alpha-1 antitrypsin deficiency associated liver disease",
+            "title_zh": "甲型抗胰蛋白酶缺乏症的肝臟不良結局：同型與異型合子皆有風險",
+            "url": "https://doi.org/10.1097/HEP.0000000000001854",
+            "journal": "Hepatology",
+            "category": "遺傳性肝病",
+            "abstract": "This retrospective cohort of 22,537 genotyped veterans with 352,612 person-years of follow-up found that major adverse liver outcome risk increased sequentially with Z-allele burden: Pi*MZ (aHR 1.25), Pi*SZ (aHR 1.51), and Pi*ZZ (aHR 1.80) versus Pi*MM. Pi*ZZ was associated with increased risk of decompensation, HCC, transplantation, and liver-related death.",
+            "abstract_zh": "這項回溯世代分析22,537位完成基因型檢測的退伍軍人、追蹤中位15.9年。重大肝臟不良結局風險隨 Z 對偶基因負荷遞增：Pi*MZ 為1.25倍、Pi*SZ 1.51倍、Pi*ZZ 1.80倍。Pi*ZZ 者失代償、肝癌、肝移植與肝病死亡風險皆上升，提示帶原者也需及早診斷與長期追蹤。"
+          },
+          {
+            "id": "hepato-20260904-03",
+            "title": "Drug-Induced Liver Injury (DILI) in clinical trials: Views and practical updates from DILI specialists at FDA",
+            "title_zh": "臨床試驗中的藥物性肝損傷：FDA 專家的實務觀點與更新",
+            "url": "https://doi.org/10.1097/HEP.0000000000001858",
+            "journal": "Hepatology",
+            "category": "藥物性肝損傷",
+            "abstract": "Drug-induced liver injury remains a major challenge in drug development, and just one or two severe cases in a trial can raise approvability concerns. Changing development patterns, including the rise of biologics, smaller underpowered rare-disease trials, and growing interest in drugs for liver disease, challenge current FDA paradigms. The authors highlight eight key topics warranting review and discussion.",
+            "abstract_zh": "藥物性肝損傷仍是新藥開發的重大挑戰，試驗中僅一兩例嚴重肝毒性即可能影響核准。生物製劑興起、罕病小型試驗增加、以及針對肝病本身的新藥增多，都衝擊現行風險評估架構。FDA 專家提出八項關鍵議題，呼籲業界、學界與監管單位共同檢討。"
+          },
+          {
+            "id": "hepato-20260904-04",
+            "title": "Genetic regulation of CPEB3-mediated alternative polyadenylation associated with survival of patients with hepatocellular carcinoma",
+            "title_zh": "CPEB3 調控的替代性多聚腺苷酸化與肝癌存活相關",
+            "url": "https://doi.org/10.1097/HEP.0000000000001859",
+            "journal": "Hepatology",
+            "category": "肝癌／轉譯醫學",
+            "abstract": "Using genotype and alternative polyadenylation profiling in 848 Chinese and 369 TCGA liver cancer patients, this study identified 32,034 significant apaQTLs and prioritized CPEB3 as a key regulator. Low CPEB3 expression correlated with poor survival and promoted proliferation and invasion. The variant rs2037547 in GSK3B, mediated by CPEB3, was associated with poor survival (pooled HR 1.29).",
+            "abstract_zh": "研究團隊整合848位華人與369位 TCGA 肝癌病人的基因型與替代性多聚腺苷酸化資料，找出32,034個顯著 apaQTL，並鎖定 CPEB3 為關鍵調控因子。CPEB3 表現偏低與存活不佳相關；經 CPEB3 調控的 GSK3B 變異 rs2037547 在兩世代皆與較差預後相關（合併 HR 1.29），可望作為預後分層與治療標靶。"
+          }
+        ],
+        "diabetes": [
+          {
+            "id": "diabetes-20260904-01",
+            "title": "Intermittent fasting to treat diabetes: time to update clinical practice guidelines",
+            "title_zh": "間歇性斷食治療糖尿病：是時候更新臨床指引了",
+            "url": "https://doi.org/10.1016/S2213-8587(26)00119-1",
+            "journal": "Lancet Diabetes & Endocrinology",
+            "category": "生活型態治療",
+            "abstract": "Despite more than 225 clinical trials, intermittent fasting has not been recommended in ADA or IDF guidelines. In adults with type 2 diabetes, time-restricted eating, the 5:2 diet, and fasting-mimicking diets reduce HbA1c by typically 0.3-1.2%, along with fasting glucose and body weight, and are as effective as calorie restriction without increasing hypoglycemia when medications are adjusted.",
+            "abstract_zh": "雖已累積超過225項臨床試驗，間歇性斷食仍未納入 ADA 或 IDF 指引。作者綜整證據指出，限時進食、5:2 飲食與模擬斷食飲食可使第二型糖尿病成人的糖化血色素下降約0.3至1.2%，並改善空腹血糖與體重；效果與熱量限制相當，且在適當調整藥物下不會增加低血糖風險。"
+          },
+          {
+            "id": "diabetes-20260904-02",
+            "title": "Effects of the DASH4D Diet on Biomarkers of Glycemia in Adults With Type 2 Diabetes",
+            "title_zh": "DASH4D 飲食改善第二型糖尿病血糖指標：隨機試驗次級分析",
+            "url": "https://doi.org/10.2337/dc26-1062",
+            "journal": "Diabetes Care",
+            "category": "飲食介入",
+            "abstract": "In this controlled feeding trial, 101 adults with type 2 diabetes were fed four diets in random order over 5-week periods. Compared with a typical American comparison diet, the DASH4D diet significantly reduced fructosamine (-5.6 umol/L), fasting glucose (-4.5 mg/dL), and HbA1c (-0.09 percentage points), supporting its use for glycemic management.",
+            "abstract_zh": "這項控制餵食試驗讓101位第二型糖尿病成人依隨機順序各接受四種飲食、每期五週。相較典型美式飲食，專為糖尿病調整的 DASH4D 飲食顯著降低果糖胺（-5.6 μmol/L）、空腹血糖（-4.5 mg/dL）與糖化血色素（-0.09個百分點），支持將其納入血糖管理建議。"
+          },
+          {
+            "id": "diabetes-20260904-03",
+            "title": "Metabolic and macrovascular outcomes following simultaneous pancreas-kidney transplantation and kidney transplantation alone in type 1 diabetes",
+            "title_zh": "第一型糖尿病：胰腎同時移植 vs. 單獨腎臟移植的代謝與大血管結局",
+            "url": "https://doi.org/10.1007/s00125-026-06843-x",
+            "journal": "Diabetologia",
+            "category": "糖尿病併發症",
+            "abstract": "This systematic review and meta-analysis of 15 studies (564 simultaneous pancreas-kidney and 419 kidney-alone recipients) found lower post-transplant total cholesterol, triglycerides, LDL, HbA1c, and creatinine after simultaneous pancreas-kidney transplantation. However, there was no difference in post-transplant frequency of coronary, cerebrovascular, or peripheral vascular disease between groups.",
+            "abstract_zh": "這項系統性回顧與統合分析納入15項研究（胰腎同時移植564人、單獨腎移植419人）。胰腎同時移植者術後總膽固醇、三酸甘油酯、低密度脂蛋白、糖化血色素與肌酸酐皆較低，代謝表現明顯較佳；但冠狀動脈、腦血管與周邊血管疾病發生率兩組無差異，其中周邊血管疾病負擔最重。"
+          }
+        ],
+        "ckd": [
+          {
+            "id": "ckd-20260904-01",
+            "title": "ASN Kidney Health Guidance on the Cardiovascular-Kidney-Metabolic Syndrome",
+            "title_zh": "美國腎臟醫學會心腎代謝症候群（CKM）臨床指引",
+            "url": "https://doi.org/10.1681/ASN.0000001231",
+            "journal": "JASN",
+            "category": "CKM 症候群",
+            "abstract": "This American Society of Nephrology Kidney Health Guidance provides practical advice on screening, risk stratification, and pharmacologic management across the cardiovascular-kidney-metabolic spectrum. It emphasizes longitudinal assessment of eGFR and albuminuria, integration of PREVENT and Kidney Failure Risk Equation models, and evidence supporting SGLT2 inhibitors, GLP-1-based therapies, and nonsteroidal mineralocorticoid receptor antagonists.",
+            "abstract_zh": "美國腎臟醫學會發布心腎代謝（CKM）症候群臨床指引，強調腎病族群心血管風險顯著偏高。建議以 eGFR 與白蛋白尿長期追蹤為風險基礎，結合 PREVENT 與腎衰竭風險方程式辨識高危病人，並整合 SGLT2 抑制劑、GLP-1 類藥物與非固醇類礦皮質素受體拮抗劑等具心腎雙重效益的治療。"
+          },
+          {
+            "id": "ckd-20260904-02",
+            "title": "Effects and Safety of Henagliflozin on Cardiac Structure in Dialysis Patients with Heart Failure with Preserved Ejection Fraction",
+            "title_zh": "透析合併 HFpEF 病人使用 SGLT2 抑制劑 Henagliflozin 的心臟結構效益",
+            "url": "https://doi.org/10.2215/CJN.0000001201",
+            "journal": "CJASN",
+            "category": "透析／心衰竭",
+            "abstract": "In this multicenter, randomized, double-blind, placebo-controlled trial, 112 dialysis patients with heart failure with preserved ejection fraction received henagliflozin or placebo for 24 weeks. Left ventricular mass index decreased more with henagliflozin, with a between-group difference of -5.27 g/m2 (P=0.03). Secondary outcomes did not differ and adverse event rates were similar (36% vs 34%).",
+            "abstract_zh": "這項多中心隨機雙盲試驗納入112位合併左心室射出分率保留型心衰竭的透析病人，隨機接受 henagliflozin 或安慰劑24週。SGLT2 抑制劑組左心室質量指數降幅較大（組間差異-5.27 g/m²），次要指標無差異，不良事件比例相當（36% vs 34%），顯示於透析族群使用具耐受性。"
+          },
+          {
+            "id": "ckd-20260904-03",
+            "title": "Predictive Value of Urine Tubular Biomarkers on Kidney Outcomes: Observations from EMPA-KIDNEY",
+            "title_zh": "尿液腎小管生物標記能否提升腎病預後預測？EMPA-KIDNEY 分析",
+            "url": "https://doi.org/10.2215/CJN.0000001203",
+            "journal": "CJASN",
+            "category": "CKD 進展預測",
+            "abstract": "Among 5100 EMPA-KIDNEY participants followed for a median 3.5 years, nine urine tubular biomarkers were measured. The Kidney Failure Risk Equation showed excellent discrimination for treated kidney failure (C-index 0.858). Adding MCP-1, KIM-1, and EGF further improved prediction of kidney failure (+0.014) and kidney disease progression (+0.038), with little added value from the remaining biomarkers.",
+            "abstract_zh": "研究分析 EMPA-KIDNEY 試驗中5100位慢性腎臟病受試者、追蹤中位3.5年，檢測九項尿液腎小管生物標記。腎衰竭風險方程式對需治療腎衰竭的鑑別力已相當優異（C-index 0.858）；加入 MCP-1、KIM-1 與 EGF 三項可小幅提升預測（腎病進展 +0.038），其餘標記助益有限。"
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-08-28",
+      "week_label": "2026 第35週",
+      "taiwan_news": [
+        {
+          "title": "健保8月新制上路　8項藥品擴大給付、肺癌與白血病患受惠",
+          "summary": "健保署自8月起擴大8項藥品給付，包含治療EGFR基因突變非小細胞肺癌的標靶藥aumolertinib、急性骨髓性白血病gilteritinib移植後維持治療，以及兒少近視控制用藥，估計逾萬名病友受惠。",
+          "url": "https://health.ltn.com.tw/article/breakingnews/5523897",
+          "source": "自由健康網",
+          "category": "藥物治療",
+          "id": "tw-20260828-01",
+          "tag": "藥物治療"
+        },
+        {
+          "title": "健保收載癌症新藥及擴增支付標準5項　挹注藥費約16億元",
+          "summary": "健保署通過1項癌症新藥及3項癌症藥品擴增給付規定，新增dostarlimab併用化療用於特定晚期或復發性子宮內膜癌，可降低疾病惡化風險並提高存活率，共挹注藥費約16億元，約3,085位癌友受惠。",
+          "url": "https://www.nhi.gov.tw/ch/cp-15423-58ae5-3255-1.html",
+          "source": "中央健康保險署",
+          "category": "癌症",
+          "id": "tw-20260828-02",
+          "tag": "癌症"
+        },
+        {
+          "title": "新國民病脂肪肝　治療與減重須並行",
+          "summary": "台灣今年正式核准GLP-1類藥物用於代謝功能障礙相關脂肪肝（MASLD/MASH）。醫師指出，部分患者在體重明顯下降前，脂肪肝與心血管指標即已改善，顯示藥物具獨立作用機轉，仍須搭配3至6個月飲食與生活型態調整以降低復胖風險。",
+          "url": "https://udn.com/news/story/7266/9441963",
+          "source": "聯合新聞網",
+          "category": "減重代謝",
+          "id": "tw-20260828-03",
+          "tag": "減重代謝"
+        },
+        {
+          "title": "健康台灣擴展腸癌防護網　篩檢年齡下修至45歲",
+          "summary": "自2026年起，國健署大腸癌糞便潛血篩檢對象由50至74歲擴大至45至74歲，並納入40至44歲具家族病史者。研究顯示定期篩檢可降低34%晚期大腸癌發生率與40%死亡率。",
+          "url": "https://www.mohw.gov.tw/cp-16-81256-1.html",
+          "source": "衛生福利部",
+          "category": "健康政策",
+          "id": "tw-20260828-04",
+          "tag": "健康政策"
+        },
+        {
+          "title": "8月關愛父親健康月　定期大腸癌篩檢不可少",
+          "summary": "大腸癌長年位居台灣癌症發生率前段班，早期多無明顯症狀。醫界呼籲符合資格民眾善用公費糞便潛血檢查，結果陽性務必接受大腸鏡確診；若能早期發現並妥善治療，存活率可高達九成。",
+          "url": "https://n.yam.com/Article/20260727261592",
+          "source": "蕃新聞",
+          "category": "癌症",
+          "id": "tw-20260828-05",
+          "tag": "癌症"
+        }
+      ],
+      "academic": {
+        "nejm": [
+          {
+            "id": "nejm-20260828-01",
+            "title": "Finerenone in Persons with Chronic Kidney Disease without Diabetes (FIND-CKD)",
+            "title_zh": "Finerenone 用於非糖尿病慢性腎臟病患者（FIND-CKD 試驗）",
+            "abstract": "In this phase 3 trial, 1584 adults without diabetes who had CKD (eGFR 25 to <90) and albuminuria on a renin-angiotensin system inhibitor were randomized to finerenone or placebo. The mean annual eGFR change to month 32 was -3.3 with finerenone versus -4.0 ml/min/1.73 m2 with placebo (difference 0.7; P<0.001). The composite kidney or cardiovascular outcome was also lower with finerenone (HR 0.77). Hyperkalemia was more frequent with finerenone (17.0% vs 13.3%).",
+            "abstract_zh": "1584名無糖尿病、合併蛋白尿的慢性腎臟病成人隨機接受finerenone或安慰劑。32個月時腎絲球過濾率年下降幅度為-3.3對-4.0（P<0.001），腎臟／心血管複合事件風險亦降低23%。高血鉀發生率17.0%對13.3%。此為非糖尿病CKD首見的非類固醇型礦物皮質素受體拮抗劑陽性結果。",
+            "url": "https://doi.org/10.1056/NEJMoa2604625",
+            "journal": "NEJM",
+            "category": "腎臟/代謝"
+          },
+          {
+            "id": "nejm-20260828-02",
+            "title": "Perioperative Apalutamide in High-Risk Localized Prostate Cancer (PROTEUS)",
+            "title_zh": "圍手術期 Apalutamide 用於高風險局限性攝護腺癌（PROTEUS 試驗）",
+            "abstract": "In this phase 3 double-blind trial, 2109 patients with high-risk localized or locally advanced prostate cancer received androgen-deprivation therapy plus apalutamide or placebo for 6 cycles before and after radical prostatectomy. Pathological complete response or minimal residual disease occurred in 8.9% versus 1.0% (odds ratio 10.17), and 5-year metastasis-free survival was 78.2% versus 73.5% (HR 0.80; P=0.02). Grade 3-4 adverse events were more common with apalutamide (39.6% vs 31.0%).",
+            "abstract_zh": "2109名高風險局限性攝護腺癌患者於根治性攝護腺切除前後接受雄性素剝奪加apalutamide或安慰劑各6週期。病理完全緩解或極少殘存病灶率8.9%對1.0%，五年無遠端轉移存活率78.2%對73.5%（HR 0.80）。第3-4級不良事件較多，主要為皮疹。",
+            "url": "https://doi.org/10.1056/NEJMoa2603878",
+            "journal": "NEJM",
+            "category": "泌尿腫瘤"
+          },
+          {
+            "id": "nejm-20260828-03",
+            "title": "Selpercatinib in Early-Stage RET Fusion-Positive Non-Small-Cell Lung Cancer (LIBRETTO-432)",
+            "title_zh": "Selpercatinib 用於早期 RET 融合基因陽性非小細胞肺癌（LIBRETTO-432）",
+            "abstract": "In this phase 3 double-blind trial, 151 patients with RET fusion-positive NSCLC who had completed definitive therapy were randomized to adjuvant selpercatinib or placebo for up to 3 years. Among 109 patients with stage II-IIIA disease, 2-year event-free survival was 92% with selpercatinib versus 61% with placebo (HR 0.17; P<0.001). Elevated aminotransferases were the most common adverse events (grade 3 or higher in 17-19%).",
+            "abstract_zh": "151名RET融合基因陽性、已完成根治性治療的非小細胞肺癌患者隨機接受輔助性selpercatinib或安慰劑最長3年。第II-IIIA期患者兩年無事件存活率92%對61%（HR 0.17）。最常見不良事件為肝功能指數上升，第3級以上約17-19%，需定期監測肝功能。",
+            "url": "https://doi.org/10.1056/NEJMoa2602628",
+            "journal": "NEJM",
+            "category": "肺癌/標靶"
+          }
+        ],
+        "lancet": [
+          {
+            "id": "lancet-20260828-01",
+            "title": "Liver resection after atezolizumab and bevacizumab versus maintenance therapy for locally advanced hepatocellular carcinoma (TALENTOP): a phase 3 trial",
+            "title_zh": "局部晚期肝細胞癌經免疫合併療法後手術切除對比維持治療（TALENTOP 第三期試驗）",
+            "abstract": "In this multicentre randomized phase 3 trial in China, treatment-naive patients with hepatocellular carcinoma and macrovascular invasion received induction atezolizumab plus bevacizumab. Responders (n=201) were randomized to liver resection followed by 12 months of atezolizumab-bevacizumab, or to maintenance therapy alone. Median time to treatment failure was 20.4 versus 11.8 months (HR 0.60; p=0.015). Grade 3-4 treatment-related adverse events occurred in 39% versus 21%.",
+            "abstract_zh": "中國24家醫院針對合併大血管侵犯的肝細胞癌，先以atezolizumab加bevacizumab導入治療，反應良好的201人隨機分為手術切除加術後免疫治療或單純維持治療。中位治療失敗時間20.4對11.8個月（HR 0.60）。手術組第3-4級治療相關不良事件較高（39%對21%）。",
+            "url": "https://doi.org/10.1016/S0140-6736(26)01252-3",
+            "journal": "Lancet",
+            "category": "肝癌"
+          },
+          {
+            "id": "lancet-20260828-02",
+            "title": "Deramiocel heart-derived cellular therapy in advanced Duchenne muscular dystrophy (HOPE-3): a phase 3 randomised trial",
+            "title_zh": "心臟來源細胞治療 Deramiocel 用於晚期裘馨氏肌失養症（HOPE-3 第三期試驗）",
+            "abstract": "HOPE-3 was a phase 3, multicentre, randomized, double-blind, placebo-controlled trial in 106 participants aged 10 years or older with Duchenne muscular dystrophy. Deramiocel, an allogeneic cardiosphere-derived cell therapy, was infused intravenously every 3 months. At 12 months, the least-squares mean percentage change in total Performance of the Upper Limb 2.0 favoured deramiocel by 4.55% (p=0.029), with a safety profile similar to placebo.",
+            "abstract_zh": "106名10歲以上裘馨氏肌失養症患者隨機接受每3個月一次靜脈輸注異體心球衍生細胞治療deramiocel或安慰劑。12個月時上肢功能量表PUL2.0相對改善4.55%（p=0.029），安全性與安慰劑相當。此療法不受特定基因缺陷限制，可於門診施行。",
+            "url": "https://doi.org/10.1016/S0140-6736(26)01385-1",
+            "journal": "Lancet",
+            "category": "細胞治療"
+          }
+        ],
+        "jama": [
+          {
+            "id": "jama-20260828-01",
+            "title": "Global Burden of Elevated LDL-C: Findings From the Global Burden of Disease Study 2023",
+            "title_zh": "全球低密度脂蛋白膽固醇升高的疾病負擔：GBD 2023 研究",
+            "abstract": "This comparative risk assessment estimated LDL-C-attributable ischemic heart disease and stroke burden across 204 countries from 1990 to 2023. In 2023, elevated LDL-C accounted for 3.6 million deaths (6.0% of global mortality) and 90.7 million DALYs. Age-standardized death and DALY rates fell 45.6% and 39.5% since 1990, but absolute burden rose due to population growth and aging, with one-third of the burden in India and China.",
+            "abstract_zh": "全球疾病負擔研究分析204國1990至2023年資料。2023年低密度脂蛋白膽固醇升高造成360萬人死亡，占全球死亡6.0%。年齡標準化死亡率雖較1990年下降45.6%，但因人口成長與老化，絕對負擔仍上升，且三分之一集中於印度與中國。",
+            "url": "https://doi.org/10.1001/jama.2026.8628",
+            "journal": "JAMA",
+            "category": "心血管流行病學"
+          },
+          {
+            "id": "jama-20260828-02",
+            "title": "YEARS Algorithm for Diagnosis of Suspected Pulmonary Embolism in Patients With Cancer: A Randomized Clinical Trial (Hydra)",
+            "title_zh": "YEARS 演算法用於癌症病人疑似肺栓塞的診斷：Hydra 隨機臨床試驗",
+            "abstract": "In this open-label noninferiority trial across six European countries, 698 patients with active cancer and suspected pulmonary embolism were randomized to the YEARS algorithm or CTPA only. Among those in whom PE was excluded, the primary outcome occurred in 1.8% versus 5.5% (absolute risk difference -3.7%), confirming noninferiority. The YEARS strategy avoided CTPA in 22% of patients.",
+            "abstract_zh": "698名活動性癌症併疑似肺栓塞病人隨機以YEARS演算法或直接電腦斷層肺動脈攝影診斷。排除肺栓塞者90天內事件率1.8%對5.5%，證實非劣性，且22%病人可免除電腦斷層檢查，有助減少輻射與顯影劑腎毒性。",
+            "url": "https://doi.org/10.1001/jama.2026.10676",
+            "journal": "JAMA",
+            "category": "腫瘤/血栓"
+          },
+          {
+            "id": "jama-20260828-03",
+            "title": "Total Intravenous vs Volatile Inhalational Anesthesia for Major Noncardiac Surgery: A Randomized Clinical Trial",
+            "title_zh": "全靜脈麻醉與吸入性麻醉用於重大非心臟手術：隨機臨床試驗",
+            "abstract": "This pragmatic trial in 49 UK hospitals randomized 2508 patients aged 50 years or older undergoing elective major noncardiac surgery to total intravenous anesthesia (propofol) or volatile inhalational anesthesia. Days alive and at home at 30 days were similar (22.5 vs 22.4 days). No differences were seen in mortality, quality of recovery, delirium, or major complications, although thirst, hoarseness, nausea and vomiting were less frequent with TIVA.",
+            "abstract_zh": "英國49家醫院將2508名50歲以上接受重大非心臟手術者隨機分為全靜脈麻醉或吸入性麻醉。30天存活且返家天數相當（22.5對22.4天），死亡率、譫妄與重大併發症皆無差異；全靜脈麻醉組口渴、聲音沙啞與噁心嘔吐較少。",
+            "url": "https://doi.org/10.1001/jama.2026.11065",
+            "journal": "JAMA",
+            "category": "麻醉/術後照護"
+          },
+          {
+            "id": "jama-20260828-04",
+            "title": "Duration of Therapeutic Hypothermia After Out-of-Hospital Cardiac Arrest: The ICECAP Randomized Clinical Trial",
+            "title_zh": "到院前心跳停止後低溫治療的最適時長：ICECAP 隨機臨床試驗",
+            "abstract": "ICECAP was a multicenter adaptive-allocation trial at 71 US hospitals enrolling 1158 comatose survivors of out-of-hospital cardiac arrest cooled to 33 °C, with durations from 6 to 72 hours. For the nonshockable rhythm cohort, the posterior probability that 6 hours was the shortest duration achieving maximal neurological benefit was 0.51, with similar results for shockable rhythms. Longer cooling did not improve 90-day neurological outcomes or mortality.",
+            "abstract_zh": "美國71家醫院納入1158名到院前心跳停止後昏迷存活者，以適應性隨機分派接受6至72小時33°C低溫治療。結果顯示延長冷卻時間並未改善90天神經學預後或死亡率，6小時即可能達到最大效益，對臨床資源配置具重要意義。",
+            "url": "https://doi.org/10.1001/jama.2026.10247",
+            "journal": "JAMA",
+            "category": "急重症"
+          }
+        ],
+        "gastro": [
+          {
+            "id": "gastro-20260828-01",
+            "title": "Prognostic Performance of Liver Stiffness Measurements in Primary Sclerosing Cholangitis: The Prospective FICUS Cohort",
+            "title_zh": "肝臟硬度檢測於原發性硬化性膽管炎的預後價值：FICUS 前瞻性世代研究",
+            "abstract": "This prospective cohort followed 538 patients with uncomplicated primary sclerosing cholangitis for a median of 60.7 months with annual FibroScan liver stiffness measurement (LSM). Five-year transplant-free survival was 93.9%, 78.1% and 46.0% for baseline LSM of <10, 10-15 and >=15 kPa. Progressors had worse transplant-free survival (adjusted HR 3.12), and each 1-kPa/year increment raised risk of death or transplantation by 18%.",
+            "abstract_zh": "538名原發性硬化性膽管炎患者接受每年一次FibroScan追蹤，中位追蹤60.7個月。基線肝硬度<10、10-15、≥15 kPa者五年無移植存活率分別為93.9%、78.1%、46.0%；硬度每年上升1 kPa，死亡或移植風險增加18%，支持以肝硬度作為風險分層工具。",
+            "url": "https://doi.org/10.1053/j.gastro.2026.07.019",
+            "journal": "Gastroenterology",
+            "category": "膽道疾病"
+          },
+          {
+            "id": "gastro-20260828-02",
+            "title": "Fecal Hemoglobin-Guided Precision Postpolypectomy Surveillance: A Four-Million-Participant FIT-Based Screening Study",
+            "title_zh": "以糞便血紅素濃度導引息肉切除後精準追蹤：四百萬人糞便潛血篩檢研究",
+            "abstract": "Among 3,929,387 FIT screening participants, 89,771 aged 50-74 years with fecal hemoglobin >=20 ug Hb/g and complete colonoscopy after polypectomy were followed through 2018. Colorectal cancer incidence rose stepwise from 2.2 to 4.0 per 1000 person-years across f-Hb strata. Adopting f-Hb-guided surveillance intervals could reduce colonoscopy demand by 9.8% versus current US guidelines while maintaining comparable cancer risk.",
+            "abstract_zh": "台灣近393萬名糞便免疫化學篩檢參與者中，89,771名息肉切除後個案追蹤至2018年。大腸癌發生率隨糞便血紅素濃度由每千人年2.2升至4.0。若依血紅素濃度調整追蹤間隔，可較現行美國指引減少9.8%大腸鏡需求，而癌症風險相當。",
+            "url": "https://doi.org/10.1053/j.gastro.2026.02.045",
+            "journal": "Gastroenterology",
+            "category": "大腸癌篩檢"
+          },
+          {
+            "id": "gastro-20260828-03",
+            "title": "Cardiovascular Outcomes Following Major Gastrointestinal Bleeding in Patients With Pre-Existing Cardiovascular Disease: The INTERBLEED Study",
+            "title_zh": "既有心血管疾病患者發生重大消化道出血後的心血管結果：INTERBLEED 國際前瞻性研究",
+            "abstract": "INTERBLEED enrolled 3814 patients with cardiovascular disease, 1612 with gastrointestinal bleeding and 2202 without. GI bleeding was associated with higher 12-month all-cause death (OR 2.29) and recurrent bleeding (OR 4.28), but not MACE. Resuming antithrombotic therapy 4-7 or 8-30 days after bleeding was associated with lower odds of MACE (OR 0.37 for both), without increasing recurrent bleeding.",
+            "abstract_zh": "國際多中心前瞻研究納入3814名心血管疾病患者。發生消化道出血者12個月死亡風險增2.29倍、再出血增4.28倍。出血後4至30天內恢復抗血栓藥物與較低的主要心血管事件相關（OR 0.37），且未增加再出血風險，支持適時復用抗血栓治療。",
+            "url": "https://doi.org/10.1053/j.gastro.2026.02.028",
+            "journal": "Gastroenterology",
+            "category": "消化道出血"
+          },
+          {
+            "id": "gastro-20260828-04",
+            "title": "Fibroblast-derived Spondin-2 promotes dysplastic transition in metaplastic gastric epithelial cells",
+            "title_zh": "纖維母細胞分泌的 Spondin-2 促使胃化生上皮進展為異型增生",
+            "abstract": "Using single-cell RNA sequencing, proteomics and spatial transcriptomics of patient-derived fibroblasts and gastroids, the authors identified SPON2 as the most upregulated protein secreted by metaplasia- and cancer-derived fibroblasts. SPON2 knockdown abrogated dysplastic induction in cocultured gastroids, while recombinant SPON2 promoted dysplasia markers. SPON2 is the first fibroblast-derived secreted factor shown to drive the metaplasia-to-dysplasia transition.",
+            "abstract_zh": "研究以單細胞定序、蛋白質體與空間轉錄體分析發現，來自胃化生與癌組織的纖維母細胞大量分泌Spondin-2；抑制SPON2可阻斷類器官的異型增生，補充重組SPON2則促進之。此為首個被證實驅動胃「化生→異型增生」轉變的纖維母細胞分泌因子。",
+            "url": "https://doi.org/10.1053/j.gastro.2026.08.011",
+            "journal": "Gastroenterology",
+            "category": "胃癌前病變"
+          }
+        ],
+        "hepato": [
+          {
+            "id": "hepato-20260828-01",
+            "title": "BEACON-HCC: Best Evidence and North American Consensus on Treatment Allocation for Hepatocellular Carcinoma",
+            "title_zh": "BEACON-HCC：北美肝細胞癌治療分派共識架構",
+            "abstract": "A multidisciplinary panel of 20 North American experts used a modified Delphi process to build the BEACON-HCC treatment allocation framework, incorporating intrahepatic tumor burden, vascular invasion, adverse prognostic markers, and newer modalities such as external beam radiotherapy, transarterial radioembolization and systemic-locoregional combinations. In a pilot of 29 real-world cases, expert decisions showed 96.6% concordance with BEACON-HCC versus 72.4% with BCLC 2025.",
+            "abstract_zh": "20位北美多專科專家以改良德爾菲法建立BEACON-HCC肝癌治療分派架構，納入腫瘤負荷、血管侵犯、不良預後指標，並整合體外放射治療、經動脈放射栓塞與全身合併局部療法。29個真實案例中，專家決策與BEACON-HCC吻合度96.6%，高於BCLC 2025的72.4%。",
+            "url": "https://doi.org/10.1097/HEP.0000000000001834",
+            "journal": "Hepatology",
+            "category": "肝癌治療"
+          },
+          {
+            "id": "hepato-20260828-02",
+            "title": "Weight reduction-dependent/-independent effects of survodutide on liver endpoints: mediation analysis of a phase 2 trial in MASH",
+            "title_zh": "Survodutide 對肝臟終點的減重依賴與非依賴效應：MASH 第二期試驗中介分析",
+            "abstract": "This post hoc mediation analysis of 170 participants with F2-F3 MASH assessed how much of survodutide's benefit is mediated by weight loss. Weight reduction mediated 66.7% of MASH resolution and 71.8% of MASH improvement, but only 36.3% of fibrosis improvement. For inflammation and fibrosis noninvasive tests, less than 50% of the effect was weight-mediated, suggesting a direct hepatic effect of glucagon receptor agonism.",
+            "abstract_zh": "針對170名F2-F3期MASH患者的中介分析顯示，survodutide改善MASH緩解的效果有66.7%經由減重達成，但纖維化改善僅36.3%由減重中介；發炎與纖維化的非侵入性指標亦不到一半由減重解釋，暗示昇糖素受體促效具肝臟直接作用。",
+            "url": "https://doi.org/10.1097/HEP.0000000000001825",
+            "journal": "Hepatology",
+            "category": "MASH/脂肪肝"
+          },
+          {
+            "id": "hepato-20260828-03",
+            "title": "Nucleos(t)ide withdrawal versus nucleos(t)ide withdrawal with adjuvant pegylated-interferon in HBeAg-negative hepatitis B (NUC-B trial)",
+            "title_zh": "核苷（酸）類似物停藥合併長效干擾素輔助治療於 HBeAg 陰性 B 型肝炎（NUC-B 試驗）",
+            "abstract": "NUC-B randomized 156 noncirrhotic HBeAg-negative patients on nucleos(t)ide analogues to withdrawal alone or withdrawal followed by 16 weeks of pegylated interferon alfa. At 3 years, HBsAg loss occurred in 3% of controls versus 14% with PEG-IFNa (OR 5.39; p=0.037). Exaggerated flares were less frequent with PEG-IFNa (13.4% vs 27.9%), and fewer patients returned to nucleos(t)ide therapy.",
+            "abstract_zh": "156名無肝硬化的HBeAg陰性慢性B肝患者停用核苷類似物後，隨機加或不加16週長效干擾素。3年時表面抗原消失率14%對3%（OR 5.39），且過度肝炎發作較少（13.4%對27.9%），提示輔助干擾素可提升有限療程停藥的功能性治癒機會。",
+            "url": "https://doi.org/10.1097/HEP.0000000000001821",
+            "journal": "Hepatology",
+            "category": "B型肝炎"
+          },
+          {
+            "id": "hepato-20260828-04",
+            "title": "A first-in-human study of AHB-137, an unconjugated antisense oligonucleotide, in healthy subjects and patients with chronic hepatitis B",
+            "title_zh": "反義寡核苷酸 AHB-137 首次人體試驗：健康受試者與慢性 B 型肝炎患者",
+            "abstract": "This phase 1 study enrolled 40 healthy subjects and 24 virally suppressed HBeAg-negative chronic hepatitis B patients on stable nucleos(t)ide therapy. AHB-137, an antisense oligonucleotide targeting all HBV mRNA, was well tolerated with mainly mild injection-site reactions and headache. In CHB patients, HBsAg declined rapidly by a mean 0.7-1.0 log10 IU/mL, with HBsAg loss in three patients.",
+            "abstract_zh": "第一期試驗納入40名健康受試者與24名病毒已抑制的HBeAg陰性慢性B肝患者。標靶所有B肝病毒mRNA的反義寡核苷酸AHB-137耐受性良好，多為輕度注射部位反應與頭痛；B肝患者表面抗原平均下降0.7至1.0 log10 IU/mL，3人達表面抗原消失。",
+            "url": "https://doi.org/10.1097/HEP.0000000000001835",
+            "journal": "Hepatology",
+            "category": "B型肝炎新藥"
+          }
+        ],
+        "diabetes": [
+          {
+            "id": "diabetes-20260828-01",
+            "title": "Efficacy and safety of mazdutide in adults with obesity or overweight: a US-based, multicentre, phase 2, randomised, placebo-controlled clinical trial",
+            "title_zh": "Mazdutide 用於肥胖或過重成人的療效與安全性：美國多中心第二期隨機安慰劑對照試驗",
+            "abstract": "In this phase 2 trial at 24 US centres, 179 adults with obesity or overweight without type 2 diabetes were randomized to placebo or once-weekly mazdutide, a glucagon/GLP-1 dual agonist, at 3-6 mg, 10 mg or 16 mg for 48 weeks. At 32 weeks, least-squares mean weight change was -7.3%, -15.6% and -18.1% versus -0.9% with placebo. Gastrointestinal adverse events predominated; discontinuation was highest at 16 mg (20%).",
+            "abstract_zh": "美國24家中心納入179名無糖尿病的肥胖或過重成人，隨機接受安慰劑或每週一次昇糖素／GLP-1雙重促效劑mazdutide。32週體重變化分別為-7.3%、-15.6%、-18.1%，安慰劑僅-0.9%。腸胃道副作用為主，16 mg組因不良事件停藥率20%。",
+            "url": "https://doi.org/10.1016/S2213-8587(26)00160-9",
+            "journal": "Lancet Diabetes & Endocrinology",
+            "category": "減重新藥"
+          },
+          {
+            "id": "diabetes-20260828-02",
+            "title": "Cardiometabolic Effects of Dual GLP-1 and Glucagon Receptor Agonists: A Systematic Review and Meta-analysis of Randomized Controlled Trials",
+            "title_zh": "GLP-1 與昇糖素受體雙重促效劑的心血管代謝效應：隨機對照試驗系統性回顧與統合分析",
+            "abstract": "This random-effects meta-analysis included 16 randomized trials with 6611 participants evaluating dual GLP-1 receptor/glucagon receptor agonists for at least 12 weeks. Dual agonists reduced body weight by 7.44% (7.27 kg) versus placebo, with improvements across waist circumference, atherogenic lipids, HbA1c and hemodynamic outcomes. Compared with selective GLP-1 receptor agonists, dual agonists produced a greater triglyceride reduction (-0.28 mmol/L).",
+            "abstract_zh": "統合16項隨機試驗、6611名受試者，評估GLP-1／昇糖素雙重受體促效劑。相較安慰劑減重7.44%（7.27公斤），腰圍、致動脈硬化血脂、糖化血色素與血流動力學指標均改善；相較單一GLP-1促效劑，三酸甘油酯下降更多（-0.28 mmol/L）。",
+            "url": "https://doi.org/10.2337/dc26-1127",
+            "journal": "Diabetes Care",
+            "category": "代謝/心血管"
+          },
+          {
+            "id": "diabetes-20260828-03",
+            "title": "Once-weekly IcoSema versus once-daily insulin glargine U100 in type 2 diabetes management (COMBINE 4): a phase 3b randomised trial",
+            "title_zh": "每週一次 IcoSema 與每日一次甘精胰島素 U100 治療第二型糖尿病（COMBINE 4 第三期b試驗）",
+            "abstract": "COMBINE 4 randomized 485 adults with type 2 diabetes (HbA1c >=8.0%) on oral agents to once-weekly IcoSema (insulin icodec plus semaglutide) or once-daily glargine U100 for 40 weeks. HbA1c fell by 3.32 versus 2.44 percentage points (ETD -0.88; p<0.001), and body weight changed by -0.79 versus +3.81 kg (ETD -4.61 kg). Clinically significant or severe hypoglycemia was lower with IcoSema (rate ratio 0.56).",
+            "abstract_zh": "485名口服藥控制不佳的第二型糖尿病成人隨機接受每週一次IcoSema（icodec胰島素合併semaglutide）或每日一次甘精胰島素。40週糖化血色素下降3.32對2.44個百分點，體重-0.79對+3.81公斤，且顯著或嚴重低血糖率降低44%。",
+            "url": "https://doi.org/10.1016/S2213-8587(26)00136-1",
+            "journal": "Lancet Diabetes & Endocrinology",
+            "category": "胰島素治療"
+          }
+        ],
+        "ckd": [
+          {
+            "id": "ckd-20260828-01",
+            "title": "Glucagon-Like Peptide-1 Receptor Agonist Use and Risks of Hospitalization and Mortality in Patients with End-Stage Kidney Disease",
+            "title_zh": "GLP-1 受體促效劑使用與末期腎病患者住院及死亡風險",
+            "abstract": "This matched retrospective cohort compared 2492 incident thrice-weekly in-center hemodialysis patients prescribed a GLP-1 receptor agonist within 30 days of dialysis initiation with 1:1 matched non-users, from January 2018 to April 2024. After matching and adjustment, GLP-1 receptor agonist use was independently associated with a 9% lower hospitalization rate (IRR 0.91) and a 17% lower mortality rate (IRR 0.83).",
+            "abstract_zh": "回溯性配對世代研究比較2492名初始血液透析後30天內使用GLP-1受體促效劑者與未使用者。校正後顯示使用GLP-1受體促效劑與住院率降低9%、死亡率降低17%獨立相關，為FLOW試驗之外，末期腎病族群使用此類藥物的重要真實世界證據。",
+            "url": "https://doi.org/10.2215/CJN.0000001208",
+            "journal": "CJASN",
+            "category": "透析/GLP-1"
+          },
+          {
+            "id": "ckd-20260828-02",
+            "title": "Outcomes from the International Society of Nephrology Forum on Complement Therapeutics in C3G and IgAN",
+            "title_zh": "國際腎臟醫學會 C3 腎絲球病變與 IgA 腎病補體治療論壇成果",
+            "abstract": "This report summarizes the 2025 International Society of Nephrology Forum on complement therapeutics in C3 glomerulopathy, immune-complex MPGN and IgA nephropathy. A global expert panel reviewed the current state of knowledge following successful alternative-pathway complement inhibitor trials, identified areas of uncertainty including how complement biomarkers, autoantibodies, genetics and kidney biopsy should guide therapy, and proposed how these agents fit the therapeutic landscape.",
+            "abstract_zh": "國際腎臟醫學會2025年論壇整理補體抑制劑於C3腎絲球病變、免疫複合體膜增生性腎絲球腎炎與IgA腎病的應用。專家小組回顧近期替代途徑補體抑制劑試驗成果，並指出補體生物標記、自體抗體、基因與腎切片如何導引用藥仍待釐清。",
+            "url": "https://doi.org/10.1016/j.kint.2026.08.007",
+            "journal": "Kidney International",
+            "category": "腎絲球疾病"
+          },
+          {
+            "id": "ckd-20260828-03",
+            "title": "Proteinuria and Kidney Function Trajectories in Patients with Advanced CKD: Insights from CRIC and KNOW-CKD Studies",
+            "title_zh": "晚期慢性腎臟病的蛋白尿與腎功能軌跡：CRIC 與 KNOW-CKD 世代研究",
+            "abstract": "Among 2727 participants with eGFR 15-45 mL/min/1.73 m2 from the CRIC and KNOW-CKD cohorts, higher urine protein-to-creatinine ratio (UPCR) was strongly associated with CKD progression (HR 6.32 for UPCR >=3.0 vs <0.5 g/gCr). eGFR slopes ranged from -0.87 to -5.45 mL/min/1.73 m2 per year across UPCR categories, and projected time to reach an eGFR of 10 fell from 28.7 to 3.8 years.",
+            "abstract_zh": "整合CRIC與KNOW-CKD共2727名腎絲球過濾率15-45的病人。尿蛋白／肌酸酐比值≥3.0者較<0.5者腎病進展風險高6.32倍；各組每年腎絲球過濾率下降-0.87至-5.45，預估達腎衰竭門檻時間由28.7年縮短至3.8年。",
+            "url": "https://doi.org/10.2215/CJN.0000001206",
+            "journal": "CJASN",
+            "category": "CKD 進展"
+          }
+        ]
+      }
+    }
+  ]
+};
+
+// ─── Helpers ────────────────────────────────────────────────────
+function escapeHtml(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function linkIcon() {
+  return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
+}
+
+function arrowIcon() {
+  return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+}
+
+// ─── Render Taiwan News ──────────────────────────────────────────
+function renderTaiwanNews(items, container) {
+  container.innerHTML = items.map((n, i) => `
+    <a class="news-card scroll-reveal" href="${escapeHtml(n.url)}" target="_blank" rel="noopener" id="${escapeHtml(n.id)}">
+      <span class="news-number">0${i+1}</span>
+      <div class="news-body">
+        <div class="news-tags">
+          <span class="tag tag-tw">${escapeHtml(n.tag || '醫療')}</span>
+          <span class="tag tag-source">${escapeHtml(n.source)}</span>
+        </div>
+        <p class="news-title">${escapeHtml(n.title)}</p>
+        <p class="news-summary">${escapeHtml(n.summary)}</p>
+      </div>
+      <span class="news-link-icon">${linkIcon()}</span>
+    </a>
+  `).join('');
+}
+
+// ─── Render Academic Cards ───────────────────────────────────────
+function renderAcademic(items, container, type) {
+  container.innerHTML = items.map(a => `
+    <div class="academic-card ${type} scroll-reveal" id="${escapeHtml(a.id)}">
+      <div class="academic-journal">
+        <span class="journal-badge ${type}">${type === 'nejm' ? 'NEJM' : 'The Lancet'}</span>
+        <span class="academic-category">${escapeHtml(a.category)}</span>
+      </div>
+      <p class="academic-title">${escapeHtml(a.title)}</p>
+      <div>
+        <div class="abstract-tabs">
+          <button class="tab-btn active" onclick="switchTab(this,'en')">EN</button>
+          <button class="tab-btn" onclick="switchTab(this,'zh')">中文</button>
+        </div>
+        <p class="abstract-text abstract-en">${escapeHtml(a.abstract)}</p>
+        <p class="abstract-text abstract-zh">${escapeHtml(a.abstract_zh)}</p>
+      </div>
+      <a class="read-more" href="${escapeHtml(a.url)}" target="_blank" rel="noopener">
+        閱讀全文 ${arrowIcon()}
+      </a>
+    </div>
+  `).join('');
+}
+
+// ─── Tab Switch ──────────────────────────────────────────────────
+function switchTab(btn, lang) {
+  const card = btn.closest('.academic-card');
+  card.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  card.querySelector('.abstract-en').style.display = lang === 'en' ? 'block' : 'none';
+  card.querySelector('.abstract-zh').style.display = lang === 'zh' ? 'block' : 'none';
+}
+
+// ─── History ─────────────────────────────────────────────────────
+function renderHistory(weeks) {
+  const tabs = document.getElementById('history-tabs');
+  const content = document.getElementById('history-content');
+  const show = weeks.slice(0, 3);
+
+  tabs.innerHTML = show.map((w, i) => `
+    <button class="history-tab${i===0?' active':''}" onclick="showHistoryPanel(${i})" id="htab-${i}">
+      ${escapeHtml(w.week_label)} &nbsp;·&nbsp; ${escapeHtml(w.date)}
+    </button>
+  `).join('');
+
+  content.innerHTML = show.map((w, i) => `
+    <div class="history-panel${i===0?' active':''}" id="hpanel-${i}">
+      <div class="news-grid" style="margin-bottom:1.5rem">
+        ${w.taiwan_news.slice(0,3).map((n,j) => `
+          <a class="news-card" href="${escapeHtml(n.url)}" target="_blank" rel="noopener" style="opacity:0.78">
+            <span class="news-number">0${j+1}</span>
+            <div class="news-body">
+              <div class="news-tags">
+                <span class="tag tag-tw">${escapeHtml(n.tag || '醫療')}</span>
+                <span class="tag tag-source">${escapeHtml(n.source)}</span>
+              </div>
+              <p class="news-title">${escapeHtml(n.title)}</p>
+            </div>
+          </a>
+        `).join('')}
+      </div>
+      <div class="academic-grid">
+        ${w.academic.nejm.slice(0,2).map(a => `
+          <div class="academic-card nejm" style="opacity:0.75">
+            <div class="academic-journal">
+              <span class="journal-badge nejm">NEJM</span>
+              <span class="academic-category">${escapeHtml(a.category)}</span>
+            </div>
+            <p class="academic-title">${escapeHtml(a.title)}</p>
+            <a class="read-more" href="${escapeHtml(a.url)}" target="_blank" rel="noopener">
+              閱讀全文 ${arrowIcon()}
+            </a>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function showHistoryPanel(idx) {
+  document.querySelectorAll('.history-tab').forEach((t,i) => t.classList.toggle('active', i===idx));
+  document.querySelectorAll('.history-panel').forEach((p,i) => p.classList.toggle('active', i===idx));
+}
+
+// ─── GSAP ScrollTrigger Animations ──────────────────────────────
+function initGSAP() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance
+  gsap.from('.hero-eyebrow', { opacity: 0, y: 20, duration: 0.7, delay: 0.1, ease: 'power2.out' });
+  gsap.from('.hero-title',   { opacity: 0, y: 32, duration: 0.9, delay: 0.25, ease: 'power3.out' });
+  gsap.from('.hero-subtitle',{ opacity: 0, y: 20, duration: 0.7, delay: 0.42, ease: 'power2.out' });
+  gsap.from('.hero-meta .hero-badge', {
+    opacity: 0, y: 16, duration: 0.5, delay: 0.55, stagger: 0.12, ease: 'power2.out'
+  });
+
+  // Section headers — fade up
+  gsap.utils.toArray('.section-header').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+      opacity: 0, y: 28, duration: 0.7, ease: 'power2.out'
+    });
+  });
+
+  // News cards — stagger slide up
+  const newsCards = gsap.utils.toArray('.section#taiwan .news-card');
+  if (newsCards.length) {
+    gsap.from(newsCards, {
+      scrollTrigger: { trigger: newsCards[0], start: 'top 90%', toggleActions: 'play none none none' },
+      opacity: 0, y: 40, duration: 0.55, stagger: 0.1, ease: 'power3.out'
+    });
+  }
+
+  // Academic cards — fade + scale
+  gsap.utils.toArray('.academic-card').forEach((card, i) => {
+    gsap.from(card, {
+      scrollTrigger: { trigger: card, start: 'top 92%', toggleActions: 'play none none none' },
+      opacity: 0, y: 35, scale: 0.97, duration: 0.6, delay: (i % 3) * 0.12, ease: 'power2.out'
+    });
+  });
+
+  // Dividers — width reveal (Apple-style)
+  gsap.utils.toArray('.divider').forEach(el => {
+    gsap.from(el, {
+      scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none none' },
+      scaleX: 0, transformOrigin: 'left center', duration: 0.9, ease: 'power2.inOut'
+    });
+  });
+}
+
+// ─── Init ────────────────────────────────────────────────────────
+(function () {
+  const current = DATA.weeks[0];
+  if (!current) return;
+
+  const banner = document.getElementById('week-banner');
+  if (banner) banner.innerHTML =
+    `<strong>${current.week_label}</strong> &nbsp;·&nbsp; 更新日期：${current.date}` +
+    ` &nbsp;·&nbsp; <span>腸胃肝膽・代謝領域・自動整理</span>`;
+
+  // 主要卡片已由 update_medical_news.py 預渲染為 HTML，
+  // 只有當預渲染缺失時 (例如本機開發、新欄位) 才用 JS fallback 補上。
+  const twEl = document.getElementById('taiwan-news');
+  if (twEl && !twEl.querySelector('.news-card')) renderTaiwanNews(current.taiwan_news, twEl);
+  const twCount = document.getElementById('tw-count');
+  if (twCount) twCount.textContent = current.taiwan_news.length + ' 則';
+
+  const nejmEl = document.getElementById('nejm-articles');
+  if (nejmEl && !nejmEl.querySelector('.academic-card')) renderAcademic(current.academic.nejm, nejmEl, 'nejm');
+  const lancetEl = document.getElementById('lancet-articles');
+  if (lancetEl && !lancetEl.querySelector('.academic-card')) renderAcademic(current.academic.lancet, lancetEl, 'lancet');
+
+  renderHistory(DATA.weeks);
+
+  const fd = document.getElementById('footer-date');
+  if (fd) fd.textContent = '更新：' + current.date;
+
+  // Progress bar (rAF 節流)
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const el = document.getElementById('progress-bar');
+      if (el) {
+        const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+        el.style.width = pct + '%';
+      }
+      ticking = false;
+    });
+  }, { passive: true });
+
+  // ─── FB iframe lazy-load (IntersectionObserver) ────────────
+  const fbIframe = document.getElementById('fb-iframe');
+  const fbFallback = document.getElementById('fb-fallback');
+  if (fbIframe) {
+    const loadFb = () => {
+      if (fbIframe.src) return;
+      fbIframe.src = fbIframe.dataset.src;
+      const timer = setTimeout(() => { if (fbFallback) fbFallback.style.display = 'block'; }, 3000);
+      fbIframe.addEventListener('load', () => { clearTimeout(timer); }, { once: true });
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { loadFb(); io.disconnect(); }
+        });
+      }, { rootMargin: '200px' });
+      io.observe(fbIframe);
+    } else {
+      loadFb();
+    }
+  }
+})();
+</script>
+</body>
+</html>

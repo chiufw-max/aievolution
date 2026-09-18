@@ -1,6 +1,318 @@
 {
   "weeks": [
     {
+      "date": "2026-09-18",
+      "week_label": "2026 第38週",
+      "taiwan_news": [
+        {
+          "id": "tw-20260918-01",
+          "title": "健保9/1起首度給付罕見膽汁鬱積搔癢新藥 ALGS、PFIC病童受惠",
+          "summary": "健保署自9月1日起新增給付含 maralixibat 成分藥品，用於一歲以上阿拉吉歐症候群（ALGS）與進行性家族性肝內膽汁滯留症（PFIC）病人的膽汁鬱積搔癢，可降低血清膽酸、改善反覆摳抓破皮；另納入PNH口服新藥，本次新措施總挹注藥費25.48億元。",
+          "url": "https://newtalk.tw/news/view/2026-08-31/1056739",
+          "source": "Newtalk新聞",
+          "category": "健康政策",
+          "tag": "健康政策",
+          "slot": "A",
+          "topic": "罕病膽汁鬱積藥納保",
+          "pub_date": "2026-08-31"
+        },
+        {
+          "id": "tw-20260918-02",
+          "title": "一次切除15顆大腸腺瘤！醫：大多數大腸癌由腺瘤演變，定期篩檢最有效",
+          "summary": "胃腸肝膽科醫師張靖分享單次大腸鏡切除15顆腺瘤的罕見個案，強調大腸癌多由腺瘤長大癌變而來，發現就該切除。除家族遺傳外，建議少吃加工肉品、多攝取蔬菜纖維、規律運動避免肥胖，並定期做大腸鏡或糞便潛血檢查。",
+          "url": "https://health.ettoday.net/news/3234120",
+          "source": "ETtoday健康雲",
+          "category": "癌症",
+          "tag": "癌症",
+          "slot": "B",
+          "topic": "大腸腺瘤切除預防",
+          "pub_date": "2026-09-14"
+        },
+        {
+          "id": "tw-20260918-03",
+          "title": "流感疫情持續上升 疾管署：公費抗病毒藥擴大用藥條件延長至10/31",
+          "summary": "疾管署9月18日表示流感已進入流行期且持續上升，公費流感抗病毒藥劑「有類流感症狀之高傳播族群」（醫事人員、長照機構、幼托與學生、與高風險者同住等7類）適用期限延長至10月31日；符合條件者不需快篩即可由醫師開立，全國約4千家合約院所配置克流感與易剋冒。",
+          "url": "https://www.cdc.gov.tw/Bulletin/Detail/-EYGFSc-mTOTTawYvm91GA?typeid=9",
+          "source": "衛生福利部疾病管制署",
+          "category": "健康政策",
+          "tag": "健康政策",
+          "slot": "C",
+          "topic": "流感公費抗病毒藥延長",
+          "pub_date": "2026-09-18"
+        },
+        {
+          "id": "tw-20260918-04",
+          "title": "放屁特別臭別只怪吃肉 醫：合併腹瀉、脂肪便、體重下降要就醫",
+          "summary": "胃腸肝膽科醫師楊子緯指出，成人每天放屁10～20次屬正常，臭味多來自腸道菌分解含硫胺基酸（紅肉、蛋、豆類、十字花科蔬菜）。但若持續惡臭並合併腹瀉、油亮黏膩的脂肪便與不明原因體重下降，可能是吸收不良、菌相失衡或腸道感染，應盡速檢查。",
+          "url": "https://health.ettoday.net/news/3237584",
+          "source": "ETtoday健康雲",
+          "category": "肝膽腸胃",
+          "tag": "肝膽腸胃",
+          "slot": "D",
+          "topic": "放屁惡臭腸道警訊",
+          "pub_date": "2026-09-18"
+        },
+        {
+          "id": "tw-20260918-05",
+          "title": "手搖飲稽查：知名連鎖店腸桿菌科超標140倍 食藥署共裁罰105萬",
+          "summary": "食藥署9月17日公布「現場調製飲品及冰品稽查專案」結果，查核387家、抽驗448件，6件不合格；台北一家青山分店檢出腸桿菌科1400 CFU/ml（限量10），另有咖啡因標示不符、食品逾期、未投保產品責任險等違規，合計裁罰105萬元。",
+          "url": "https://www.cna.com.tw/news/ahel/202609170161.aspx",
+          "source": "中央社",
+          "category": "健康政策",
+          "tag": "健康政策",
+          "slot": "E",
+          "topic": "手搖飲腸桿菌稽查",
+          "pub_date": "2026-09-17"
+        }
+      ],
+      "academic": {
+        "nejm": [
+          {
+            "id": "nejm-20260918-01",
+            "title": "Colonoscopy Intervals and Colorectal Cancer Incidence after Adenoma Removal (EPoS II)",
+            "title_zh": "高風險腺瘤切除後 5 年 vs 3 年追蹤大腸鏡：EPoS II 試驗期中分析",
+            "url": "https://doi.org/10.1056/NEJMoa2603816",
+            "journal": "NEJM",
+            "category": "大腸癌篩檢",
+            "abstract": "In this European noninferiority trial, 10,799 patients with high-risk adenomas were randomized to first surveillance colonoscopy at 5 years or 3 years after polyp removal. At the 5.5-year interim analysis, cumulative colorectal cancer incidence was 0.77% with 5-year surveillance versus 0.82% with 3-year surveillance, meeting noninferiority. Cancer stage distribution and colorectal cancer deaths did not differ substantially between groups.",
+            "abstract_zh": "歐洲八國非劣性試驗納入10,799名高風險腺瘤（≥10 mm、高度異生、絨毛狀或3–10顆）病人，隨機分配息肉切除後5年或3年做第一次追蹤大腸鏡。5.5年期中分析顯示，5年組大腸癌累積發生率0.77%、3年組0.82%，達非劣性；分期分布與大腸癌死亡無明顯差異，支持放寬追蹤間隔。"
+          },
+          {
+            "id": "nejm-20260918-02",
+            "title": "Blinatumomab for Replacing Chemotherapy in Pediatric Acute Lymphoblastic Leukemia",
+            "title_zh": "Blinatumomab 取代化療用於兒童高風險 B 細胞急性淋巴性白血病",
+            "url": "https://doi.org/10.1056/NEJMoa2604166",
+            "journal": "NEJM",
+            "category": "血液腫瘤",
+            "abstract": "In this randomized trial of 709 children with newly diagnosed high-risk B-cell ALL, replacing two consolidation chemotherapy cycles with blinatumomab increased estimated 4-year event-free survival from 70.3% to 83.0% (hazard ratio 0.51). Treatment-related infections fell from 69.4% to 23.9%, and life-threatening adverse events were fewer, although neurotoxic events were more frequent with blinatumomab.",
+            "abstract_zh": "709名新診斷高風險B細胞ALL兒童隨機分組，以兩個週期 blinatumomab 取代傳統化療。中位追蹤2.9年，4年無事件存活率由70.3%提升至83.0%（HR 0.51）；治療相關感染從69.4%降至23.9%，危及生命不良事件也較少，但神經毒性事件較多（12.0% vs 3.2%）。"
+          },
+          {
+            "id": "nejm-20260918-03",
+            "title": "Tambotatug Pelitecan in Small-Cell Lung Cancer after Platinum-Based Therapy (TAISHAN-302)",
+            "title_zh": "B7-H3 抗體藥物複合體 Tam-Peli 用於鉑類治療後小細胞肺癌：第三期試驗",
+            "url": "https://doi.org/10.1056/NEJMoa2610229",
+            "journal": "NEJM",
+            "category": "肺癌治療",
+            "abstract": "In this phase 3 trial, 451 patients with small-cell lung cancer progressing after platinum-based therapy were randomized to tambotatug pelitecan, a B7-H3-targeting antibody-drug conjugate, or topotecan. Median overall survival was 13.3 versus 9.4 months (hazard ratio 0.46), progression-free survival 7.4 versus 2.8 months, and objective response 59.1% versus 9.7%, with fewer grade 3 or higher adverse events.",
+            "abstract_zh": "451名鉑類治療後惡化的小細胞肺癌病人隨機接受 B7-H3 標靶 ADC 藥物 tambotatug pelitecan 或 topotecan。中位整體存活13.3 vs 9.4個月（HR 0.46），無惡化存活7.4 vs 2.8個月，客觀反應率59.1% vs 9.7%，且≥3級不良事件反而較少（55.4% vs 77.9%）。"
+          }
+        ],
+        "lancet": [
+          {
+            "id": "lancet-20260918-01",
+            "title": "Efficacy and safety of mitapivat in adults with transfusion-dependent α- or β-thalassaemia (ENERGIZE-T): phase 3 trial",
+            "title_zh": "口服 mitapivat 用於輸血依賴型地中海型貧血：ENERGIZE-T 第三期試驗",
+            "url": "https://doi.org/10.1016/S0140-6736(26)00874-3",
+            "journal": "Lancet",
+            "category": "血液疾病",
+            "abstract": "ENERGIZE-T randomized 258 adults with transfusion-dependent α- or β-thalassaemia across 19 countries to oral mitapivat 100 mg twice daily or placebo for 48 weeks. Transfusion reduction response occurred in 30% versus 13% (adjusted difference 18 percentage points). Common adverse events included headache, upper respiratory infection, insomnia, diarrhoea and fatigue; no deaths occurred, supporting mitapivat as the first oral disease-modifying therapy.",
+            "abstract_zh": "ENERGIZE-T 於19國納入258名輸血依賴型α或β地中海型貧血成人，隨機接受口服丙酮酸激酶活化劑 mitapivat 或安慰劑48週。輸血量減少反應率30% vs 13%（差異18個百分點，p=0.0003）；常見副作用為頭痛、上呼吸道感染、失眠、腹瀉，無死亡，為首個口服疾病修飾療法。"
+          },
+          {
+            "id": "lancet-20260918-02",
+            "title": "Catheter ablation for symptomatic atrial fibrillation (PVI-SHAM-AF): a randomised, double-blind, sham-controlled trial",
+            "title_zh": "心房顫動導管消融 vs 假手術：PVI-SHAM-AF 雙盲隨機試驗",
+            "url": "https://doi.org/10.1016/S0140-6736(26)01558-8",
+            "journal": "Lancet",
+            "category": "心血管介入",
+            "abstract": "In this double-blind sham-controlled trial, 262 patients with symptomatic paroxysmal or persistent atrial fibrillation were randomized 2:1 to catheter ablation or a sham procedure. At 6 months, AFEQT quality-of-life scores improved substantially in both groups (61.3 to 81.1 versus 59.2 to 74.9), with a nonsignificant between-group difference of 2.6 points. Ablation did not demonstrate superiority over sham for symptom-related quality of life.",
+            "abstract_zh": "德國與波蘭9個中心262名有症狀心房顫動病人，以2:1隨機接受導管消融或假手術，雙盲追蹤6個月。兩組 AFEQT 生活品質分數皆明顯改善（61.3→81.1 vs 59.2→74.9），組間差異僅2.6分（p=0.36），消融未顯示優於假手術，顯示安慰劑效應在症狀改善中扮演重要角色。"
+          }
+        ],
+        "jama": [
+          {
+            "id": "jama-20260918-01",
+            "title": "Liquid Biopsies for Cancer: A Translational Science Review",
+            "title_zh": "癌症液態切片（ctDNA）：轉譯科學回顧",
+            "url": "https://doi.org/10.1001/jama.2026.13898",
+            "journal": "JAMA",
+            "category": "腫瘤診斷",
+            "abstract": "This review summarizes circulating tumor DNA applications: guiding molecularly targeted therapy in lung, colorectal and breast cancer, monitoring treatment response, and detecting minimal residual disease. Post-treatment ctDNA detection strongly predicts recurrence; in colorectal cancer, molecular relapse was detected about 8.7 months earlier than imaging. Optimal testing timing, management of ctDNA-positive imaging-negative patients, and cost-effectiveness remain unresolved.",
+            "abstract_zh": "本回顧整理循環腫瘤DNA（ctDNA）在肺癌、大腸癌、乳癌的臨床應用：指引標靶治療選擇、監測治療反應與偵測微量殘留疾病。治療後ctDNA陽性與復發及較差存活強烈相關；大腸癌中分子復發比影像早約8.7個月被發現。最佳檢測時機、影像陰性但ctDNA陽性的處置及成本效益仍待釐清。"
+          },
+          {
+            "id": "jama-20260918-02",
+            "title": "High-Dose Intravenous Vitamin C and Mortality and Organ Dysfunction in Severe Burn Injury: The VICTORY Randomized Clinical Trial",
+            "title_zh": "高劑量靜脈維生素 C 用於嚴重燒傷：VICTORY 隨機試驗提前中止",
+            "url": "https://doi.org/10.1001/jama.2026.10616",
+            "journal": "JAMA",
+            "category": "重症醫學",
+            "abstract": "In this international phase 3 trial, 238 adults with deep burns covering at least 20% body surface area were randomized to intravenous vitamin C 50 mg/kg every 6 hours for 96 hours or placebo. The composite of 28-day mortality and persistent organ dysfunction occurred in 40.8% versus 29.7%, and 28-day mortality was higher with vitamin C (15.0% vs 7.6%), prompting early termination for futility and possible harm.",
+            "abstract_zh": "24個燒傷中心238名體表面積≥20%深度燒傷成人，隨機接受高劑量靜脈維生素C（50 mg/kg每6小時、共96小時）或安慰劑。28天死亡或持續器官功能障礙複合終點40.8% vs 29.7%，28天死亡率15.0% vs 7.6%（RR 1.96），試驗因無效且可能有害而提前中止。"
+          },
+          {
+            "id": "jama-20260918-03",
+            "title": "Integrated Telehealth Rehabilitation and Quality of Life in Mechanically Ventilated Adults: A Randomized Clinical Trial",
+            "title_zh": "整合式遠距復健對呼吸器病人生活品質與死亡率的影響：階梯式叢集隨機試驗",
+            "url": "https://doi.org/10.1001/jama.2026.10617",
+            "journal": "JAMA",
+            "category": "重症復健",
+            "abstract": "This stepped-wedge cluster randomized trial in 20 Brazilian public hospitals enrolled 1916 adults with acute hypoxemic respiratory failure requiring invasive ventilation. A telehealth-based rehabilitation program spanning ICU, ward and 2 months post-discharge modestly improved 90-day EQ-5D-3L utility (0.16 vs 0.12), reduced 90-day mortality (71.8% vs 78.3%) and shortened mechanical ventilation duration (9.9 vs 15.5 days).",
+            "abstract_zh": "巴西20家公立醫院階梯式叢集隨機試驗，納入1916名需插管的急性低血氧呼吸衰竭成人。涵蓋ICU、病房到出院後2個月的遠距復健方案，使出院90天EQ-5D-3L效用值略升（0.16 vs 0.12），90天死亡率下降（71.8% vs 78.3%），呼吸器使用天數縮短（9.9 vs 15.5天）。"
+          },
+          {
+            "id": "jama-20260918-04",
+            "title": "Prognostic Value of Blood-Based P-Tau217 Levels for Progression to Cognitive Impairment",
+            "title_zh": "血液 p-tau217 預測認知正常長者進展至認知障礙的絕對風險",
+            "url": "https://doi.org/10.1001/jama.2026.12556",
+            "journal": "JAMA",
+            "category": "神經退化",
+            "abstract": "Pooling 2684 cognitively unimpaired older adults from 6 cohorts with median 5.4-year follow-up, each 1-SD increase in baseline plasma p-tau217 raised the hazard of progression to cognitive impairment by 38%, independent of amyloid PET. Participants with high and very high p-tau217 had 24% and 38% absolute 5-year risk, respectively, and faster cognitive decline, supporting p-tau217 for prognostic model development.",
+            "abstract_zh": "彙整北美、日本、澳洲6個世代2684名認知正常長者，中位追蹤5.4年。基線血漿p-tau217每升高1個標準差，進展至認知障礙風險增加38%，且獨立於類澱粉PET。p-tau217高與極高者5年絕對風險分別為24%與38%，認知下降也較快，支持作為預後模型與試驗設計依據。"
+          }
+        ],
+        "gastro": [
+          {
+            "id": "gastro-20260918-01",
+            "title": "Faecalibacterium prausnitzii EXL01 Strain for the Prevention of Multiple-Recurrent Clostridioides difficile Infection",
+            "title_zh": "單一共生菌株 F. prausnitzii EXL01 預防多次復發困難梭菌感染：第一期試驗",
+            "url": "https://doi.org/10.1053/j.gastro.2026.09.002",
+            "journal": "Gastroenterology",
+            "category": "腸道微菌治療",
+            "abstract": "In a murine CDI model and a multicenter open-label phase 1 trial of six adults with at least three C. difficile episodes, oral Faecalibacterium prausnitzii EXL01 given for 8 weeks after vancomycin was safe, and 83.3% remained recurrence-free at week 8, comparable to matched FMT cohorts. Engraftment correlated with restored secondary bile acid and butyrate production, supporting function-targeted precision microbiome therapy.",
+            "abstract_zh": "於小鼠模型與多中心開放性第一期試驗中，6名至少3次困難梭菌感染的成人在 vancomycin 前置後口服 F. prausnitzii EXL01 八週，無治療相關嚴重不良事件，第8週83.3%未復發，與配對FMT世代相當。菌株定殖與次級膽酸及丁酸恢復相關，支持以功能為標的的精準微菌療法。"
+          },
+          {
+            "id": "gastro-20260918-02",
+            "title": "Gastrointestinal Disorders in Scleroderma",
+            "title_zh": "硬皮症的腸胃道表現：從食道到肛門的全面回顧",
+            "url": "https://doi.org/10.1053/j.gastro.2026.03.022",
+            "journal": "Gastroenterology",
+            "category": "腸胃蠕動疾病",
+            "abstract": "This review covers gastrointestinal involvement in systemic sclerosis, which affects the esophagus in about 90% of patients and produces dysphagia, reflux, gastroparesis, gastric antral vascular ectasia, pseudo-obstruction, small intestinal bacterial overgrowth, constipation and fecal incontinence. Impaired motility from smooth-muscle atrophy and fibrosis is central; symptoms correlate poorly with pathology, and management largely extrapolates from non-scleroderma evidence.",
+            "abstract_zh": "本回顧整理全身性硬化症的腸胃道侵犯，約90%病人食道受累，表現為吞嚥困難、胃食道逆流、胃輕癱、胃竇血管擴張、假性腸阻塞、小腸細菌過度生長、便秘與糞失禁。平滑肌萎縮與纖維化導致的蠕動障礙是核心機轉；症狀與病理相關性差，治療多引用非硬皮症證據，需高度警覺並個別化處置。"
+          },
+          {
+            "id": "gastro-20260918-03",
+            "title": "Clonal Lymphocyte Expansions and JAK-STAT Pathway Mutations Define a Pathogenic Continuum Driving Resistance to Gluten-Free Diet in Celiac Disease",
+            "title_zh": "頑固型乳糜瀉的克隆淋巴球擴增與 JAK-STAT 突變：JAK 抑制劑單一治療的隱憂",
+            "url": "https://doi.org/10.1053/j.gastro.2026.03.025",
+            "journal": "Gastroenterology",
+            "category": "乳糜瀉",
+            "abstract": "Using single-cell transcriptomic, genomic and TCR profiling of duodenal biopsies and blood from patients with type 1 and type 2 refractory celiac disease, the authors show malignant RCD2 lymphocytes are heterogeneous and that JAK inhibitors can select drug-resistant clones in vitro. In RCD1, clonal T-cell expansions with JAK-STAT-enhancing mutations were identified, suggesting a shared pathogenic continuum and caution against JAK inhibitor monotherapy.",
+            "abstract_zh": "研究以單細胞轉錄體、基因體與TCR分析第一型與第二型頑固型乳糜瀉的十二指腸切片與血液。RCD2惡性淋巴球具高度腫瘤內異質性，體外JAK抑制劑可篩選出抗藥克隆；RCD1亦發現帶有增強JAK-STAT路徑突變的克隆T細胞擴增。兩者可能共享克隆演化機轉，提示JAK抑制劑單一治療的風險。"
+          },
+          {
+            "id": "gastro-20260918-04",
+            "title": "Pre-Crohn's Disease Stool From Discordant Siblings Promotes the Development of Colitis in Germ-Free Mice",
+            "title_zh": "克隆氏症發病前的糞便菌相即可在無菌鼠誘發更嚴重腸炎",
+            "url": "https://doi.org/10.1053/j.gastro.2026.03.023",
+            "journal": "Gastroenterology",
+            "category": "發炎性腸道疾病",
+            "abstract": "Germ-free mice were colonized with stool from 12 sibling pairs in which one sibling later developed Crohn's disease. After T-cell transfer colitis induction, recipients of pre-Crohn's stool showed greater weight loss, fecal lipocalin-2 and histologic damage than recipients of healthy sibling stool. Forty fecal metabolites differed, and sphingolipids correlated with colitis in both humans and mice, demonstrating pre-diagnostic microbiome alterations with inflammatory potential.",
+            "abstract_zh": "研究將12對不一致手足（一人日後罹患克隆氏症）的糞便移植至無菌鼠，再以T細胞轉移誘發腸炎。接受「發病前」糞便的小鼠體重減輕更多、糞便lipocalin-2與組織損傷更嚴重；40種糞便代謝物有差異，鞘脂類在人與鼠皆與腸炎相關，證實診斷前數年腸道菌相已具致炎潛能。"
+          }
+        ],
+        "hepato": [
+          {
+            "id": "hepato-20260918-01",
+            "title": "Lactulose with or without TeleTai-Chi for the prevention of falls: A sequential multiple assignment randomized controlled trial (LiveSMART)",
+            "title_zh": "Lactulose 合併遠距太極預防肝硬化病人跌倒：LiveSMART 序貫隨機試驗",
+            "url": "https://doi.org/10.1097/HEP.0000000000001869",
+            "journal": "Hepatology",
+            "category": "肝硬化照護",
+            "abstract": "In this 24-week SMART trial of 230 adults with cirrhosis and portal hypertension without prior overt hepatic encephalopathy, lactulose reduced injurious falls (3.5% vs 8.5%) and non-injurious falls (15.0% vs 26.5%) versus non-use, with a win ratio of 2.3. Sequential lactulose followed by TeleTai-Chi was superior to enhanced usual care (win ratio 2.7) on a hierarchical composite of death, falls and encephalopathy.",
+            "abstract_zh": "美國四中心24週序貫多重分配隨機試驗，納入230名有門脈高壓但無明顯肝性腦病變的肝硬化成人。使用lactulose者受傷性跌倒3.5% vs 8.5%、非受傷性跌倒15.0% vs 26.5%（勝率比2.3）；lactulose接續遠距太極相較加強常規照護，在死亡/移植、跌倒與腦病變的階層複合終點上更優（勝率比2.7）。"
+          },
+          {
+            "id": "hepato-20260918-02",
+            "title": "Shear wave elastography demonstrates similar risk stratification performance to vibration-controlled transient elastography in FIB-4-based two-step algorithms for MASLD",
+            "title_zh": "剪力波彈性成像（SWE）在 MASLD 兩階段風險分層中表現與 FibroScan 相當",
+            "url": "https://doi.org/10.1097/HEP.0000000000001841",
+            "journal": "Hepatology",
+            "category": "MASLD 非侵入評估",
+            "abstract": "Among 2817 MASLD patients who underwent same-session VCTE and SWE, AGA- and EASL-based two-step algorithms using SWE stratified liver-related event risk (subdistribution hazard ratios up to 18.9 for high-risk groups). Time-dependent AUCs through 60 months were 0.770 vs 0.775 (AGA) and 0.804 vs 0.805 (EASL) for SWE vs VCTE, with strong correlation (rho 0.713), indicating comparable predictive performance without formal equivalence.",
+            "abstract_zh": "2817名同一次檢查同時接受FibroScan（VCTE）與剪力波彈性成像（SWE）的MASLD病人，依AGA與EASL兩階段流程分層。SWE分層可有效區分肝臟相關事件風險（高風險組sHR達18.9）；60個月時間相依AUC分別為0.770 vs 0.775（AGA）、0.804 vs 0.805（EASL），兩者相關性強（ρ=0.713），預測表現相當。"
+          },
+          {
+            "id": "hepato-20260918-03",
+            "title": "A First-in-Human study of AHB-137, an unconjugated antisense oligonucleotide, in healthy subjects and patients with chronic hepatitis B",
+            "title_zh": "反義寡核苷酸 AHB-137 首次人體試驗：慢性 B 肝病人 HBsAg 快速下降",
+            "url": "https://doi.org/10.1097/HEP.0000000000001835",
+            "journal": "Hepatology",
+            "category": "B 型肝炎新藥",
+            "abstract": "This phase 1 study evaluated AHB-137, an unconjugated antisense oligonucleotide targeting all HBV mRNAs, in 40 healthy volunteers and 24 virally suppressed HBeAg-negative chronic hepatitis B patients. Adverse events were mainly mild injection-site reactions and headache, with no serious treatment-related events. Pharmacokinetics were dose-proportional with a 150-220 hour half-life; HBsAg declined 0.7-1.0 log10 IU/mL, and three patients achieved HBsAg loss at least once.",
+            "abstract_zh": "第一期試驗評估針對所有HBV mRNA的非接合反義寡核苷酸AHB-137，納入40名健康受試者與24名病毒抑制中的HBeAg陰性慢性B肝病人。不良事件多為輕度注射部位反應與頭痛，無嚴重治療相關事件；藥動學呈劑量比例、半衰期150–220小時。HBsAg平均下降0.7–1.0 log，3名病人曾達HBsAg消失。"
+          },
+          {
+            "id": "hepato-20260918-04",
+            "title": "BEACON-HCC: Best evidence and North American consensus on treatment allocation for hepatocellular carcinoma",
+            "title_zh": "BEACON-HCC：北美肝細胞癌治療分配共識框架",
+            "url": "https://doi.org/10.1097/HEP.0000000000001834",
+            "journal": "Hepatology",
+            "category": "肝癌治療策略",
+            "abstract": "Through a modified Delphi process, 20 North American experts across hepatology, oncology, surgery, radiology and radiation oncology developed BEACON-HCC, a treatment allocation framework incorporating intrahepatic tumor burden, vascular invasion, adverse prognostic markers, external beam radiation, radioembolization and systemic-locoregional combinations. In 29 real-world cases, expert decisions showed 96.6% concordance with BEACON-HCC versus 72.4% with BCLC 2025.",
+            "abstract_zh": "20位北美肝臟科、腫瘤科、外科、放射科與放射腫瘤專家以修正式Delphi法建立BEACON-HCC治療分配框架，納入肝內腫瘤負荷、血管侵犯、不良預後標記，並整合體外放射、放射栓塞與全身合併局部治療。29例真實病例中，專家決策與BEACON-HCC一致率96.6%，與BCLC 2025僅72.4%。"
+          }
+        ],
+        "diabetes": [
+          {
+            "id": "diabetes-20260918-01",
+            "title": "Calorie-Restricted DASH, Carbohydrate-Restricted, and Low-Purine Diets for Weight Loss and Urate Control in Men With Overweight or Obesity and Hyperuricemia: A Randomized Trial",
+            "title_zh": "肥胖合併高尿酸男性的三種限熱量飲食比較：DASH 順從性最佳、瘦體重流失最少",
+            "url": "https://doi.org/10.2337/dc26-1241",
+            "journal": "Diabetes Care",
+            "category": "減重與代謝",
+            "abstract": "In this 12-week randomized trial, 102 men with overweight or obesity and hyperuricemia followed calorie-restricted carbohydrate-restricted, DASH or low-purine balanced diets. Mean weight loss was 8.47 kg (9.3%) with no between-group difference, and serum urate reductions (-0.89, -0.79, -0.50 mg/dL) did not differ significantly. DASH had higher adherence and less lean mass loss; a transient week-1 urate rise coincided with early gout flares.",
+            "abstract_zh": "102名過重或肥胖合併高尿酸男性隨機接受限熱量（20–25 kcal/kg理想體重）的低碳水、DASH或低普林均衡飲食12週。平均減重8.47 kg（9.3%），三組無差異；血尿酸下降分別為-0.89、-0.79、-0.50 mg/dL亦無顯著差異。DASH順從性較高、軟瘦體重流失較少；第1週尿酸短暫上升並伴隨痛風急性發作高峰。"
+          },
+          {
+            "id": "diabetes-20260918-02",
+            "title": "The Management of Type 1 Diabetes in Adults: The Updated 2026 Consensus Report by the ADA and EASD",
+            "title_zh": "2026 ADA/EASD 成人第一型糖尿病管理共識更新",
+            "url": "https://doi.org/10.2337/dci26-0122",
+            "journal": "Diabetes Care",
+            "category": "糖尿病指引",
+            "abstract": "This 2026 ADA/EASD consensus report updates the 2021 guidance on managing type 1 diabetes in adults, emphasizing integration of new technologies such as automated insulin delivery, incorporating new evidence and therapies including interventions to delay stage 3 type 1 diabetes, and broadening scope to screening for long-term complications and management of obesity and cardiovascular risk factors, while retaining psychosocial care and self-management education as core elements.",
+            "abstract_zh": "ADA與EASD發布2026年成人第一型糖尿病管理共識，更新2021版內容，重點強化新科技整合（自動胰島素輸注等），納入延緩第3期第一型糖尿病發病的介入、新療法與新證據，並擴大至長期併發症篩檢、肥胖與心血管風險因子管理；心理社會照護與自我管理衛教仍為核心。"
+          },
+          {
+            "id": "diabetes-20260918-03",
+            "title": "Maternal and Neonatal Complications in Pregnant Women With Polyendocrine Metabolic Ovarian Syndrome: A Nested Prospective Cohort Study",
+            "title_zh": "多囊性卵巢／PMOS 孕婦的早發妊娠糖尿病與新生兒併發症風險",
+            "url": "https://doi.org/10.2337/dc25-1704",
+            "journal": "Diabetes Care",
+            "category": "妊娠糖尿病",
+            "abstract": "In a nested cohort of 3645 pregnant women at risk of hyperglycemia within an international gestational diabetes trial, PMOS (PCOS) prevalence was 17.1%. PMOS was independently associated with early gestational diabetes (adjusted OR 1.37), a composite of adverse neonatal outcomes (aOR 1.28), neonatal special care admission (aOR 1.32), and slightly shorter gestation and birth length, with no interaction by BMI or ethnicity.",
+            "abstract_zh": "在一項國際妊娠糖尿病治療試驗中，3645名高血糖風險孕婦的巢式前瞻世代顯示PMOS（PCOS）盛行率17.1%。PMOS獨立與早發妊娠糖尿病（aOR 1.37）、新生兒不良結果複合終點（aOR 1.28）、新生兒加護／特殊照護入住（aOR 1.32）及較短妊娠週數相關，且與BMI、種族無交互作用，提示需及早辨識與監測。"
+          }
+        ],
+        "ckd": [
+          {
+            "id": "ckd-20260918-01",
+            "title": "Initial Changes in eGFR during Treatment with Balcinrenone and Dapagliflozin: An Exploratory Analysis of the MIRO-CKD Trial",
+            "title_zh": "新型非類固醇 MRA balcinrenone 合併 dapagliflozin 的早期 eGFR 下降：MIRO-CKD 探索分析",
+            "url": "https://doi.org/10.2215/CJN.0000001202",
+            "journal": "CJASN",
+            "category": "CKD 新藥",
+            "abstract": "In the phase 2 MIRO-CKD trial, 324 adults with CKD (eGFR 25-60, UACR 100-5000 mg/g) received balcinrenone/dapagliflozin 15/10 mg, 40/10 mg, or dapagliflozin alone. The combination caused a modest, reversible acute eGFR dip at week 4 (-0.6 and -1.7 mL/min/1.73 m2 vs dapagliflozin). Larger acute dips were associated with greater UACR and blood pressure reductions, and adverse event rates were low and unrelated to the dip.",
+            "abstract_zh": "MIRO-CKD第二期試驗324名CKD成人（eGFR 25–60、UACR 100–5000 mg/g）隨機接受balcinrenone/dapagliflozin 15/10、40/10 mg或單用dapagliflozin。合併治療於第4週出現輕微且可逆的急性eGFR下降（-0.6與-1.7），停藥4週後恢復；急性下降幅度越大者UACR與收縮壓降幅越大，嚴重不良事件少且與eGFR變化無關。"
+          },
+          {
+            "id": "ckd-20260918-02",
+            "title": "Glucosuria as a Marker of Adherence to Sodium-Glucose Cotransporter 2 Inhibitors and Clinical Outcomes in Real-World Practice",
+            "title_zh": "尿糖作為 SGLT2 抑制劑服藥順從性的客觀指標與真實世界預後",
+            "url": "https://doi.org/10.1681/ASN.0000001252",
+            "journal": "JASN",
+            "category": "SGLT2 抑制劑",
+            "abstract": "Using Optum real-world data (2014-2023), SGLT2 inhibitor use was associated with 18-fold higher odds of glucosuria on urinalysis. Among 45,711 patients prescribed SGLT2 inhibitors, 58% showed glucosuria within 6 months; after weighting, glucosuria was associated with lower all-cause mortality (HR 0.78), heart failure hospitalization (HR 0.87) and end-stage kidney disease (HR 0.73), with no association with fractures as a negative control.",
+            "abstract_zh": "分析Optum真實世界資料（2014–2023），使用SGLT2抑制劑者尿液常規出現尿糖的機率高18倍。45,711名處方SGLT2i的病人中58%於6個月內出現尿糖（代表服藥）；加權後尿糖者全因死亡（HR 0.78）、心衰竭住院（HR 0.87）與末期腎病（HR 0.73）風險較低，骨折陰性對照無差異。"
+          },
+          {
+            "id": "ckd-20260918-03",
+            "title": "Complement in Kidney Disease: Core Curriculum 2026",
+            "title_zh": "補體與腎臟疾病：AJKD 2026 核心課程",
+            "url": "https://doi.org/10.1053/j.ajkd.2026.06.008",
+            "journal": "AJKD",
+            "category": "補體抑制劑",
+            "abstract": "This core curriculum reviews the complement cascade as a driver of kidney inflammation and summarizes FDA-approved complement inhibitors for five renal indications: atypical hemolytic uremic syndrome, C3 glomerulopathy, immune-complex membranoproliferative glomerulonephritis, ANCA-associated vasculitis and IgA nephropathy. It covers ongoing trials of new anticomplement agents, complement biomarkers in plasma, urine and tissue, and practical laboratory evaluation for nephrologists.",
+            "abstract_zh": "本核心課程回顧補體級聯作為腎臟發炎驅動因子的角色，整理美國FDA已核准補體抑制劑的五種腎臟適應症：非典型溶血性尿毒症候群、C3腎絲球病變、免疫複合體膜增生性腎絲球腎炎、ANCA血管炎與IgA腎病變，並說明進行中的新藥試驗、血漿／尿液／組織補體生物標記與臨床實驗室評估要點。"
+          }
+        ]
+      }
+    },
+    {
       "date": "2026-09-11",
       "week_label": "2026 第37週",
       "taiwan_news": [
@@ -620,303 +932,6 @@
             "category": "CKD 進展預測",
             "abstract": "Among 5100 EMPA-KIDNEY participants followed for a median 3.5 years, nine urine tubular biomarkers were measured. The Kidney Failure Risk Equation showed excellent discrimination for treated kidney failure (C-index 0.858). Adding MCP-1, KIM-1, and EGF further improved prediction of kidney failure (+0.014) and kidney disease progression (+0.038), with little added value from the remaining biomarkers.",
             "abstract_zh": "研究分析 EMPA-KIDNEY 試驗中5100位慢性腎臟病受試者、追蹤中位3.5年，檢測九項尿液腎小管生物標記。腎衰竭風險方程式對需治療腎衰竭的鑑別力已相當優異（C-index 0.858）；加入 MCP-1、KIM-1 與 EGF 三項可小幅提升預測（腎病進展 +0.038），其餘標記助益有限。"
-          }
-        ]
-      }
-    },
-    {
-      "date": "2026-08-28",
-      "week_label": "2026 第35週",
-      "taiwan_news": [
-        {
-          "title": "健保8月新制上路　8項藥品擴大給付、肺癌與白血病患受惠",
-          "summary": "健保署自8月起擴大8項藥品給付，包含治療EGFR基因突變非小細胞肺癌的標靶藥aumolertinib、急性骨髓性白血病gilteritinib移植後維持治療，以及兒少近視控制用藥，估計逾萬名病友受惠。",
-          "url": "https://health.ltn.com.tw/article/breakingnews/5523897",
-          "source": "自由健康網",
-          "category": "藥物治療",
-          "id": "tw-20260828-01",
-          "tag": "藥物治療"
-        },
-        {
-          "title": "健保收載癌症新藥及擴增支付標準5項　挹注藥費約16億元",
-          "summary": "健保署通過1項癌症新藥及3項癌症藥品擴增給付規定，新增dostarlimab併用化療用於特定晚期或復發性子宮內膜癌，可降低疾病惡化風險並提高存活率，共挹注藥費約16億元，約3,085位癌友受惠。",
-          "url": "https://www.nhi.gov.tw/ch/cp-15423-58ae5-3255-1.html",
-          "source": "中央健康保險署",
-          "category": "癌症",
-          "id": "tw-20260828-02",
-          "tag": "癌症"
-        },
-        {
-          "title": "新國民病脂肪肝　治療與減重須並行",
-          "summary": "台灣今年正式核准GLP-1類藥物用於代謝功能障礙相關脂肪肝（MASLD/MASH）。醫師指出，部分患者在體重明顯下降前，脂肪肝與心血管指標即已改善，顯示藥物具獨立作用機轉，仍須搭配3至6個月飲食與生活型態調整以降低復胖風險。",
-          "url": "https://udn.com/news/story/7266/9441963",
-          "source": "聯合新聞網",
-          "category": "減重代謝",
-          "id": "tw-20260828-03",
-          "tag": "減重代謝"
-        },
-        {
-          "title": "健康台灣擴展腸癌防護網　篩檢年齡下修至45歲",
-          "summary": "自2026年起，國健署大腸癌糞便潛血篩檢對象由50至74歲擴大至45至74歲，並納入40至44歲具家族病史者。研究顯示定期篩檢可降低34%晚期大腸癌發生率與40%死亡率。",
-          "url": "https://www.mohw.gov.tw/cp-16-81256-1.html",
-          "source": "衛生福利部",
-          "category": "健康政策",
-          "id": "tw-20260828-04",
-          "tag": "健康政策"
-        },
-        {
-          "title": "8月關愛父親健康月　定期大腸癌篩檢不可少",
-          "summary": "大腸癌長年位居台灣癌症發生率前段班，早期多無明顯症狀。醫界呼籲符合資格民眾善用公費糞便潛血檢查，結果陽性務必接受大腸鏡確診；若能早期發現並妥善治療，存活率可高達九成。",
-          "url": "https://n.yam.com/Article/20260727261592",
-          "source": "蕃新聞",
-          "category": "癌症",
-          "id": "tw-20260828-05",
-          "tag": "癌症"
-        }
-      ],
-      "academic": {
-        "nejm": [
-          {
-            "id": "nejm-20260828-01",
-            "title": "Finerenone in Persons with Chronic Kidney Disease without Diabetes (FIND-CKD)",
-            "title_zh": "Finerenone 用於非糖尿病慢性腎臟病患者（FIND-CKD 試驗）",
-            "abstract": "In this phase 3 trial, 1584 adults without diabetes who had CKD (eGFR 25 to <90) and albuminuria on a renin-angiotensin system inhibitor were randomized to finerenone or placebo. The mean annual eGFR change to month 32 was -3.3 with finerenone versus -4.0 ml/min/1.73 m2 with placebo (difference 0.7; P<0.001). The composite kidney or cardiovascular outcome was also lower with finerenone (HR 0.77). Hyperkalemia was more frequent with finerenone (17.0% vs 13.3%).",
-            "abstract_zh": "1584名無糖尿病、合併蛋白尿的慢性腎臟病成人隨機接受finerenone或安慰劑。32個月時腎絲球過濾率年下降幅度為-3.3對-4.0（P<0.001），腎臟／心血管複合事件風險亦降低23%。高血鉀發生率17.0%對13.3%。此為非糖尿病CKD首見的非類固醇型礦物皮質素受體拮抗劑陽性結果。",
-            "url": "https://doi.org/10.1056/NEJMoa2604625",
-            "journal": "NEJM",
-            "category": "腎臟/代謝"
-          },
-          {
-            "id": "nejm-20260828-02",
-            "title": "Perioperative Apalutamide in High-Risk Localized Prostate Cancer (PROTEUS)",
-            "title_zh": "圍手術期 Apalutamide 用於高風險局限性攝護腺癌（PROTEUS 試驗）",
-            "abstract": "In this phase 3 double-blind trial, 2109 patients with high-risk localized or locally advanced prostate cancer received androgen-deprivation therapy plus apalutamide or placebo for 6 cycles before and after radical prostatectomy. Pathological complete response or minimal residual disease occurred in 8.9% versus 1.0% (odds ratio 10.17), and 5-year metastasis-free survival was 78.2% versus 73.5% (HR 0.80; P=0.02). Grade 3-4 adverse events were more common with apalutamide (39.6% vs 31.0%).",
-            "abstract_zh": "2109名高風險局限性攝護腺癌患者於根治性攝護腺切除前後接受雄性素剝奪加apalutamide或安慰劑各6週期。病理完全緩解或極少殘存病灶率8.9%對1.0%，五年無遠端轉移存活率78.2%對73.5%（HR 0.80）。第3-4級不良事件較多，主要為皮疹。",
-            "url": "https://doi.org/10.1056/NEJMoa2603878",
-            "journal": "NEJM",
-            "category": "泌尿腫瘤"
-          },
-          {
-            "id": "nejm-20260828-03",
-            "title": "Selpercatinib in Early-Stage RET Fusion-Positive Non-Small-Cell Lung Cancer (LIBRETTO-432)",
-            "title_zh": "Selpercatinib 用於早期 RET 融合基因陽性非小細胞肺癌（LIBRETTO-432）",
-            "abstract": "In this phase 3 double-blind trial, 151 patients with RET fusion-positive NSCLC who had completed definitive therapy were randomized to adjuvant selpercatinib or placebo for up to 3 years. Among 109 patients with stage II-IIIA disease, 2-year event-free survival was 92% with selpercatinib versus 61% with placebo (HR 0.17; P<0.001). Elevated aminotransferases were the most common adverse events (grade 3 or higher in 17-19%).",
-            "abstract_zh": "151名RET融合基因陽性、已完成根治性治療的非小細胞肺癌患者隨機接受輔助性selpercatinib或安慰劑最長3年。第II-IIIA期患者兩年無事件存活率92%對61%（HR 0.17）。最常見不良事件為肝功能指數上升，第3級以上約17-19%，需定期監測肝功能。",
-            "url": "https://doi.org/10.1056/NEJMoa2602628",
-            "journal": "NEJM",
-            "category": "肺癌/標靶"
-          }
-        ],
-        "lancet": [
-          {
-            "id": "lancet-20260828-01",
-            "title": "Liver resection after atezolizumab and bevacizumab versus maintenance therapy for locally advanced hepatocellular carcinoma (TALENTOP): a phase 3 trial",
-            "title_zh": "局部晚期肝細胞癌經免疫合併療法後手術切除對比維持治療（TALENTOP 第三期試驗）",
-            "abstract": "In this multicentre randomized phase 3 trial in China, treatment-naive patients with hepatocellular carcinoma and macrovascular invasion received induction atezolizumab plus bevacizumab. Responders (n=201) were randomized to liver resection followed by 12 months of atezolizumab-bevacizumab, or to maintenance therapy alone. Median time to treatment failure was 20.4 versus 11.8 months (HR 0.60; p=0.015). Grade 3-4 treatment-related adverse events occurred in 39% versus 21%.",
-            "abstract_zh": "中國24家醫院針對合併大血管侵犯的肝細胞癌，先以atezolizumab加bevacizumab導入治療，反應良好的201人隨機分為手術切除加術後免疫治療或單純維持治療。中位治療失敗時間20.4對11.8個月（HR 0.60）。手術組第3-4級治療相關不良事件較高（39%對21%）。",
-            "url": "https://doi.org/10.1016/S0140-6736(26)01252-3",
-            "journal": "Lancet",
-            "category": "肝癌"
-          },
-          {
-            "id": "lancet-20260828-02",
-            "title": "Deramiocel heart-derived cellular therapy in advanced Duchenne muscular dystrophy (HOPE-3): a phase 3 randomised trial",
-            "title_zh": "心臟來源細胞治療 Deramiocel 用於晚期裘馨氏肌失養症（HOPE-3 第三期試驗）",
-            "abstract": "HOPE-3 was a phase 3, multicentre, randomized, double-blind, placebo-controlled trial in 106 participants aged 10 years or older with Duchenne muscular dystrophy. Deramiocel, an allogeneic cardiosphere-derived cell therapy, was infused intravenously every 3 months. At 12 months, the least-squares mean percentage change in total Performance of the Upper Limb 2.0 favoured deramiocel by 4.55% (p=0.029), with a safety profile similar to placebo.",
-            "abstract_zh": "106名10歲以上裘馨氏肌失養症患者隨機接受每3個月一次靜脈輸注異體心球衍生細胞治療deramiocel或安慰劑。12個月時上肢功能量表PUL2.0相對改善4.55%（p=0.029），安全性與安慰劑相當。此療法不受特定基因缺陷限制，可於門診施行。",
-            "url": "https://doi.org/10.1016/S0140-6736(26)01385-1",
-            "journal": "Lancet",
-            "category": "細胞治療"
-          }
-        ],
-        "jama": [
-          {
-            "id": "jama-20260828-01",
-            "title": "Global Burden of Elevated LDL-C: Findings From the Global Burden of Disease Study 2023",
-            "title_zh": "全球低密度脂蛋白膽固醇升高的疾病負擔：GBD 2023 研究",
-            "abstract": "This comparative risk assessment estimated LDL-C-attributable ischemic heart disease and stroke burden across 204 countries from 1990 to 2023. In 2023, elevated LDL-C accounted for 3.6 million deaths (6.0% of global mortality) and 90.7 million DALYs. Age-standardized death and DALY rates fell 45.6% and 39.5% since 1990, but absolute burden rose due to population growth and aging, with one-third of the burden in India and China.",
-            "abstract_zh": "全球疾病負擔研究分析204國1990至2023年資料。2023年低密度脂蛋白膽固醇升高造成360萬人死亡，占全球死亡6.0%。年齡標準化死亡率雖較1990年下降45.6%，但因人口成長與老化，絕對負擔仍上升，且三分之一集中於印度與中國。",
-            "url": "https://doi.org/10.1001/jama.2026.8628",
-            "journal": "JAMA",
-            "category": "心血管流行病學"
-          },
-          {
-            "id": "jama-20260828-02",
-            "title": "YEARS Algorithm for Diagnosis of Suspected Pulmonary Embolism in Patients With Cancer: A Randomized Clinical Trial (Hydra)",
-            "title_zh": "YEARS 演算法用於癌症病人疑似肺栓塞的診斷：Hydra 隨機臨床試驗",
-            "abstract": "In this open-label noninferiority trial across six European countries, 698 patients with active cancer and suspected pulmonary embolism were randomized to the YEARS algorithm or CTPA only. Among those in whom PE was excluded, the primary outcome occurred in 1.8% versus 5.5% (absolute risk difference -3.7%), confirming noninferiority. The YEARS strategy avoided CTPA in 22% of patients.",
-            "abstract_zh": "698名活動性癌症併疑似肺栓塞病人隨機以YEARS演算法或直接電腦斷層肺動脈攝影診斷。排除肺栓塞者90天內事件率1.8%對5.5%，證實非劣性，且22%病人可免除電腦斷層檢查，有助減少輻射與顯影劑腎毒性。",
-            "url": "https://doi.org/10.1001/jama.2026.10676",
-            "journal": "JAMA",
-            "category": "腫瘤/血栓"
-          },
-          {
-            "id": "jama-20260828-03",
-            "title": "Total Intravenous vs Volatile Inhalational Anesthesia for Major Noncardiac Surgery: A Randomized Clinical Trial",
-            "title_zh": "全靜脈麻醉與吸入性麻醉用於重大非心臟手術：隨機臨床試驗",
-            "abstract": "This pragmatic trial in 49 UK hospitals randomized 2508 patients aged 50 years or older undergoing elective major noncardiac surgery to total intravenous anesthesia (propofol) or volatile inhalational anesthesia. Days alive and at home at 30 days were similar (22.5 vs 22.4 days). No differences were seen in mortality, quality of recovery, delirium, or major complications, although thirst, hoarseness, nausea and vomiting were less frequent with TIVA.",
-            "abstract_zh": "英國49家醫院將2508名50歲以上接受重大非心臟手術者隨機分為全靜脈麻醉或吸入性麻醉。30天存活且返家天數相當（22.5對22.4天），死亡率、譫妄與重大併發症皆無差異；全靜脈麻醉組口渴、聲音沙啞與噁心嘔吐較少。",
-            "url": "https://doi.org/10.1001/jama.2026.11065",
-            "journal": "JAMA",
-            "category": "麻醉/術後照護"
-          },
-          {
-            "id": "jama-20260828-04",
-            "title": "Duration of Therapeutic Hypothermia After Out-of-Hospital Cardiac Arrest: The ICECAP Randomized Clinical Trial",
-            "title_zh": "到院前心跳停止後低溫治療的最適時長：ICECAP 隨機臨床試驗",
-            "abstract": "ICECAP was a multicenter adaptive-allocation trial at 71 US hospitals enrolling 1158 comatose survivors of out-of-hospital cardiac arrest cooled to 33 °C, with durations from 6 to 72 hours. For the nonshockable rhythm cohort, the posterior probability that 6 hours was the shortest duration achieving maximal neurological benefit was 0.51, with similar results for shockable rhythms. Longer cooling did not improve 90-day neurological outcomes or mortality.",
-            "abstract_zh": "美國71家醫院納入1158名到院前心跳停止後昏迷存活者，以適應性隨機分派接受6至72小時33°C低溫治療。結果顯示延長冷卻時間並未改善90天神經學預後或死亡率，6小時即可能達到最大效益，對臨床資源配置具重要意義。",
-            "url": "https://doi.org/10.1001/jama.2026.10247",
-            "journal": "JAMA",
-            "category": "急重症"
-          }
-        ],
-        "gastro": [
-          {
-            "id": "gastro-20260828-01",
-            "title": "Prognostic Performance of Liver Stiffness Measurements in Primary Sclerosing Cholangitis: The Prospective FICUS Cohort",
-            "title_zh": "肝臟硬度檢測於原發性硬化性膽管炎的預後價值：FICUS 前瞻性世代研究",
-            "abstract": "This prospective cohort followed 538 patients with uncomplicated primary sclerosing cholangitis for a median of 60.7 months with annual FibroScan liver stiffness measurement (LSM). Five-year transplant-free survival was 93.9%, 78.1% and 46.0% for baseline LSM of <10, 10-15 and >=15 kPa. Progressors had worse transplant-free survival (adjusted HR 3.12), and each 1-kPa/year increment raised risk of death or transplantation by 18%.",
-            "abstract_zh": "538名原發性硬化性膽管炎患者接受每年一次FibroScan追蹤，中位追蹤60.7個月。基線肝硬度<10、10-15、≥15 kPa者五年無移植存活率分別為93.9%、78.1%、46.0%；硬度每年上升1 kPa，死亡或移植風險增加18%，支持以肝硬度作為風險分層工具。",
-            "url": "https://doi.org/10.1053/j.gastro.2026.07.019",
-            "journal": "Gastroenterology",
-            "category": "膽道疾病"
-          },
-          {
-            "id": "gastro-20260828-02",
-            "title": "Fecal Hemoglobin-Guided Precision Postpolypectomy Surveillance: A Four-Million-Participant FIT-Based Screening Study",
-            "title_zh": "以糞便血紅素濃度導引息肉切除後精準追蹤：四百萬人糞便潛血篩檢研究",
-            "abstract": "Among 3,929,387 FIT screening participants, 89,771 aged 50-74 years with fecal hemoglobin >=20 ug Hb/g and complete colonoscopy after polypectomy were followed through 2018. Colorectal cancer incidence rose stepwise from 2.2 to 4.0 per 1000 person-years across f-Hb strata. Adopting f-Hb-guided surveillance intervals could reduce colonoscopy demand by 9.8% versus current US guidelines while maintaining comparable cancer risk.",
-            "abstract_zh": "台灣近393萬名糞便免疫化學篩檢參與者中，89,771名息肉切除後個案追蹤至2018年。大腸癌發生率隨糞便血紅素濃度由每千人年2.2升至4.0。若依血紅素濃度調整追蹤間隔，可較現行美國指引減少9.8%大腸鏡需求，而癌症風險相當。",
-            "url": "https://doi.org/10.1053/j.gastro.2026.02.045",
-            "journal": "Gastroenterology",
-            "category": "大腸癌篩檢"
-          },
-          {
-            "id": "gastro-20260828-03",
-            "title": "Cardiovascular Outcomes Following Major Gastrointestinal Bleeding in Patients With Pre-Existing Cardiovascular Disease: The INTERBLEED Study",
-            "title_zh": "既有心血管疾病患者發生重大消化道出血後的心血管結果：INTERBLEED 國際前瞻性研究",
-            "abstract": "INTERBLEED enrolled 3814 patients with cardiovascular disease, 1612 with gastrointestinal bleeding and 2202 without. GI bleeding was associated with higher 12-month all-cause death (OR 2.29) and recurrent bleeding (OR 4.28), but not MACE. Resuming antithrombotic therapy 4-7 or 8-30 days after bleeding was associated with lower odds of MACE (OR 0.37 for both), without increasing recurrent bleeding.",
-            "abstract_zh": "國際多中心前瞻研究納入3814名心血管疾病患者。發生消化道出血者12個月死亡風險增2.29倍、再出血增4.28倍。出血後4至30天內恢復抗血栓藥物與較低的主要心血管事件相關（OR 0.37），且未增加再出血風險，支持適時復用抗血栓治療。",
-            "url": "https://doi.org/10.1053/j.gastro.2026.02.028",
-            "journal": "Gastroenterology",
-            "category": "消化道出血"
-          },
-          {
-            "id": "gastro-20260828-04",
-            "title": "Fibroblast-derived Spondin-2 promotes dysplastic transition in metaplastic gastric epithelial cells",
-            "title_zh": "纖維母細胞分泌的 Spondin-2 促使胃化生上皮進展為異型增生",
-            "abstract": "Using single-cell RNA sequencing, proteomics and spatial transcriptomics of patient-derived fibroblasts and gastroids, the authors identified SPON2 as the most upregulated protein secreted by metaplasia- and cancer-derived fibroblasts. SPON2 knockdown abrogated dysplastic induction in cocultured gastroids, while recombinant SPON2 promoted dysplasia markers. SPON2 is the first fibroblast-derived secreted factor shown to drive the metaplasia-to-dysplasia transition.",
-            "abstract_zh": "研究以單細胞定序、蛋白質體與空間轉錄體分析發現，來自胃化生與癌組織的纖維母細胞大量分泌Spondin-2；抑制SPON2可阻斷類器官的異型增生，補充重組SPON2則促進之。此為首個被證實驅動胃「化生→異型增生」轉變的纖維母細胞分泌因子。",
-            "url": "https://doi.org/10.1053/j.gastro.2026.08.011",
-            "journal": "Gastroenterology",
-            "category": "胃癌前病變"
-          }
-        ],
-        "hepato": [
-          {
-            "id": "hepato-20260828-01",
-            "title": "BEACON-HCC: Best Evidence and North American Consensus on Treatment Allocation for Hepatocellular Carcinoma",
-            "title_zh": "BEACON-HCC：北美肝細胞癌治療分派共識架構",
-            "abstract": "A multidisciplinary panel of 20 North American experts used a modified Delphi process to build the BEACON-HCC treatment allocation framework, incorporating intrahepatic tumor burden, vascular invasion, adverse prognostic markers, and newer modalities such as external beam radiotherapy, transarterial radioembolization and systemic-locoregional combinations. In a pilot of 29 real-world cases, expert decisions showed 96.6% concordance with BEACON-HCC versus 72.4% with BCLC 2025.",
-            "abstract_zh": "20位北美多專科專家以改良德爾菲法建立BEACON-HCC肝癌治療分派架構，納入腫瘤負荷、血管侵犯、不良預後指標，並整合體外放射治療、經動脈放射栓塞與全身合併局部療法。29個真實案例中，專家決策與BEACON-HCC吻合度96.6%，高於BCLC 2025的72.4%。",
-            "url": "https://doi.org/10.1097/HEP.0000000000001834",
-            "journal": "Hepatology",
-            "category": "肝癌治療"
-          },
-          {
-            "id": "hepato-20260828-02",
-            "title": "Weight reduction-dependent/-independent effects of survodutide on liver endpoints: mediation analysis of a phase 2 trial in MASH",
-            "title_zh": "Survodutide 對肝臟終點的減重依賴與非依賴效應：MASH 第二期試驗中介分析",
-            "abstract": "This post hoc mediation analysis of 170 participants with F2-F3 MASH assessed how much of survodutide's benefit is mediated by weight loss. Weight reduction mediated 66.7% of MASH resolution and 71.8% of MASH improvement, but only 36.3% of fibrosis improvement. For inflammation and fibrosis noninvasive tests, less than 50% of the effect was weight-mediated, suggesting a direct hepatic effect of glucagon receptor agonism.",
-            "abstract_zh": "針對170名F2-F3期MASH患者的中介分析顯示，survodutide改善MASH緩解的效果有66.7%經由減重達成，但纖維化改善僅36.3%由減重中介；發炎與纖維化的非侵入性指標亦不到一半由減重解釋，暗示昇糖素受體促效具肝臟直接作用。",
-            "url": "https://doi.org/10.1097/HEP.0000000000001825",
-            "journal": "Hepatology",
-            "category": "MASH/脂肪肝"
-          },
-          {
-            "id": "hepato-20260828-03",
-            "title": "Nucleos(t)ide withdrawal versus nucleos(t)ide withdrawal with adjuvant pegylated-interferon in HBeAg-negative hepatitis B (NUC-B trial)",
-            "title_zh": "核苷（酸）類似物停藥合併長效干擾素輔助治療於 HBeAg 陰性 B 型肝炎（NUC-B 試驗）",
-            "abstract": "NUC-B randomized 156 noncirrhotic HBeAg-negative patients on nucleos(t)ide analogues to withdrawal alone or withdrawal followed by 16 weeks of pegylated interferon alfa. At 3 years, HBsAg loss occurred in 3% of controls versus 14% with PEG-IFNa (OR 5.39; p=0.037). Exaggerated flares were less frequent with PEG-IFNa (13.4% vs 27.9%), and fewer patients returned to nucleos(t)ide therapy.",
-            "abstract_zh": "156名無肝硬化的HBeAg陰性慢性B肝患者停用核苷類似物後，隨機加或不加16週長效干擾素。3年時表面抗原消失率14%對3%（OR 5.39），且過度肝炎發作較少（13.4%對27.9%），提示輔助干擾素可提升有限療程停藥的功能性治癒機會。",
-            "url": "https://doi.org/10.1097/HEP.0000000000001821",
-            "journal": "Hepatology",
-            "category": "B型肝炎"
-          },
-          {
-            "id": "hepato-20260828-04",
-            "title": "A first-in-human study of AHB-137, an unconjugated antisense oligonucleotide, in healthy subjects and patients with chronic hepatitis B",
-            "title_zh": "反義寡核苷酸 AHB-137 首次人體試驗：健康受試者與慢性 B 型肝炎患者",
-            "abstract": "This phase 1 study enrolled 40 healthy subjects and 24 virally suppressed HBeAg-negative chronic hepatitis B patients on stable nucleos(t)ide therapy. AHB-137, an antisense oligonucleotide targeting all HBV mRNA, was well tolerated with mainly mild injection-site reactions and headache. In CHB patients, HBsAg declined rapidly by a mean 0.7-1.0 log10 IU/mL, with HBsAg loss in three patients.",
-            "abstract_zh": "第一期試驗納入40名健康受試者與24名病毒已抑制的HBeAg陰性慢性B肝患者。標靶所有B肝病毒mRNA的反義寡核苷酸AHB-137耐受性良好，多為輕度注射部位反應與頭痛；B肝患者表面抗原平均下降0.7至1.0 log10 IU/mL，3人達表面抗原消失。",
-            "url": "https://doi.org/10.1097/HEP.0000000000001835",
-            "journal": "Hepatology",
-            "category": "B型肝炎新藥"
-          }
-        ],
-        "diabetes": [
-          {
-            "id": "diabetes-20260828-01",
-            "title": "Efficacy and safety of mazdutide in adults with obesity or overweight: a US-based, multicentre, phase 2, randomised, placebo-controlled clinical trial",
-            "title_zh": "Mazdutide 用於肥胖或過重成人的療效與安全性：美國多中心第二期隨機安慰劑對照試驗",
-            "abstract": "In this phase 2 trial at 24 US centres, 179 adults with obesity or overweight without type 2 diabetes were randomized to placebo or once-weekly mazdutide, a glucagon/GLP-1 dual agonist, at 3-6 mg, 10 mg or 16 mg for 48 weeks. At 32 weeks, least-squares mean weight change was -7.3%, -15.6% and -18.1% versus -0.9% with placebo. Gastrointestinal adverse events predominated; discontinuation was highest at 16 mg (20%).",
-            "abstract_zh": "美國24家中心納入179名無糖尿病的肥胖或過重成人，隨機接受安慰劑或每週一次昇糖素／GLP-1雙重促效劑mazdutide。32週體重變化分別為-7.3%、-15.6%、-18.1%，安慰劑僅-0.9%。腸胃道副作用為主，16 mg組因不良事件停藥率20%。",
-            "url": "https://doi.org/10.1016/S2213-8587(26)00160-9",
-            "journal": "Lancet Diabetes & Endocrinology",
-            "category": "減重新藥"
-          },
-          {
-            "id": "diabetes-20260828-02",
-            "title": "Cardiometabolic Effects of Dual GLP-1 and Glucagon Receptor Agonists: A Systematic Review and Meta-analysis of Randomized Controlled Trials",
-            "title_zh": "GLP-1 與昇糖素受體雙重促效劑的心血管代謝效應：隨機對照試驗系統性回顧與統合分析",
-            "abstract": "This random-effects meta-analysis included 16 randomized trials with 6611 participants evaluating dual GLP-1 receptor/glucagon receptor agonists for at least 12 weeks. Dual agonists reduced body weight by 7.44% (7.27 kg) versus placebo, with improvements across waist circumference, atherogenic lipids, HbA1c and hemodynamic outcomes. Compared with selective GLP-1 receptor agonists, dual agonists produced a greater triglyceride reduction (-0.28 mmol/L).",
-            "abstract_zh": "統合16項隨機試驗、6611名受試者，評估GLP-1／昇糖素雙重受體促效劑。相較安慰劑減重7.44%（7.27公斤），腰圍、致動脈硬化血脂、糖化血色素與血流動力學指標均改善；相較單一GLP-1促效劑，三酸甘油酯下降更多（-0.28 mmol/L）。",
-            "url": "https://doi.org/10.2337/dc26-1127",
-            "journal": "Diabetes Care",
-            "category": "代謝/心血管"
-          },
-          {
-            "id": "diabetes-20260828-03",
-            "title": "Once-weekly IcoSema versus once-daily insulin glargine U100 in type 2 diabetes management (COMBINE 4): a phase 3b randomised trial",
-            "title_zh": "每週一次 IcoSema 與每日一次甘精胰島素 U100 治療第二型糖尿病（COMBINE 4 第三期b試驗）",
-            "abstract": "COMBINE 4 randomized 485 adults with type 2 diabetes (HbA1c >=8.0%) on oral agents to once-weekly IcoSema (insulin icodec plus semaglutide) or once-daily glargine U100 for 40 weeks. HbA1c fell by 3.32 versus 2.44 percentage points (ETD -0.88; p<0.001), and body weight changed by -0.79 versus +3.81 kg (ETD -4.61 kg). Clinically significant or severe hypoglycemia was lower with IcoSema (rate ratio 0.56).",
-            "abstract_zh": "485名口服藥控制不佳的第二型糖尿病成人隨機接受每週一次IcoSema（icodec胰島素合併semaglutide）或每日一次甘精胰島素。40週糖化血色素下降3.32對2.44個百分點，體重-0.79對+3.81公斤，且顯著或嚴重低血糖率降低44%。",
-            "url": "https://doi.org/10.1016/S2213-8587(26)00136-1",
-            "journal": "Lancet Diabetes & Endocrinology",
-            "category": "胰島素治療"
-          }
-        ],
-        "ckd": [
-          {
-            "id": "ckd-20260828-01",
-            "title": "Glucagon-Like Peptide-1 Receptor Agonist Use and Risks of Hospitalization and Mortality in Patients with End-Stage Kidney Disease",
-            "title_zh": "GLP-1 受體促效劑使用與末期腎病患者住院及死亡風險",
-            "abstract": "This matched retrospective cohort compared 2492 incident thrice-weekly in-center hemodialysis patients prescribed a GLP-1 receptor agonist within 30 days of dialysis initiation with 1:1 matched non-users, from January 2018 to April 2024. After matching and adjustment, GLP-1 receptor agonist use was independently associated with a 9% lower hospitalization rate (IRR 0.91) and a 17% lower mortality rate (IRR 0.83).",
-            "abstract_zh": "回溯性配對世代研究比較2492名初始血液透析後30天內使用GLP-1受體促效劑者與未使用者。校正後顯示使用GLP-1受體促效劑與住院率降低9%、死亡率降低17%獨立相關，為FLOW試驗之外，末期腎病族群使用此類藥物的重要真實世界證據。",
-            "url": "https://doi.org/10.2215/CJN.0000001208",
-            "journal": "CJASN",
-            "category": "透析/GLP-1"
-          },
-          {
-            "id": "ckd-20260828-02",
-            "title": "Outcomes from the International Society of Nephrology Forum on Complement Therapeutics in C3G and IgAN",
-            "title_zh": "國際腎臟醫學會 C3 腎絲球病變與 IgA 腎病補體治療論壇成果",
-            "abstract": "This report summarizes the 2025 International Society of Nephrology Forum on complement therapeutics in C3 glomerulopathy, immune-complex MPGN and IgA nephropathy. A global expert panel reviewed the current state of knowledge following successful alternative-pathway complement inhibitor trials, identified areas of uncertainty including how complement biomarkers, autoantibodies, genetics and kidney biopsy should guide therapy, and proposed how these agents fit the therapeutic landscape.",
-            "abstract_zh": "國際腎臟醫學會2025年論壇整理補體抑制劑於C3腎絲球病變、免疫複合體膜增生性腎絲球腎炎與IgA腎病的應用。專家小組回顧近期替代途徑補體抑制劑試驗成果，並指出補體生物標記、自體抗體、基因與腎切片如何導引用藥仍待釐清。",
-            "url": "https://doi.org/10.1016/j.kint.2026.08.007",
-            "journal": "Kidney International",
-            "category": "腎絲球疾病"
-          },
-          {
-            "id": "ckd-20260828-03",
-            "title": "Proteinuria and Kidney Function Trajectories in Patients with Advanced CKD: Insights from CRIC and KNOW-CKD Studies",
-            "title_zh": "晚期慢性腎臟病的蛋白尿與腎功能軌跡：CRIC 與 KNOW-CKD 世代研究",
-            "abstract": "Among 2727 participants with eGFR 15-45 mL/min/1.73 m2 from the CRIC and KNOW-CKD cohorts, higher urine protein-to-creatinine ratio (UPCR) was strongly associated with CKD progression (HR 6.32 for UPCR >=3.0 vs <0.5 g/gCr). eGFR slopes ranged from -0.87 to -5.45 mL/min/1.73 m2 per year across UPCR categories, and projected time to reach an eGFR of 10 fell from 28.7 to 3.8 years.",
-            "abstract_zh": "整合CRIC與KNOW-CKD共2727名腎絲球過濾率15-45的病人。尿蛋白／肌酸酐比值≥3.0者較<0.5者腎病進展風險高6.32倍；各組每年腎絲球過濾率下降-0.87至-5.45，預估達腎衰竭門檻時間由28.7年縮短至3.8年。",
-            "url": "https://doi.org/10.2215/CJN.0000001206",
-            "journal": "CJASN",
-            "category": "CKD 進展"
           }
         ]
       }

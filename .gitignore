@@ -1,0 +1,5 @@
+.token
+.env
+*.lock
+__pycache__/
+*.py[cod]

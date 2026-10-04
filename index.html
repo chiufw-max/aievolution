@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ─── SEO Meta Tags ─── -->
+<title>邱芳瑋醫師｜全方胃．恢腸肝膽・聽你說「腸」心事</title>
+<meta name="description" content="邱芳瑋醫師，全方胃．恢腸肝膽消化系統專科。整合胃、腸、肝、膽全方位照護，專長消化道疾病、肝膽胰疾病、胃腸鏡及減重代謝門診。聽你說「腸」心事。">
+<meta name="keywords" content="邱芳瑋醫師,全方胃,恢腸肝膽,腸胃科,肝膽科,消化道,胃腸鏡,肝炎,膽結石,GERD,減重,代謝症候群">
+<link rel="canonical" href="https://fw-gi.com/">
+<meta property="og:title" content="邱芳瑋醫師｜全方胃．恢腸肝膽">
+<meta property="og:description" content="全方胃．恢腸肝膽，整合胃腸肝膽全方位消化系統照護。聽你說「腸」心事。">
+<meta property="og:url" content="https://fw-gi.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://fw-gi.com/og_facebook.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ─── JSON-LD Structured Data ─── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "https://fw-gi.com/#physician",
+      "name": "邱芳瑋",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "醫師",
+      "description": "全方胃．恢腸肝膽消化系統專科，整合胃腸肝膽全方位照護，專長消化道疾病、肝膽胰疾病診療與胃腸鏡檢查",
+      "medicalSpecialty": [
+        "Gastroenterology",
+        "Hepatology"
+      ],
+      "url": "https://fw-gi.com",
+      "image": "https://fw-gi.com/logo.jpg",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61576486042172"
+      ],
+      "worksFor": {
+        "@type": "MedicalOrganization",
+        "@id": "https://fw-gi.com/#clinic"
+      }
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://fw-gi.com/#clinic",
+      "name": "邱芳瑋醫師・全方胃．恢腸肝膽",
+      "description": "全方胃．恢腸肝膽，提供胃腸肝膽全方位消化系統照護，包含消化道疾病、肝炎、膽結石、胃腸鏡及減重代謝門診",
+      "url": "https://fw-gi.com",
+      "image": "https://fw-gi.com/logo.jpg",
+      "medicalSpecialty": "Gastroenterology",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TW",
+        "addressLocality": "台灣"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61576486042172"
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- ─── Fonts & Icons (async, non-blocking) ─── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://connect.facebook.net">
+<link rel="dns-prefetch" href="https://www.facebook.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap"></noscript>
+
+<style>
+/* ─── Reset & Base ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --teal:        #0F766E;          /* WCAG AA on white: 5.47:1 (was #0D9488: 3.74:1) */
+  --teal-bright: #0D9488;          /* 裝飾用（漸層、邊框、陰影） */
+  --teal-light:  #5EADB3;
+  --teal-pale:   #CCFBF1;
+  --amber:       #B45309;          /* WCAG AA: 5.13:1 (was #D97706: 3.40:1) */
+  --amber-bright:#D97706;          /* 裝飾用 */
+  --amber-light: #FDE68A;
+  --bg:          #FEFCE8;
+  --bg2:         #FEF3C7;
+  --surface:     #FFFFFF;
+  --border:      rgba(180,140,40,0.18);
+  --border-teal: rgba(13,148,136,0.25);
+  --text:        #292524;
+  --text2:       #78716C;
+  --text-muted:  #A8A29E;
+  --shadow:      0 2px 16px rgba(120,80,20,0.07);
+  --shadow-lg:   0 8px 32px rgba(13,148,136,0.12);
+  --radius:      16px;
+  --radius-sm:   10px;
+}
+html { scroll-behavior: smooth; font-size: 17px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans TC', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ─── Subtle warm background ─── */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 50% at 5% 15%, rgba(253,230,138,0.38) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 95% 80%, rgba(167,243,208,0.18) 0%, transparent 60%);
+}
+
+/* ─── Navigation ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 62px; padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(254,252,232,0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 12px rgba(120,80,20,0.06);
+}
+.nav-brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.nav-brand-icon {
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; box-shadow: 0 2px 8px rgba(13,148,136,0.28);
+}
+.nav-brand-text { font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: -0.01em; line-height: 1.2; }
+.nav-brand-sub { font-size: 0.75rem; color: var(--teal); font-weight: 500; letter-spacing: 0.02em; }
+.nav-links { display: flex; gap: 1.6rem; list-style: none; align-items: center; }
+.nav-links a { color: var(--text2); text-decoration: none; font-size: 1rem; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--teal); }
+.nav-links a.active { color: var(--teal); font-weight: 700; }
+.nav-fb-link {
+  display: flex; align-items: center; gap: 0.4rem;
+  background: #1877F2; color: white !important;
+  padding: 0.32rem 0.95rem; border-radius: 100px;
+  font-size: 0.86rem; font-weight: 600; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(24,119,242,0.3); transition: opacity 0.2s;
+}
+.nav-fb-link:hover { opacity: 0.85; }
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+.nav-hamburger span { display: block; width: 22px; height: 2px; background: var(--text2); border-radius: 2px; transition: all 0.3s; }
+.mobile-menu {
+  display: none;
+  position: fixed; top: 62px; left: 0; right: 0; z-index: 199;
+  background: rgba(254,252,232,0.97);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25rem 2rem;
+  flex-direction: column; gap: 1rem;
+}
+.mobile-menu a { color: var(--text2); text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.4rem 0; }
+.mobile-menu a:hover { color: var(--teal); }
+.mobile-menu.open { display: flex; }
+@media (max-width: 680px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .nav-brand-sub { font-size: 0.68rem; white-space: nowrap; letter-spacing: 0.01em; }
+}
+
+/* ─── Hero Section ─── */
+.hero {
+  position: relative; z-index: 1;
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding: 100px 2rem 4rem;
+  overflow: hidden;
+}
+.hero-inner {
+  max-width: 1100px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr 420px;
+  gap: 4rem; align-items: center;
+}
+.hero-text { }
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.86rem; font-weight: 600; color: var(--teal);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  background: rgba(13,148,136,0.08);
+  padding: 0.35rem 1rem; border-radius: 100px;
+  border: 1px solid rgba(13,148,136,0.2);
+  margin-bottom: 1.25rem;
+}
+.hero-eyebrow::before {
+  content: ''; width: 7px; height: 7px;
+  background: var(--teal); border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+h1.hero-name {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 700; line-height: 1.15;
+  color: var(--text); letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+h1.hero-name .name-accent { color: var(--teal); }
+h2.hero-specialty {
+  font-size: clamp(1rem, 2.2vw, 1.3rem);
+  font-weight: 500; color: var(--amber);
+  letter-spacing: 0.04em; margin-bottom: 1.5rem;
+}
+.hero-tagline {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: var(--text2); line-height: 1.8;
+  margin-bottom: 2rem; max-width: 480px;
+}
+.hero-tagline strong { color: var(--text); font-weight: 600; }
+.hero-actions {
+  display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: linear-gradient(135deg, var(--teal), var(--teal-light));
+  color: white; padding: 0.75rem 1.75rem; border-radius: 100px;
+  font-size: 1rem; font-weight: 600; text-decoration: none;
+  box-shadow: 0 4px 16px rgba(13,148,136,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(13,148,136,0.4); }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: white; color: var(--teal);
+  padding: 0.75rem 1.75rem; border-radius: 100px;
+  font-size: 1rem; font-weight: 600; text-decoration: none;
+  border: 1.5px solid var(--border-teal);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-secondary:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.hero-badges {
+  display: flex; flex-wrap: wrap; gap: 0.75rem;
+}
+.badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: white; border: 1px solid var(--border);
+  padding: 0.3rem 0.9rem; border-radius: 8px;
+  font-size: 0.85rem; font-weight: 500; color: var(--text2);
+  box-shadow: var(--shadow);
+}
+.badge svg { opacity: 0.6; }
+
+/* ─── Doctor Photo Card ─── */
+.hero-photo-wrap {
+  position: relative; display: flex; justify-content: center;
+}
+.photo-bg-circle {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  width: 340px; height: 340px;
+  background: radial-gradient(circle, rgba(13,148,136,0.12) 0%, rgba(13,148,136,0.04) 60%, transparent 75%);
+  border-radius: 50%;
+}
+.photo-card {
+  position: relative; z-index: 1;
+  background: white;
+  border-radius: 24px;
+  padding: 2rem 2rem 1.5rem;
+  box-shadow: 0 12px 48px rgba(120,80,20,0.1), 0 2px 8px rgba(13,148,136,0.08);
+  border: 1px solid rgba(255,255,255,0.9);
+  width: 320px;
+}
+.photo-frame {
+  /* 替換 src 為您的實際照片路徑 */
+  width: 100%; aspect-ratio: 3/4; max-height: 320px;
+  border-radius: 16px; overflow: hidden;
+  background: linear-gradient(160deg, #E0F2FE 0%, #CCFBF1 50%, #FEF3C7 100%);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.25rem; position: relative;
+}
+.photo-placeholder {
+  text-align: center; color: var(--text-muted);
+}
+.photo-placeholder svg { opacity: 0.35; margin-bottom: 0.5rem; }
+.photo-placeholder p { font-size: 0.86rem; }
+.photo-card img.doctor-photo {
+  width: 100%; height: 100%; object-fit: contain;
+  display: block;
+  background: white;
+}
+.photo-info { text-align: center; }
+.photo-info .name { font-size: 1.15rem; font-weight: 700; color: var(--text); }
+.photo-info .dept { font-size: 0.9rem; color: var(--teal); font-weight: 600; margin: 0.2rem 0; }
+.photo-info .motto { font-size: 0.86rem; color: var(--text-muted); }
+.photo-card-badge {
+  position: absolute; top: -12px; right: 16px;
+  background: linear-gradient(135deg, var(--amber), #F59E0B);
+  color: white; font-size: 1.02rem; font-weight: 700;
+  padding: 0.3rem 0.9rem; border-radius: 100px;
+  box-shadow: 0 2px 8px rgba(217,119,6,0.35);
+  letter-spacing: 0.04em;
+}
+
+/* ─── Section Base ─── */
+.section {
+  position: relative; z-index: 1;
+  padding: 5rem 2rem;
+}
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-eyebrow {
+  font-size: 0.91rem; font-weight: 600; color: var(--teal);
+  letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.section-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700; color: var(--text); line-height: 1.25;
+  letter-spacing: -0.02em; margin-bottom: 1rem;
+}
+.section-lead {
+  font-size: 1rem; color: var(--text2); max-width: 600px;
+  line-height: 1.8; margin-bottom: 3rem;
+}
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin: 0 2rem;
+}
+
+/* ─── About Section ─── */
+.about-section { background: white; }
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 3.5rem; align-items: start;
+}
+.about-text { }
+.about-text p { color: var(--text2); line-height: 1.9; margin-bottom: 1.1rem; font-size: 1.05rem; }
+.about-text p strong { color: var(--text); font-weight: 600; }
+
+/* Credentials */
+.credential-list { list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.credential-list li {
+  display: flex; align-items: flex-start; gap: 0.65rem;
+  font-size: 1.02rem; color: var(--text2);
+}
+.cred-icon {
+  width: 22px; height: 22px; flex-shrink: 0; margin-top: 1px;
+  background: rgba(13,148,136,0.1); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal); font-size: 0.86rem;
+}
+.credential-list li strong { color: var(--text); font-weight: 600; }
+
+/* Specialties cards */
+.specialties-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  align-items: stretch;
+}
+.specialty-card {
+  background: var(--bg); border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm); padding: 1.2rem 1.1rem;
+  transition: all 0.25s;
+  display: flex; flex-direction: column;
+}
+.specialty-card:hover {
+  border-color: var(--border-teal);
+  background: rgba(13,148,136,0.03);
+  box-shadow: 0 4px 16px rgba(13,148,136,0.12);
+  transform: translateY(-2px);
+}
+.specialty-icon {
+  font-size: 1.75rem; margin-bottom: 0.55rem;
+  display: block; line-height: 1;
+}
+.specialty-name {
+  font-size: 0.97rem; font-weight: 700; color: var(--text);
+  margin-bottom: 0.3rem; line-height: 1.3;
+}
+.specialty-desc {
+  font-size: 0.8rem; color: var(--text-muted);
+  line-height: 1.55; margin-top: auto;
+}
+
+/* ─── Facebook Section ─── */
+.fb-section { background: var(--bg); }
+.fb-layout {
+  display: grid; grid-template-columns: 1fr 380px;
+  gap: 3.5rem; align-items: start;
+}
+.fb-text h3 { font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem; }
+.fb-text p { font-size: 1rem; color: var(--text2); line-height: 1.8; margin-bottom: 1.5rem; }
+.fb-link-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: #1877F2; color: white;
+  padding: 0.7rem 1.5rem; border-radius: 10px;
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  box-shadow: 0 4px 12px rgba(24,119,242,0.3);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.fb-link-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+/* FB Plugin wrapper */
+.fb-plugin-wrap {
+  background: white; border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden; border: 1px solid var(--border);
+  min-height: 500px; position: relative;
+}
+.fb-plugin-header {
+  background: linear-gradient(135deg, #1877F2, #0B5CD7);
+  padding: 1rem 1.25rem; color: white;
+}
+.fb-plugin-header h4 { font-size: 1.02rem; font-weight: 700; }
+.fb-plugin-header p { font-size: 1.02rem; opacity: 0.85; margin-top: 0.15rem; }
+.fb-plugin-body { min-height: 500px; position: relative; }
+
+/* SDK plugin container */
+#fb-sdk-container {
+  padding: 0.5rem; min-height: 500px;
+}
+/* Fallback card */
+#fb-fallback-card {
+  display: none;
+  padding: 2rem 1.5rem; text-align: center;
+  position: absolute; inset: 0;
+  background: white;
+  flex-direction: column; align-items: center; justify-content: center;
+}
+#fb-fallback-card.show { display: flex; }
+.fb-fallback-avatar {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: linear-gradient(135deg, #1877F2, #0B5CD7);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 16px rgba(24,119,242,0.3);
+}
+.fb-fallback-avatar svg { display: block; }
+.fb-fallback-card h5 { font-size: 1.05rem; font-weight: 700; color: var(--text); margin-bottom: 0.35rem; }
+.fb-fallback-card p { font-size: 1rem; color: var(--text2); line-height: 1.7; margin-bottom: 1.5rem; }
+.fb-stats {
+  display: flex; gap: 1.5rem; justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.fb-stat { text-align: center; }
+.fb-stat .num { font-size: 1.1rem; font-weight: 700; color: var(--teal); }
+.fb-stat .lbl { font-size: 1.02rem; color: var(--text-muted); }
+.fb-cta-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: #1877F2; color: white;
+  padding: 0.65rem 1.5rem; border-radius: 8px;
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+}
+
+/* ─── Weekly CTA ─── */
+.weekly-cta-section {
+  background: linear-gradient(135deg, var(--teal) 0%, #059669 100%);
+  padding: 5rem 2rem; position: relative; z-index: 1; overflow: hidden;
+}
+.weekly-cta-section::before {
+  content: '';
+  position: absolute; inset: 0; pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.weekly-cta-inner {
+  max-width: 700px; margin: 0 auto; text-align: center; position: relative;
+}
+.weekly-cta-inner h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 700; color: white; margin-bottom: 1rem; line-height: 1.3;
+}
+.weekly-cta-inner p {
+  color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.8; margin-bottom: 2rem;
+}
+.cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn-white {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: white; color: var(--teal);
+  padding: 0.8rem 2rem; border-radius: 100px;
+  font-size: 1.02rem; font-weight: 700; text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.2); }
+.btn-outline-white {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: transparent; color: white;
+  padding: 0.8rem 2rem; border-radius: 100px;
+  font-size: 1.02rem; font-weight: 600; text-decoration: none;
+  border: 2px solid rgba(255,255,255,0.6);
+  transition: all 0.2s;
+}
+.btn-outline-white:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+/* ─── Footer ─── */
+footer {
+  position: relative; z-index: 1;
+  background: rgba(41,37,36,0.97);
+  color: rgba(255,255,255,0.75);
+  padding: 3rem 2rem 2rem;
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem; margin-bottom: 2.5rem;
+}
+.footer-brand .brand-name {
+  font-size: 1rem; font-weight: 700; color: white;
+  margin-bottom: 0.4rem;
+}
+.footer-brand .brand-dept {
+  font-size: 0.86rem; color: var(--teal-light); margin-bottom: 0.75rem;
+}
+.footer-brand p { font-size: 1.02rem; line-height: 1.7; }
+.footer-nav h5 { font-size: 1.02rem; font-weight: 700; color: white; margin-bottom: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.footer-nav ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.footer-nav a { font-size: 0.9rem; color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+.footer-nav a:hover { color: var(--teal-light); }
+.footer-bottom {
+  max-width: 1100px; margin: 0 auto;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.5rem;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+}
+.footer-bottom p { font-size: 1rem; }
+.footer-bottom a { color: var(--teal-light); text-decoration: none; }
+
+/* ─── Responsive ─── */
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2.5rem; }
+  .hero-photo-wrap { order: -1; }
+  .hero-tagline { margin: 0 auto 2rem; }
+  .hero-actions { justify-content: center; }
+  .hero-badges { justify-content: center; }
+  .about-grid { grid-template-columns: 1fr; }
+  .fb-layout { grid-template-columns: 1fr; }
+  .fb-plugin-wrap { max-width: 500px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px) {
+  .hero { padding: 88px 1.25rem 3rem; min-height: auto; }
+  .section { padding: 3.5rem 1.25rem; }
+  .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .photo-card { width: 280px; }
+  .specialties-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .weekly-cta-section { padding: 3.5rem 1.25rem; }
+}
+
+/* ─── Fix 2：隱藏 FB SDK 注入的浮動覆蓋層 ─── */
+/* Facebook SDK 會在 #fb-root 內注入 .fb_reset 容器，其中可能含 position:fixed 的浮動元素 */
+/* 將其高度折疊並隱藏溢出，避免遮住 hero 區塊；Page Plugin 的 iframe 渲染在 #fb-sdk-container，不受影響 */
+.fb_reset { height: 0 !important; overflow: hidden !important; }
+#fb-root > div { height: 0 !important; overflow: hidden !important; }
+</style>
+</head>
+<body>
+
+<!-- ─── Facebook root (SDK 由 IntersectionObserver 在使用者捲到 FB 區塊時才載入) ─── -->
+<div id="fb-root"></div>
+
+<!-- ─── Navigation ─── -->
+<nav>
+  <a class="nav-brand" href="/">
+    <div class="nav-brand-icon"><img src="logo3.jpg?v=1" alt="邱芳瑋醫師 Logo" width="38" height="38" style="width:100%;height:100%;object-fit:contain;display:block;border-radius:10px;"></div>
+    <div>
+      <div class="nav-brand-text">邱芳瑋醫師</div>
+      <div class="nav-brand-sub">全方胃．恢腸肝膽・聽你說「腸」心事</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/" class="active">首頁</a></li>
+    <li><a href="/weekly.html">醫學週報</a></li>
+    <li><a href="/education.html">衛教文章</a></li>
+    <li>
+      <a class="nav-fb-link" href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        粉絲團
+      </a>
+    </li>
+  </ul>
+  <!-- Mobile hamburger -->
+  <button class="nav-hamburger" aria-label="選單" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="/" onclick="closeMenu()">🏠 首頁</a>
+  <a href="/weekly.html" onclick="closeMenu()">📰 醫學週報</a>
+  <a href="/education.html" onclick="closeMenu()">📚 衛教文章</a>
+  <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">👍 Facebook 粉絲團</a>
+</div>
+
+<!-- ─── Main content ─── -->
+<main id="main">
+
+<!-- ─── Hero ─── -->
+<section class="hero" id="hero" aria-labelledby="hero-name">
+  <div class="hero-inner">
+    <!-- Left: Text -->
+    <div class="hero-text">
+      <p class="hero-eyebrow">全方胃．恢腸肝膽・消化系統專科</p>
+      <h1 id="hero-name" class="hero-name">
+        <span class="name-accent">邱芳瑋</span>醫師
+      </h1>
+      <h2 class="hero-specialty">全方胃．恢腸肝膽・消化系統專科</h2>
+      <p class="hero-tagline">
+        <strong>聽你說「腸」心事。</strong><br>
+        從胃到腸、從肝到膽，全方位整合消化系統照護。邱芳瑋醫師以溫暖、專業的態度，陪伴您找回消化健康。
+      </p>
+      <div class="hero-actions">
+        <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          追蹤粉絲團
+        </a>
+        <a href="/weekly.html" class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          醫學週報
+        </a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          全方胃．恢腸肝膽
+        </span>
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          消化道内視鏡
+        </span>
+        <span class="badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          減重・代謝門診
+        </span>
+      </div>
+    </div>
+
+    <!-- Right: Photo -->
+    <div class="hero-photo-wrap">
+      <div class="photo-bg-circle" aria-hidden="true"></div>
+      <div class="photo-card">
+        <span class="photo-card-badge">全方胃．恢腸肝膽</span>
+        <div class="photo-frame">
+          <img
+            src="logo.jpg?v=2"
+            alt="邱芳瑋醫師・全方胃．恢腸肝膽消化系統專科"
+            class="doctor-photo"
+            width="280" height="280"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <div class="photo-info">
+          <p class="name">邱芳瑋 醫師</p>
+          <p class="dept">全方胃．恢腸肝膽・消化系統專科</p>
+          <p class="motto">聽你說「腸」心事</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── About Section ─── -->
+<section class="section about-section" id="about" aria-labelledby="about-title">
+  <div class="section-inner">
+    <div class="about-grid">
+      <!-- Left: Bio text -->
+      <div class="about-text">
+        <p class="section-eyebrow">關於醫師</p>
+        <h2 id="about-title" class="section-title">全方位・整合・以病人為中心</h2>
+        <p>
+          邱芳瑋醫師秉持「<strong>全方胃．恢腸肝膽</strong>」的理念，提供胃、腸、肝、膽完整的消化系統整合照護，專精胃食道逆流、消化性潰瘍、發炎性腸道疾病、脂肪肝、肝炎、肝硬化、膽結石及代謝症候群等疾病診治。
+        </p>
+        <p>
+          秉持「聽你說『腸』心事」的初心，邱醫師重視每一位患者的感受與故事，以深入淺出的方式解釋疾病機制與治療選項，讓您充分了解自身狀況，並與醫師共同制定最適合的照護計畫。
+        </p>
+        <p>
+          同時積極推廣<strong>預防醫學</strong>，每週整合 NEJM・Lancet 最新腸胃肝膽研究，以中文呈現頂尖醫學知識，讓更多人掌握消化健康的最新趨勢。
+        </p>
+
+        <ul class="credential-list" aria-label="醫師資歷">
+          <li>
+            <span class="cred-icon">🎓</span>
+            <div><strong>醫學教育</strong><br>醫學系畢業・完成住院醫師訓練及消化系統專科訓練</div>
+          </li>
+          <li>
+            <span class="cred-icon">🏥</span>
+            <div><strong>專科資格</strong><br>消化系統專科醫師・消化道內視鏡技術認證</div>
+          </li>
+          <li>
+            <span class="cred-icon">🔬</span>
+            <div><strong>研究興趣</strong><br>代謝相關脂肪性肝病（MASLD）・GLP-1 藥物治療・消化道癌症篩檢</div>
+          </li>
+          <li>
+            <span class="cred-icon">✍️</span>
+            <div><strong>醫學推廣</strong><br>每週整合 NEJM・Lancet 最新研究，推廣腸胃肝膽健康知識</div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Specialties -->
+      <div>
+        <p class="section-eyebrow">診療專長</p>
+        <h3 style="font-size:1.15rem;font-weight:700;color:var(--text);margin-bottom:1.5rem;">全方胃．恢腸肝膽・完整照護</h3>
+        <div class="specialties-grid">
+          <article class="specialty-card">
+            <div class="specialty-icon">🔭</div>
+            <p class="specialty-name">胃腸鏡檢查</p>
+            <p class="specialty-desc">胃鏡・大腸鏡・息肉切除・無痛內視鏡</p>
+          </article>
+          <article class="specialty-card">
+            <div class="specialty-icon">🫀</div>
+            <p class="specialty-name">肝臟疾病</p>
+            <p class="specialty-desc">B/C 型肝炎・肝硬化・MASLD（脂肪肝）</p>
+          </article>
+          <article class="specialty-card">
+            <div class="specialty-icon">💛</div>
+            <p class="specialty-name">膽道胰臟</p>
+            <p class="specialty-desc">膽結石・膽囊炎・膽管疾病・胰臟炎</p>
+          </article>
+          <article class="specialty-card">
+            <div class="specialty-icon">🍽️</div>
+            <p class="specialty-name">消化道疾病</p>
+            <p class="specialty-desc">胃食道逆流・消化性潰瘍・大腸激躁症</p>
+          </article>
+          <article class="specialty-card">
+            <div class="specialty-icon">⚖️</div>
+            <p class="specialty-name">減重・代謝</p>
+            <p class="specialty-desc">GLP-1 藥物・代謝症候群・肥胖門診</p>
+          </article>
+          <article class="specialty-card">
+            <div class="specialty-icon">🛡️</div>
+            <p class="specialty-name">癌症篩檢</p>
+            <p class="specialty-desc">大腸癌・胃癌・肝癌早期篩檢</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ─── Facebook Section ─── -->
+<section class="section fb-section" id="fb-section" aria-labelledby="fb-title">
+  <div class="section-inner">
+    <div class="fb-layout">
+      <!-- Left: text -->
+      <div class="fb-text">
+        <p class="section-eyebrow">社群・互動</p>
+        <h2 id="fb-title" class="section-title">追蹤粉絲團<br>掌握最新資訊</h2>
+        <p class="section-lead">
+          在粉絲團分享腸胃肝膽健康知識、最新醫學研究摘要，以及日常門診的衛教心得，讓您隨時掌握消化健康資訊。
+        </p>
+        <h3 class="fb-text" style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:0.75rem;">粉絲團內容包含</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:1.5rem;">
+          <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.88rem;color:var(--text2);">
+            <span style="color:var(--teal);font-weight:700;flex-shrink:0;">✓</span> 每週醫學週報重點摘要
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.88rem;color:var(--text2);">
+            <span style="color:var(--teal);font-weight:700;flex-shrink:0;">✓</span> 腸胃肝膽科衛教文章
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.88rem;color:var(--text2);">
+            <span style="color:var(--teal);font-weight:700;flex-shrink:0;">✓</span> 消化道健康飲食建議
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:0.6rem;font-size:0.88rem;color:var(--text2);">
+            <span style="color:var(--teal);font-weight:700;flex-shrink:0;">✓</span> 最新醫學研究中文解說
+          </li>
+        </ul>
+        <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener" class="fb-link-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          前往 Facebook 粉絲團
+        </a>
+      </div>
+
+      <!-- Right: FB Plugin -->
+      <div>
+        <div class="fb-plugin-wrap">
+          <div class="fb-plugin-header">
+            <h4>邱芳瑋醫師</h4>
+            <p>粉絲團最新貼文 · 全方胃．恢腸肝膽</p>
+          </div>
+          <div class="fb-plugin-body">
+            <!-- Facebook SDK Page Plugin -->
+            <div id="fb-sdk-container">
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/profile.php?id=61576486042172"
+                data-tabs="timeline"
+                data-width="360"
+                data-height="500"
+                data-small-header="true"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="false">
+              </div>
+            </div>
+            <!-- Fallback card (shown if SDK fails) -->
+            <div id="fb-fallback-card" class="fb-fallback-card">
+              <div class="fb-fallback-avatar">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </div>
+              <h5>邱芳瑋醫師</h5>
+              <p>全方胃．恢腸肝膽・聽你說「腸」心事<br>追蹤粉絲團，每週醫學新知不錯過。</p>
+              <div class="fb-stats">
+                <div class="fb-stat">
+                  <div class="num">最新</div>
+                  <div class="lbl">每週更新</div>
+                </div>
+                <div class="fb-stat">
+                  <div class="num">🩺</div>
+                  <div class="lbl">專業醫師</div>
+                </div>
+                <div class="fb-stat">
+                  <div class="num">免費</div>
+                  <div class="lbl">醫學知識</div>
+                </div>
+              </div>
+              <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener" class="fb-cta-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                前往粉絲團 →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Weekly CTA ─── -->
+<section class="weekly-cta-section" aria-labelledby="cta-title">
+  <div class="weekly-cta-inner">
+    <h2 id="cta-title">每週自動更新<br>腸胃肝膽最新研究</h2>
+    <p>
+      整合台灣醫學新聞與頂尖期刊（NEJM・Lancet），專注肝・膽・胃・腸・減重・代謝領域，由 AI 輔助整理、邱醫師把關品質。
+    </p>
+    <div class="cta-actions">
+      <a href="/weekly.html" class="btn-white">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        閱讀本週週報
+      </a>
+      <a href="/education.html" class="btn-outline-white">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        衛教文章
+      </a>
+    </div>
+  </div>
+</section>
+
+</main><!-- /#main -->
+
+<!-- ─── Footer ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="brand-name">邱芳瑋醫師</p>
+      <p class="brand-dept">全方胃．恢腸肝膽・消化系統專科</p>
+      <p>聽你說「腸」心事。<br>全方位整合消化系統，專業溫暖守護您的健康。</p>
+    </div>
+    <nav class="footer-nav" aria-label="頁腳導覽">
+      <h5>網站導覽</h5>
+      <ul>
+        <li><a href="/">首頁</a></li>
+        <li><a href="/weekly.html">醫學週報</a></li>
+        <li><a href="/education.html">衛教文章</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">Facebook 粉絲團</a></li>
+      </ul>
+    </nav>
+    <div class="footer-nav">
+      <h5>診療專長</h5>
+      <ul>
+        <li><a href="#about">胃腸鏡檢查</a></li>
+        <li><a href="#about">肝臟疾病</a></li>
+        <li><a href="#about">膽道胰臟</a></li>
+        <li><a href="#about">減重・代謝</a></li>
+        <li><a href="#about">消化道疾病</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 邱芳瑋醫師・全方胃．恢腸肝膽 | 網站內容僅供健康資訊參考，不構成醫療建議。</p>
+    <p>
+      <a href="https://github.com/chiufw-max/aievolution" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.facebook.com/profile.php?id=61576486042172" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<script defer>
+function toggleMenu() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobile-menu').classList.remove('open');
+}
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('mobile-menu');
+  const btn = document.querySelector('.nav-hamburger');
+  if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+
+/* ─── Facebook SDK lazy loader ───────────────────────────────────
+   只在使用者捲動到 FB 區塊附近 (rootMargin 600px) 才載入 SDK，
+   避免首屏 LCP 被 FB 拖慢。同步觀察 SDK 注入的 iframe 並補上 title。
+─────────────────────────────────────────────────────────────────── */
+(function () {
+  var fbSection = document.getElementById('fb-section');
+  if (!fbSection) return;
+  var loaded = false;
+  function loadFbSDK() {
+    if (loaded) return;
+    loaded = true;
+    window.fbAsyncInit = function () {
+      FB.init({ xfbml: true, version: 'v19.0' });
+      FB.Event.subscribe('xfbml.render', function () {
+        var fb = document.getElementById('fb-fallback-card');
+        if (fb) fb.classList.remove('show');
+      });
+    };
+    var js = document.createElement('script');
+    js.src = 'https://connect.facebook.net/zh_TW/sdk.js';
+    js.async = true; js.defer = true; js.crossOrigin = 'anonymous';
+    document.head.appendChild(js);
+    // 5 秒後若 SDK 未渲染則顯示 fallback 卡片
+    setTimeout(function () {
+      var c = document.getElementById('fb-sdk-container');
+      var iframe = c && c.querySelector('iframe');
+      if (!iframe || iframe.offsetHeight < 50) {
+        var fb = document.getElementById('fb-fallback-card');
+        if (fb) fb.classList.add('show');
+      }
+    }, 5000);
+  }
+  // 為 SDK 後續注入的 iframe 自動補上 title (a11y)
+  var container = document.getElementById('fb-sdk-container');
+  if (container && 'MutationObserver' in window) {
+    var mo = new MutationObserver(function () {
+      container.querySelectorAll('iframe:not([title])').forEach(function (f) {
+        f.setAttribute('title', '邱芳瑋醫師 Facebook 粉絲團最新貼文');
+      });
+    });
+    mo.observe(container, { childList: true, subtree: true });
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { loadFbSDK(); io.disconnect(); }
+      });
+    }, { rootMargin: '600px' });
+    io.observe(fbSection);
+  } else {
+    loadFbSDK();
+  }
+})();
+
+/* ─── FB in-app browser 修正 ────────────────────────────────────────
+   在 Facebook 內建瀏覽器中，點擊 facebook.com 連結會顯示「找不到網頁」。
+   偵測到 FB 瀏覽器時改用 window.location.href 在同視窗導航，避免跳轉失敗。
+─────────────────────────────────────────────────────────────────────── */
+(function () {
+  var ua = navigator.userAgent || '';
+  var isFBBrowser = /FBAN|FBAV|FB_IAB|Instagram/.test(ua);
+  if (!isFBBrowser) return;
+  document.querySelectorAll('a[href*="facebook.com"]').forEach(function (a) {
+    a.removeAttribute('target');
+    a.removeAttribute('rel');
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.location.href = a.getAttribute('href');
+    });
+  });
+})();
+</script>
+
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+</html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
